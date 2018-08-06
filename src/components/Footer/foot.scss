@@ -1,111 +1,112 @@
-.biqiBox{
-    width:100%;
-    height:285px;
-    background-color:rgba(56,62,78,1);
-    margin-top: 100px;
-    .biqiContent{
-        width:80%;
-        margin: 0 auto;
-        overflow: hidden;
-        .biqiLeft{
-            float: left;
-            &:after{
-                content: '';
-                display: block;
-                clear: both;
-            }
-            >ul{
-                float: left;
-            }
-            >ul>li{
-height:22px;
-font-size:16px;
-font-family:PingFangSC-Regular;
-color:rgba(255,255,255,1);
-line-height:22px;
-margin-top: 20px;
-            }
-          >ul>li:first-child{
-              font-size:20px;
-              color:rgba(255,255,255,1);
-          }  
-        }
-        .biqiRight{
-            float: right;
-            &:after{
-                content: '';
-                display: block;
-                clear: both;
-            }
-           .leftBox,
-           .rightBox{
-            float: left;
-            .title{
-                height:28px;
-                font-size:20px;
-                font-family:PingFangSC-Medium;
-                color:rgba(255,255,255,1);
-                line-height:28px;
-            }
-           }
-
-           .leftBox{
-               margin-right: 100px;
-           }
-
-           .bg1,.bg2,.bg3,.bg4,.bg5{
-               float: left;
-               margin-right: 20px;
-           }
-
-           .bg1{
-               width:56px;
-               height:56px;
-               background: url('../../assets/img/Twitter@2x.png') no-repeat;
-               background-size: 100% 100%;
-           }
-           .bg2{
-            width:56px;
-            height:56px;
-            background: url('../../assets/img/Facebook@2x.png') no-repeat;
-            background-size: 100% 100%; 
-           }
-           .bg3{
-            width:56px;
-            height:56px;
-            background: url('../../assets/img/Talegram@2x.png') no-repeat;
-            background-size: 100% 100%; 
-           }
-           .bg4{
-            width:56px;
-            height:56px;
-            background: url('../../assets/img/shequn@2x.png') no-repeat;
-            background-size: 100% 100%;  
-           }
-           .bg5{
-            width:56px;
-            height:56px;
-            background: url('../../assets/img/YouTube@2x.png') no-repeat;
-            background-size: 100% 100%;   
-           }
-        }
+.biqiBox {
+  width: 100%;
+  height: 285px;
+  background-color: rgba(56, 62, 78, 1);
+  margin-top: 100px;
+  padding-top: 40px;
+  .biqiContent {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    .biqiLeft {
+      float: left;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      > ul {
+        float: left;
+      }
+      > ul > li {
+        height: 22px;
+        font-size: 16px;
+        font-family: PingFangSC-Regular;
+        color: rgba(255, 255, 255, 1);
+        line-height: 22px;
+        margin-top: 20px;
+      }
+      > ul > li:first-child {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+      }
     }
-
-    .qrCodeBox{
-        width: 98px;
-        height: 98px;
-        img{
-            width: 100%;
+    .biqiRight {
+      float: right;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .leftBox,
+      .rightBox {
+        float: left;
+        .title {
+          height: 28px;
+          font-size: 20px;
+          font-family: PingFangSC-Medium;
+          color: rgba(255, 255, 255, 1);
+          line-height: 28px;
         }
-    }
+      }
 
-    .biqiFooter{
-        width:235px;
-height:20px;
-font-size:14px;
-font-family:PingFangSC-Medium;
-color:rgba(255,255,255,1);
-line-height:20px;
-margin: 0 auto;
+      .leftBox {
+        margin-right: 100px;
+      }
+
+      .bg1, .bg2, .bg3, .bg4, .bg5 {
+        float: left;
+        margin-right: 20px;
+      }
+
+      .bg1 {
+        width: 56px;
+        height: 56px;
+        background: url('../../assets/img/Twitter@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg2 {
+        width: 56px;
+        height: 56px;
+        background: url('../../assets/img/Facebook@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg3 {
+        width: 56px;
+        height: 56px;
+        background: url('../../assets/img/Talegram@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg4 {
+        width: 56px;
+        height: 56px;
+        background: url('../../assets/img/shequn@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg5 {
+        width: 56px;
+        height: 56px;
+        background: url('../../assets/img/YouTube@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
     }
+  }
+
+  .qrCodeBox {
+    width: 98px;
+    height: 98px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .biqiFooter {
+    width: 235px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    margin: 0 auto;
+  }
 }
