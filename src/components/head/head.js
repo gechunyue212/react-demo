@@ -19,10 +19,12 @@ export default class Head extends Component {
                     <a className={styles.actionBtn}>交易超市</a>
                     <a className={styles.actionBtn}>简介与帮助</a>
                     <span> </span>
-                    <a>登录</a>
-                    <span>|</span>
-                    <a>注册</a>
+                    <a className={styles.headBtn}>登录</a>
+                    <span className={styles.headBtn}>|</span>
+                    <a className={styles.headBtn}>注册</a>
                     <img/>
+                    <a className={styles.headBtn} style={{marginRight:'0'}}>cn</a>
+                    <a className={styles.headBtn}>&gt;</a>
                 </div>
             </div>
         );
