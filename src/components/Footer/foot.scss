@@ -6,7 +6,46 @@
         width:80%;
         margin: 0 auto;
         .biqiLeft{
-            
+          >ul>li:first-child{
+              font-size:20px;
+              color:rgba(255,255,255,1);
+          }  
+        }
+        .biqiRight{
+           >p{
+            font-size:20px;
+            color:rgba(255,255,255,1);  
+           }
+           .bg1{
+               width:56px;
+               height:56px;
+               background: url('../../assets/img/Twitter.png') no-repeat;
+               background-size: 100% 100%;
+           }
+           .bg2{
+            width:56px;
+            height:56px;
+            background: url('../../assets/img/Facebook.png') no-repeat;
+            background-size: 100% 100%; 
+           }
+           .bg3{
+            width:56px;
+            height:56px;
+            background: url('../../assets/img/Talegram.png') no-repeat;
+            background-size: 100% 100%; 
+           }
+           .bg4{
+            width:56px;
+            height:56px;
+            background: url('../../assets/img/shequn.png') no-repeat;
+            background-size: 100% 100%;  
+           }
+           .bg5{
+            width:56px;
+            height:56px;
+            background: url('../../assets/img/YouTube.png') no-repeat;
+            background-size: 100% 100%;   
+           }
         }
     }
     

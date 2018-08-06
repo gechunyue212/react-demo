@@ -30,11 +30,11 @@ export default class Footer extends Component{
                         <div>
                             <p>联系我们</p>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li className={styles.bg1}></li>
+                                <li className={styles.bg2}></li>
+                                <li className={styles.bg3}></li>
+                                <li className={styles.bg4}></li>
+                                <li className={styles.bg5}></li>
                             </ul>
                         </div>
                         <div>
