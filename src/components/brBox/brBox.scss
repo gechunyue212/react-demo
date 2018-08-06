@@ -1,0 +1,31 @@
+.brBox{
+    width: 420px;
+    height: 42px;
+    margin: 100px auto 85px;
+    &:after{
+        clear: both;
+        display: block;
+        content: '';
+    }
+
+    .icon{
+        float: left;
+        width: 104px;
+        height: 20px;
+        margin-top: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .title{
+        float: left;
+        width:177px;
+height:42px;
+font-size:30px;
+font-family:PingFangSC-Medium;
+color:rgba(49,48,62,1);
+line-height:42px;
+text-align: center;
+    }
+
+}
