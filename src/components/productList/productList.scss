@@ -1,0 +1,42 @@
+.box{
+    width: 1200px;
+    margin: 0 auto;
+    &:after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
+.cellBox{
+    width: 360px;
+    height: 310px;
+    float: left;
+    margin-right: 20px;
+    p{
+        text-align: center;
+    }
+    .imgIcon{
+        width: 94px;
+        height: 94px;
+        display: block;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    .title{
+height:50px;
+font-size:36px;
+font-family:PingFangSC-Regular;
+color:rgba(66,71,83,1);
+line-height:50px;
+    }
+    .content{
+height:64px;
+font-size:16px;
+font-family:PingFangSC-Regular;
+color:rgba(66,71,83,1);
+line-height:32px;
+    }
+}
