@@ -1,17 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.scss';
-import Head from './components/head/head';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.scss'
+
+import Head from './components/head/head'
 import Footer from './components/Footer/foot'
+import Banner from './components/banner'
+
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div>
-        <Head/>
-        <Footer/>
-      </div>
-    );
+     <div>
+       <Head/>
+       <Banner/>
+       <Footer/>
+     </div>
+    )
   }
 }
 
-export default App;
+export default App

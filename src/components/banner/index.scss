@@ -1,0 +1,44 @@
+
+.bannerWrap {
+  position: relative;
+
+  :global {
+    .swiper-banner-item {
+      .banner-img {
+        width: 100%;
+      }
+    }
+    .banner-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      height: 100px;
+      z-index: 2;
+      text-align: center;
+      .banner-bottom-item {
+        width: 25%;
+        float: left;
+        height: 100%;
+        color:#fff;
+        line-height: 100px;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 20%;
+          top: 20%;
+          width: 2px;
+          background-color: #fff;
+        }
+        .orange-text{
+          color:orange;
+        }
+      }
+    }
+  }
+}
+
+
