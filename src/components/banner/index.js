@@ -14,15 +14,13 @@ export default class Banner extends React.Component {
 
   render () {
     const params = {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
+      loop:true,
+      // autoplay:true,//等同于以下设置
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       },
+
     }
     console.log(s)
     return (
@@ -30,6 +28,9 @@ export default class Banner extends React.Component {
        <Swiper {...params}>
          <div className={'swiper-banner-item'}>
            <img src={img2} className={'banner-img'} alt=""/>
+           <span className={'trade-btn'}>
+             交易超市
+           </span>
          </div>
          <div className={'swiper-banner-item'}>
            <img src={img1} className={'banner-img'} alt=""/>
