@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './head.scss';
-// import HeadIcon from '../../assets/img/'
+import china from '../../assets/img/china.png';
+import logo from '../../assets/img/logo.png';
 
 export default class Head extends Component {
     constructor(props){
@@ -11,8 +12,8 @@ export default class Head extends Component {
         return (
             <div className={styles.headBox}>
                 <div className={styles.headLeft}>
-                    <div>
-                        <img src={''} />
+                    <div className={styles.logo}>
+                        <img src={logo} />
                     </div>
                 </div> 
                 <div className={styles.headRight}>
@@ -22,7 +23,7 @@ export default class Head extends Component {
                     <a className={styles.headBtn}>登录</a>
                     <span className={styles.headBtn}>|</span>
                     <a className={styles.headBtn}>注册</a>
-                    <img/>
+                    <img className={styles.chinaIcon} src={china}/>
                     <a className={styles.headBtn} style={{marginRight:'0'}}>cn</a>
                     <a className={styles.headBtn}>&gt;</a>
                 </div>

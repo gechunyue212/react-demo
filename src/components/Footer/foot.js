@@ -1,6 +1,8 @@
 import React, { Component} from 'react';
 import ReactDOM from 'react-dom';
 import styles from './foot.scss';
+import qrCode from '../../assets/img/二维码@2x.png';
+
 export default class Footer extends Component{
     state={
 
@@ -27,9 +29,9 @@ export default class Footer extends Component{
                             </ul>
                     </div>
                     <div className={styles.biqiRight}>
-                        <div>
-                            <p>联系我们</p>
-                            <ul>
+                        <div className={styles.leftBox}>
+                            <p className={styles.title}>联系我们</p>
+                            <ul style={{marginLeft:'-40px'}}>
                                 <li className={styles.bg1}></li>
                                 <li className={styles.bg2}></li>
                                 <li className={styles.bg3}></li>
@@ -37,9 +39,11 @@ export default class Footer extends Component{
                                 <li className={styles.bg5}></li>
                             </ul>
                         </div>
-                        <div>
-                            <p>联系客服</p>
-                            <p></p>
+                        <div className={styles.rightBox}>
+                            <p className={styles.title}>联系客服</p>
+                            <div className={styles.qrCodeBox}>
+                                <img src={qrCode} />
+                            </div>
                         </div>
                     </div>
                 </div>
