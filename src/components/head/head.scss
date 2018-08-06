@@ -1,6 +1,29 @@
-.head{
+.headBox{
     width: 100%;
     height: 100px;
     background-color: rgba(56,62,78,1);
     box-shadow:0px 10px 40px 0px rgba(0,0,0,0.02);
+    &:after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    .headLeft{
+        float: left;
+        div{
+            width: 162px;
+            height: 65px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .headRight{
+        float: right;
+        line-height: 100px;
+        height: 100px;
+    }
+
 }
