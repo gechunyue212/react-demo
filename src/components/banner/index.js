@@ -16,6 +16,10 @@ export default class Banner extends React.Component {
     const params = {
       loop:true,
       // autoplay:true,//等同于以下设置
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'

@@ -40,7 +40,7 @@ export default class Footer extends Component{
                             </ul>
                         </div>
                         <div className={styles.rightBox}>
-                            <p className={styles.title2}>联系客服</p>
+                            <p className={styles.title2}>公众号</p>
                             <div className={styles.qrCodeBox}>
                                 <img src={qrCode} />
                             </div>
