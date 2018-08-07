@@ -14,9 +14,9 @@ class App extends Component {
       <div>
         <Head/>
         <Banner/>
-        <BrBox title={'产品介绍'} />
+        <BrBox title={'产品优势'} />
         <ProductList/>
-        <BrBox title={'技术介绍'} />
+        <BrBox title={'技术优势'} />
         <SkillList/>
         <Footer/>
       </div>
