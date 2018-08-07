@@ -1,8 +1,8 @@
 import React, { Component} from 'react';
 import ReactDOM from 'react-dom';
 import styles from './foot.scss';
-import qrCode from '../../assets/img/二维码@2x.png';
-
+// import qrCode from '../../assets/img/二维码@2x.png';
+import qrCode from '../../assets/img/public-number.png';
 export default class Footer extends Component{
     state={
 
