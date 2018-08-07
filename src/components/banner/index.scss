@@ -5,7 +5,8 @@
   //   background: #fff !important;
   //   opacity: 1 !important;
   // }
-
+  // width:1600px;
+  margin:auto;
   :global {
     .swiper-container-horizontal > .swiper-pagination-bullets{
       bottom: 60px;
@@ -21,6 +22,7 @@
       .banner-img {
         width: 100%;
         display: block;
+        // height:620px;
       }
       .trade-btn {
         color: #fff;
