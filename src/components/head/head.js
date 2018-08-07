@@ -17,15 +17,14 @@ export default class Head extends Component {
                     </div>
                 </div> 
                 <div className={styles.headRight}>
-                    <a className={styles.actionBtn}>交易超市</a>
-                    <a className={styles.actionBtn}>简介与帮助</a>
+                    <a href='javascript:void(0)' className={styles.actionBtn}>交易超市</a>
+                    <a href='javascript:void(0)' className={styles.actionBtn}>简介与帮助</a>
                     <span> </span>
-                    <a className={styles.headBtn}>登录</a>
+                    <a href='javascript:void(0)' className={styles.headBtn}>登录</a>
                     <span className={styles.headBtn}>|</span>
-                    <a className={styles.headBtn}>注册</a>
+                    <a href='javascript:void(0)' className={styles.headBtn}>注册</a>
                     <img className={styles.chinaIcon} src={china}/>
-                    <a className={styles.headBtn} style={{marginRight:'0'}}>cn</a>
-                    <a className={styles.headBtn}>&gt;</a>
+                    <a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>
                 </div>
             </div>
         );
