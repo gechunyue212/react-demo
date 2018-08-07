@@ -3,9 +3,9 @@ import Swiper from 'react-id-swiper'
 
 import 'react-id-swiper/src/styles/css/swiper.css'
 import s from './index.scss'
-import img1 from '../../assets/img/banner-1.png'
-import img2 from '../../assets/img/banner-2.png'
-import img3 from '../../assets/img/banner-3.png'
+import img1 from '../../assets/img/banner-1.jpg'
+import img2 from '../../assets/img/banner-2.jpg'
+import img3 from '../../assets/img/banner-3.jpg'
 
 export default class Banner extends React.Component {
   constructor (props) {
@@ -24,7 +24,12 @@ export default class Banner extends React.Component {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       },
-
+      spaceBetween: 30,
+      bottom:150,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, 
+      }
     }
     console.log(s)
     return (
