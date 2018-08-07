@@ -1,11 +1,22 @@
 
 .bannerWrap {
   position: relative;
-  .swiper-pagination-bullet{
-    background: #fff !important;
-    opacity: 1 !important;
-  }
+  // .swiper-pagination-bullet{
+  //   background: #fff !important;
+  //   opacity: 1 !important;
+  // }
+
   :global {
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+      bottom: 60px;
+    }
+    .swiper-pagination-bullet{
+    background: #fff;
+    opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+      background:#007aff;
+    }
     .swiper-banner-item {
       .banner-img {
         width: 100%;
