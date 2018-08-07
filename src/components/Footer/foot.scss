@@ -7,6 +7,7 @@
         width:80%;
         margin: 0 auto;
         overflow: hidden;
+        padding-top: 50px;
         .biqiLeft{
             float: left;
             &:after{
@@ -19,12 +20,12 @@
                 margin-right: 40px;
             }
             >ul>li{
-height:22px;
-font-size:16px;
-font-family:PingFangSC-Regular;
-color:rgba(255,255,255,1);
-line-height:22px;
-margin-top: 20px;
+                height:22px;
+                font-size:16px;
+                font-family:PingFangSC-Regular;
+                color:rgba(255,255,255,1);
+                line-height:22px;
+                margin-top: 20px;
             }
           >ul>li:first-child{
               font-size:20px;
@@ -33,6 +34,7 @@ margin-top: 20px;
         }
         .biqiRight{
             float: right;
+            padding-top: 15px;
             &:after{
                 content: '';
                 display: block;
@@ -41,12 +43,21 @@ margin-top: 20px;
            .leftBox,
            .rightBox{
             float: left;
-            .title{
+            .title1{
                 height:28px;
                 font-size:20px;
                 font-family:PingFangSC-Medium;
                 color:rgba(255,255,255,1);
                 line-height:28px;
+                margin-bottom: 53px;
+            }
+            .title2{
+                height:28px;
+                font-size:20px;
+                font-family:PingFangSC-Medium;
+                color:rgba(255,255,255,1);
+                line-height:28px;
+                margin-bottom: 25px;
             }
            }
 
@@ -102,11 +113,12 @@ margin-top: 20px;
 
     .biqiFooter{
         width:235px;
-height:20px;
-font-size:14px;
-font-family:PingFangSC-Medium;
-color:rgba(255,255,255,1);
-line-height:20px;
-margin: 0 auto;
+        height:20px;
+        font-size:14px;
+        font-family:PingFangSC-Medium;
+        color:rgba(255,255,255,1);
+        line-height:20px;
+        margin: 0 auto;
+        padding-top: 25px;
     }
 }

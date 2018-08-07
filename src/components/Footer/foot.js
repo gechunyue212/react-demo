@@ -30,8 +30,8 @@ export default class Footer extends Component{
                     </div>
                     <div className={styles.biqiRight}>
                         <div className={styles.leftBox}>
-                            <p className={styles.title}>联系我们</p>
-                            <ul style={{marginLeft:'-40px'}}>
+                            <p className={styles.title1}>联系我们</p>
+                            <ul>
                                 <li className={styles.bg1}></li>
                                 <li className={styles.bg2}></li>
                                 <li className={styles.bg3}></li>
@@ -40,7 +40,7 @@ export default class Footer extends Component{
                             </ul>
                         </div>
                         <div className={styles.rightBox}>
-                            <p className={styles.title}>联系客服</p>
+                            <p className={styles.title2}>联系客服</p>
                             <div className={styles.qrCodeBox}>
                                 <img src={qrCode} />
                             </div>
