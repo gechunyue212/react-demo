@@ -42,7 +42,7 @@ export default class Footer extends Component{
                         <div className={styles.rightBox}>
                             <p className={styles.title2}>公众号</p>
                             <div className={styles.qrCodeBox}>
-                                <img src={qrCode} />
+                                <img src={qrCode} style={{width:80,height:80}}/>
                             </div>
                         </div>
                     </div>

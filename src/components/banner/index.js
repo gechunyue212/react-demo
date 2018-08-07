@@ -3,9 +3,9 @@ import Swiper from 'react-id-swiper'
 
 import 'react-id-swiper/src/styles/css/swiper.css'
 import s from './index.scss'
-import img1 from '../../assets/img/banner-12.jpg'
-import img2 from '../../assets/img/banner-11.jpg'
-import img3 from '../../assets/img/banner-13.jpg'
+import img1 from '../../assets/img/banner-21.jpg'
+import img2 from '../../assets/img/banner-22.jpg'
+import img3 from '../../assets/img/banner-23.jpg'
 
 export default class Banner extends React.Component {
   constructor (props) {
