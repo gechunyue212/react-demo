@@ -1,3 +1,6 @@
+.borderBox{
+    background: url("../../assets/img/f1.png") no-repeat center left;
+}
 .box{
     width: 1200px;
     margin: 0 auto;
@@ -22,17 +25,19 @@
         }
     }
     .title{
-height:50px;
-font-size:24px;
-font-family:PingFangSC-Regular, "Microsoft YaHei";
-color:rgba(66,71,83,1);
-line-height:50px;
+        height:50px;
+        font-size:24px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(66,71,83,1);
+        line-height:50px;
+        margin-bottom: 25px;
     }
     .content{
-height:64px;
-font-size:16px;
-font-family:PingFangSC-Regular, "Microsoft YaHei";
-color:rgba(66,71,83,1);
-line-height:32px;
+        height:64px;
+        font-size:16px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(66,71,83,1);
+        line-height:32px;
+        margin-bottom: 55px;
     }
 }

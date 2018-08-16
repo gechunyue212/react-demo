@@ -1,51 +1,174 @@
-.headBox{
+.header{
+
     width: 100%;
-    height: 60px;
-    background-color: #31303E;
-    box-shadow:0px 10px 40px 0px rgba(0,0,0,0.02);
-    &:after{
-        display: block;
-        content: '';
-        clear: both;
+    height: 650px;
+    background: url("../../assets/img/banner1.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 250px;
+
+    .headText{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        .headTitle{
+            height: 68px;
+            line-height: 68px;
+            font-size: 64px;
+            color: #F2BC0F;
+            font-family: PingFangSC, "Microsoft YaHei";
+
+            .headTitleBg{
+                max-width:881px;
+                height:41px;
+                background:rgba(150,148,231,1);
+                opacity:0.2248;
+                margin-top: -25px;
+            }
+        }
+        .headTextP{
+            font-size:24px;
+            font-family:PingFangSC-Light, "Microsoft YaHei";
+            color:rgba(255,255,255,1);
+            line-height:40px;
+            padding-top: 40px;
+        }
     }
 
-    .headLeft{
-        float: left;
-        .logo{
-            width: 110px;
-            height: 35px;
-            margin: 10px 0 0 120px;
 
-            img{
-                width: 100%;
+    .headBox{
+        width: 100%;
+        height: 60px;
+        box-shadow:0px 10px 40px 0px rgba(0,0,0,0.02);
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .headBoxContent{
+
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+
+            .headLeft{
+                float: left;
+                .logo{
+                    width: 110px;
+                    height: 35px;
+                    margin-top: 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .headRight{
+                float: right;
+                line-height: 60px;
+                height: 60px;
+                .actionBtn{
+                    font-size:16px;
+                    font-family:"Microsoft YaHei";
+                    color:rgba(255,255,255,1);
+                    line-height:28px;
+                    margin-right: 72px;
+                }
+                .headBtn{
+                    font-size:14px;
+                    font-family:"Microsoft YaHei";
+                    color:rgba(255,255,255,1);
+                    line-height:20px;
+                    margin-right: 8px;
+                }
+                .chinaIcon{
+                    width:30px;
+                    height:20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+    }
+
+    .banner-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background:rgba(11,11,36,0.2);
+        height: 50px;
+        z-index: 2;
+        text-align: center;
+        .banner-bottom-item {
+            width: 25%;
+            float: left;
+            height: 100%;
+            color: #fff;
+            line-height: 50px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 20%;
+                top: 20%;
+                width: 2px;
+                background-color: #fff;
+            }
+            &:last-child::before {
+                display: none;
+            }
+            .orange-text {
+                color: orange;
             }
         }
     }
 
-    .headRight{
-        float: right;
-        line-height: 60px;
-        height: 60px;
-        margin-right: 80px;
-        .actionBtn{
-            font-size:16px;
-            font-family:"Microsoft YaHei";
-            color:rgba(255,255,255,1);
-            line-height:28px;
-            margin-right: 40px;
-        }
-        .headBtn{
+}
+
+.menu{
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    .menuTitle{
+        font-size:14px;
+        font-family:"Microsoft YaHei";
+        color:rgba(255,255,255,1);
+        line-height:20px;
+        height: 20px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    .menuListBox{
+        background: white;
+        position: absolute;
+        top: 25px;
+        .menuItem{
+            width: 70px;
+            height: 24px;
+            line-height: 24px;
+            box-sizing: border-box;
+            text-align: center;
             font-size:14px;
             font-family:"Microsoft YaHei";
-            color:rgba(255,255,255,1);
-            line-height:20px;
-            margin-right: 8px;
-        }
-        .chinaIcon{
-            width:30px;
-            height:20px;
-            margin-left: 20px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(0,0,0,0.1);
+            }
         }
     }
-
+    .show{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
 }

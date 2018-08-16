@@ -11,13 +11,7 @@ export default class Head extends Component {
 
         return (
             <div className={styles.brBox}>
-                <div className={styles.icon}>
-                    <img src={LeftIcon}/>
-                </div>
                 <div className={styles.title}>{this.props.title}</div>
-                <div className={styles.icon}>
-                    <img src={RightIcon}/>
-                </div>
             </div>
         );
 

@@ -1,0 +1,88 @@
+.box{
+  width: 100%;
+  .content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 85px 0 67px;
+    background-color: white;
+    &:after{
+      content: '';
+      clear: both;
+      display: block;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .download{
+      float: left;
+      padding-top: 90px;
+
+      .downloadTitle{
+        font-size:18px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(155,155,155,1);
+        line-height:30px;
+      }
+
+      .downloadDescription1{
+        font-size:34px;
+        font-family:PingFangSC-Medium, "Microsoft YaHei";
+        color:rgba(51,51,51,1);
+        line-height:38px;
+        margin-top: 13px;
+      }
+
+      .downloadDescription2{
+        font-size:18px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(51,51,51,1);
+        line-height:30px;
+        margin-top: 23px;
+      }
+
+      .downloadBtns{
+        margin-top: 30px;
+        &:after{
+          content: '';
+          clear: both;
+          display: block;
+          width: 0;
+          height: 0;
+          visibility: hidden;
+        }
+
+        .downloadBtn1, .downloadBtn2{
+          width: 180px;
+          height: 50px;
+          float: left;
+          background-size: cover;
+          cursor: pointer;
+        }
+
+        .downloadBtn1{
+          background: url("../../assets/img/xiazai1.png") no-repeat center center;
+          margin-right: 21px;
+        }
+
+        .downloadBtn2{
+          background: url("../../assets/img/xiazai2.png") no-repeat center center;
+        }
+      }
+
+    }
+
+    .imgBox{
+      float: right;
+      width: 494px;
+      height: 100%;
+      .imgIcon{
+        width: 437px;
+        height: 552px;
+        background: url("../../assets/img/image3.png") no-repeat center center;
+        background-size: cover;
+      }
+    }
+
+  }
+}

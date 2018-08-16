@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from './head.scss';
-import china from '../../assets/img/china.png';
 import logo from '../../assets/img/logo.png';
 
 export default class Head extends Component {
@@ -9,25 +8,85 @@ export default class Head extends Component {
     }
     render(){
 
+        const { contentText } = this.props;
+
         return (
-            <div className={styles.headBox}>
-                <div className={styles.headLeft}>
-                    <div className={styles.logo}>
-                        <img src={logo} />
+            <div className={styles.header}>
+
+                <div className={styles.headText}>
+                    <div className={styles.headTitle}>
+                        {contentText.title}
+                        <div className={styles.headTitleBg} />
                     </div>
-                </div> 
-                <div className={styles.headRight}>
-                    <a href='javascript:void(0)' className={styles.actionBtn}>交易超市</a>
-                    <a href='javascript:void(0)' className={styles.actionBtn}>简介与帮助</a>
-                    <span> </span>
-                    <a href='javascript:void(0)' className={styles.headBtn}>登录</a>
-                    <span className={styles.headBtn}>|</span>
-                    <a href='javascript:void(0)' className={styles.headBtn}>注册</a>
-                    <img className={styles.chinaIcon} src={china}/>
-                    <a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>
+                    <p className={styles.headTextP}>{contentText.bannerText[0]}<br/>{contentText.bannerText[1]}</p>
+                </div>
+
+                <div className={styles.headBox}>
+                    <div className={styles.headBoxContent}>
+                        <div className={styles.headLeft}>
+                            <div className={styles.logo}>
+                                <img src={logo} />
+                            </div>
+                        </div>
+                        <div className={styles.headRight}>
+                            {
+                                contentText.nav.map((item,i)=>(
+                                    <a href='javascript:void(0)' key={i} className={styles.actionBtn}>{item.title}</a>
+                                ))
+                            }
+                            {/*<a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>*/}
+                            <Menu onClick={this.props.handleMenuClick} />
+                        </div>
+                    </div>
+                </div>
+                <div className={styles["banner-bottom"]}>
+                    {
+                        contentText.bannerBottomText.map((item,i)=>(
+                            <div key={i} className={styles["banner-bottom-item"]}>
+                                {item.title}<span className={styles["orange-text"]}>{item.number}</span>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         );
 
+    }
+}
+
+export class Menu extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            value:"cn",
+            menuList:["cn", "en"],
+            showMenuList:false
+        };
+    }
+
+    handleClick(value){
+        this.setState({
+            value,
+            showMenuList:!this.state.showMenuList
+        });
+        if(typeof this.props.onClick === 'function'){
+            this.props.onClick(value);
+        }
+    }
+
+    render(){
+        const { menuList, value, showMenuList } = this.state;
+        return (
+            <div className={styles.menu}>
+                <div className={styles.menuTitle} onClick={() => this.setState({showMenuList:!showMenuList})}>{value + " >"}</div>
+                <div className={styles.menuListBox + " " + (showMenuList ? styles.show : styles.hide)}>
+                    {
+                        menuList.map((item,i)=>(
+                            <div className={styles.menuItem} onClick={()=>this.handleClick(item)} key={i}>{item}</div>
+                        ))
+                    }
+                </div>
+            </div>
+        );
     }
 }

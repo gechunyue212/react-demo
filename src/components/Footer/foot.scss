@@ -1,124 +1,112 @@
-.biqiBox{
-    width:100%;
-    height:250px;
-    background-color:rgba(56,62,78,1);
-    margin-top: 100px;
-    .biqiContent{
-        width:1200px;
-        margin: 0 auto;
-        overflow: hidden;
-        padding-top: 40px;
-        .biqiLeft{
-            float: left;
-            &:after{
-                content: '';
-                display: block;
-                clear: both;
-            }
-            >ul{
-                float: left;
-                margin-right: 60px;
-            }
-            >ul>li{
-                height:22px;
-                font-size:14px;
-                font-family:PingFangSC-Regular, "Microsoft YaHei";
-                color:rgba(255,255,255,1);
-                line-height:22px;
-                margin-top: 15px;
-            }
-          >ul>li:first-child{
-              font-size:16px;
-              color:rgba(255,255,255,1);
+.footerBox{
+  width: 100%;
+  height:285px;
+  background:rgba(25,28,42,1);
+  box-sizing: border-box;
+  padding-top: 57px;
+
+  .box{
+    max-width: 1200px;
+    margin: 0 auto;
+    &:after{
+      content: '';
+      clear: both;
+      display: block;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .footerLeft{
+      float: left;
+
+      .footerLogo{
+        width: 140px;
+        height: 38px;
+      }
+
+      .footerLogoTitle{
+        font-size:16px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(97,100,138,1);
+        line-height:22px;
+        margin-top: 11px;
+      }
+
+      .footerLogoBtn{
+        margin-top: 18px;
+        &:after{
+          content: '';
+          clear: both;
+          display: block;
+          width: 0;
+          height: 0;
+          visibility: hidden;
+        }
+        .btn{
+          float: left;
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+          display: block;
+          img{
+            width: 100%;
           }
         }
-        .biqiRight{
-            float: right;
-            padding-top: 15px;
-            &:after{
-                content: '';
-                display: block;
-                clear: both;
-            }
-           .leftBox,
-           .rightBox{
-            float: left;
-            .title1{
-                height:28px;
-                font-size:16px;
-                font-family:PingFangSC-Medium, "Microsoft YaHei";
-                color:rgba(255,255,255,1);
-                line-height:28px;
-                margin-bottom: 40px;
-            }
-            .title2{
-                height:28px;
-                font-size:16px;
-                font-family:PingFangSC-Medium, "Microsoft YaHei";
-                color:rgba(255,255,255,1);
-                line-height:28px;
-                margin-bottom: 25px;
-            }
-           }
+      }
 
-           .leftBox{
-               margin-right: 50px;
-           }
-
-           .bg1,.bg2,.bg3,.bg4,.bg5{
-               float: left;
-               margin-right: 20px;
-           }
-
-           .bg1{
-               width:40px;
-               height:40px;
-               background: url('../../assets/img/Twitter@2x.png') no-repeat;
-               background-size: 100% 100%;
-           }
-           .bg2{
-            width:40px;
-            height:40px;
-            background: url('../../assets/img/Facebook@2x.png') no-repeat;
-            background-size: 100% 100%;
-           }
-           .bg3{
-            width:40px;
-            height:40px;
-            background: url('../../assets/img/Talegram@2x.png') no-repeat;
-            background-size: 100% 100%;
-           }
-           .bg4{
-            width:40px;
-            height:40px;
-            background: url('../../assets/img/shequn@2x.png') no-repeat;
-            background-size: 100% 100%;
-           }
-           .bg5{
-            width:40px;
-            height:40px;
-            background: url('../../assets/img/YouTube@2x.png') no-repeat;
-            background-size: 100% 100%;
-           }
-        }
-    }
-
-    .qrCodeBox{
-        width: 98px;
-        height: 98px;
-        img{
-            width: 100%;
-        }
-    }
-
-    .biqiFooter{
-        width:235px;
-        height:20px;
-        font-size:14px;
+      .footerCopy{
+        font-size:12px;
         font-family:PingFangSC-Medium, "Microsoft YaHei";
-        color:rgba(255,255,255,1);
-        line-height:20px;
-        margin: 0 auto;
-        padding-top: 15px;
+        color:rgba(97,100,138,1);
+        line-height:17px;
+        margin-top: 55px;
+      }
+
     }
+
+    .footerRight{
+      float: right;
+      &:after{
+        content: '';
+        clear: both;
+        display: block;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+      }
+      .navItems{
+        float: left;
+        margin-left: 80px;
+        .navItemsTitle{
+          font-size:14px;
+          font-family:PingFangSC-Medium, "Microsoft YaHei";
+          color:rgba(97,100,138,1);
+          line-height:20px;
+        }
+        .navItemsContent{
+          padding-top: 20px;
+          .navItem{
+            display: block;
+            font-size:14px;
+            font-family:PingFangSC-Regular, "Microsoft YaHei";
+            color:rgba(199,204,230,1);
+            line-height:20px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .qrcode{
+    width: 85px;
+    height: 85px;
+    img{
+      width: 100%;
+    }
+  }
+
 }
