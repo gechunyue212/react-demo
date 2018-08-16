@@ -286,3 +286,100 @@ export const download = {
     }
 
 };
+
+
+export const foot = {
+
+    cn:{
+        logo:"",
+        logoTitle:"数字货币期货交易场",
+        nav:[
+            {
+                title:"关于我们",
+                items:[
+                    {
+                        title:"关于B7"
+                    },
+                    {
+                        title:"加入我们"
+                    }
+                ]
+            },
+            {
+                title:"产品",
+                items:[
+                    {
+                        title:"数字货币期货(线上)"
+                    },
+                    {
+                        title:"外汇(线上)"
+                    }
+                ]
+            },
+            {
+                title:"服务支持",
+                items:[
+                    {
+                        title:"服务条款"
+                    },
+                    {
+                        title:"免责声明"
+                    },
+                    {
+                        title:"费率"
+                    },
+                    {
+                        title:"合约交易 (原型)"
+                    }
+                ]
+            }
+        ]
+    },
+
+    en:{
+        logo:"",
+        logoTitle:"数字货币期货交易场",
+        nav:[
+            {
+                title:"About Us",
+                items:[
+                    {
+                        title:"About B7"
+                    },
+                    {
+                        title:"Join Us"
+                    }
+                ]
+            },
+            {
+                title:"Our Product",
+                items:[
+                    {
+                        title:"Digital Future Trading (online)"
+                    },
+                    {
+                        title:"Foreign Exchange (online)"
+                    }
+                ]
+            },
+            {
+                title:"Support Center",
+                items:[
+                    {
+                        title:"Terms of Service"
+                    },
+                    {
+                        title:"Disclosures"
+                    },
+                    {
+                        title:"Our fees"
+                    },
+                    {
+                        title:"Contract Trading (Prototype)"
+                    }
+                ]
+            }
+        ]
+    }
+
+};

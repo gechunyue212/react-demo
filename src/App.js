@@ -29,7 +29,7 @@ class App extends Component {
 
   render() {
         const { language } = this.state;
-        const { head, kChart, product, technology, download } = Texts;
+        const { head, kChart, product, technology, download, foot } = Texts;
     return (
       <div style={{minWidth:"1250px"}}>
         <Head contentText={head[language]} handleMenuClick={(language)=>this.onChangeLanguage(language)} />
@@ -50,7 +50,7 @@ class App extends Component {
           <Paper contentText={head[language]}/>
           <RoadMap contentText={head[language]}/>
           <DownLoadApp contentText={download[language]}/>
-        <Footer contentText={head[language]}/>
+        <Footer contentText={foot[language]}/>
       </div>
     );
   }

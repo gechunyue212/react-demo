@@ -82,12 +82,15 @@ const navArr = [
 
 export default class Footer extends Component{
     render(){
+
+        const { contentText } = this.props;
+
         return (
             <div className={styles.footerBox}>
                 <div className={styles.box}>
                     <div className={styles.footerLeft}>
                         <div className={styles.footerLogo}><img src={logo} /></div>
-                        <div className={styles.footerLogoTitle}>数字货币期货交易场</div>
+                        <div className={styles.footerLogoTitle}>{contentText.logoTitle}</div>
                         <div className={styles.footerLogoBtn}>
                             {
                                 btnArr.map((item,i)=>(
@@ -99,19 +102,27 @@ export default class Footer extends Component{
                     </div>
                     <div className={styles.footerRight}>
                         {
-                            navArr.map((item,i)=>(
+                            contentText.nav.map((item,i)=>(
                                 <div key={i} className={styles.navItems} >
                                     <div className={styles.navItemsTitle}>{item.title}</div>
                                     <div className={styles.navItemsContent}>
                                         {
-                                            item.nav.map((preItem,j)=>(
-                                                <a href={"javascript:void(0)"} key={j} className={styles.navItem}>{preItem.text}</a>
+                                            item.items.map((preItem,j)=>(
+                                                <a href={"javascript:void(0)"} key={j} className={styles.navItem}>{preItem.title}</a>
                                             ))
                                         }
                                     </div>
                                 </div>
                             ))
                         }
+                        <div key={"qrcode"} className={styles.navItems} >
+                            <div className={styles.navItemsTitle}>{"公众号"}</div>
+                            <div className={styles.navItemsContent}>
+                                <a href={"javascript:void(0)"} key={"qrcodeBox"} className={styles.navItem}>
+                                    <div className={styles.qrcode}><img src={qrcode} /></div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
