@@ -44,7 +44,7 @@ class App extends Component {
               <div style={{height:"46px"}} />
               <BrBox title={technology[language].title} />
               <div style={{height:"64px"}} />
-              <SkillList contentText={technology[language]} />
+              <SkillList language={language} contentText={technology[language]} />
           </SkillArea>
           <Documents contentText={head[language]}/>
           <Paper contentText={head[language]}/>

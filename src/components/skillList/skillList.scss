@@ -31,6 +31,12 @@
         }
 
         .textBox{
+            &.heightEn{
+                height: 229px;
+            }
+            &.heightCn{
+                height: 154px;
+            }
             .textBoxTitle{
                 height:25px;
                 font-size:22px;

@@ -32,7 +32,7 @@ export default class Head extends Component {
                 <Row>
                     {
                         data.map((item, i)=>(
-                            <Box src={item.iconImg} title={item.title} size={item.size} key={i} />
+                            <Box index={i} src={item.iconImg} title={item.title} size={item.size} key={i} />
                         ))
                     }
                 </Row>
@@ -47,10 +47,10 @@ class Box extends Component{
         super(props);
     }
     render(){
-        const { src, title, size } = this.props;
+        const { src, title, size, index } = this.props;
         return (
             <Col xs={6} md={4} className={styles.cellBox}>
-                <div className={styles.cell}>
+                <div className={styles.cell + " " + (index === 1 ? styles.actionStatus : "")}>
                     <div className={styles.iconImg}>
                         <img src={src} />
                     </div>

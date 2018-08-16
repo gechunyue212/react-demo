@@ -27,7 +27,7 @@ export const head = {
                 title:"路线图"
             }
         ],
-        title:"Crypto Derivatives Exchange",
+        title:"让金融进入幂时代",
         bannerText:["全球首个数字期货&外汇交易所","让金融进入幂时代"],
         bannerBottomText:[
             {

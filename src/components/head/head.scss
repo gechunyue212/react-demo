@@ -12,12 +12,16 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+        position: relative;
         .headTitle{
             height: 68px;
             line-height: 68px;
             font-size: 64px;
             color: #F2BC0F;
             font-family: PingFangSC, "Microsoft YaHei";
+            position: absolute;
+            top: 0;
+            left: 0;
 
             .headTitleBg{
                 max-width:881px;
@@ -32,7 +36,7 @@
             font-family:PingFangSC-Light, "Microsoft YaHei";
             color:rgba(255,255,255,1);
             line-height:40px;
-            padding-top: 40px;
+            padding-top: 100px;
         }
     }
 
