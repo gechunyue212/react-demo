@@ -5,7 +5,9 @@ export default class SkillArea extends Component{
     render(){
         return (
             <div className={styles.skillArea}>
-                {this.props.children}
+                <div className={styles.skillAreaBg}>
+                    {this.props.children}
+                </div>
             </div>
         );
     }

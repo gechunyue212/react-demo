@@ -2,8 +2,14 @@
 
   width: 100%;
   background-color:rgba(246,248,255,0.3);
-  padding-bottom: 45px;
-  box-sizing: border-box;
   position: relative;
+
+  .skillAreaBg{
+    background: url("../../assets/img/b7technologyBg.png") no-repeat center left;
+    background-attachment: fixed;
+    background-size: 50%;
+    padding-bottom: 45px;
+    box-sizing: border-box;
+  }
 
 }
