@@ -3,7 +3,7 @@
   height:285px;
   background:rgba(25,28,42,1);
   box-sizing: border-box;
-  padding-top: 57px;
+  padding-top: 40px;
 
   .box{
     max-width: 1200px;
@@ -70,13 +70,13 @@
 
           &.hoverWeiXin{
             .qrcodeBox{
-              left: 80px;
+              left: 0;
             }
           }
 
           &.hoverQQ{
             .qrcodeBox{
-              left: 120px;
+              left: 0;
             }
           }
 

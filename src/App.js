@@ -21,19 +21,39 @@ class App extends Component {
         super(props);
         this.state = {
             language:"EN",
-            languageList:[ "EN", "CN", "JAP", "KOR" ]
+            languageListData:{
+                "EN":{
+                    text:"EN",
+                    documentTitle:"币期官网",
+                },
+                "CN":{
+                    text:"CN",
+                    documentTitle:"币期官网",
+                },
+                "JAP":{
+                    text:"JAP",
+                    documentTitle:"币期官网",
+                },
+                "KOR":{
+                    text:"KOR",
+                    documentTitle:"币期官网",
+                }
+            }
         };
     }
     onChangeLanguage(language){
+        const { languageListData } = this.state;
+        document.title = languageListData[language].documentTitle;
         this.setState({ language });
     }
 
   render() {
-        const { language, languageList } = this.state;
+        const { language, languageListData } = this.state;
+        const languageList = Object.keys(languageListData);
         const { head, kChart, product, technology, documents, roadMap, download, foot } = Texts;
     return (
       <div style={{minWidth:"1250px"}}>
-        <Head languageList={languageList} language={language} contentText={head[language]} handleMenuClick={(language)=>this.onChangeLanguage(language)} />
+        <Head languageList={languageList} languageListData={languageListData} language={language} contentText={head[language]} handleMenuClick={(language)=>this.onChangeLanguage(language)} />
         <ChartArea>
             <KChart contentText={kChart[language]}/>
         </ChartArea>

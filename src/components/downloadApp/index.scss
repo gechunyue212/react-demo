@@ -42,7 +42,7 @@
       }
 
       .downloadBtns{
-        margin-top: 30px;
+
         &:after{
           content: '';
           clear: both;
@@ -52,7 +52,7 @@
           visibility: hidden;
         }
 
-        .downloadBtn1, .downloadBtn2{
+        .downloadBtn1, .downloadBtn2, .downloadBtn3, .downloadBtn4{
           width: 180px;
           height: 50px;
           float: left;
@@ -67,6 +67,15 @@
 
         .downloadBtn2{
           background: url("../../assets/img/xiazai2.png") no-repeat center center;
+        }
+
+        .downloadBtn3{
+          background: url("../../assets/img/xiazai3.png") no-repeat center center;
+          margin-right: 21px;
+        }
+
+        .downloadBtn4{
+          background: url("../../assets/img/xiazai4.png") no-repeat center center;
         }
       }
 
