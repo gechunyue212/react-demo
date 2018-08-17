@@ -21,18 +21,31 @@ const data = [
     },
 ];
 
-export default class Head extends Component {
+export default class Paper extends Component {
     constructor(props){
         super(props);
+        this.state = {
+            actionIndex: 1
+        };
     }
     render(){
+
+        const { actionIndex } = this.state;
 
         return (
             <Grid className={styles.box}>
                 <Row>
                     {
                         data.map((item, i)=>(
-                            <Box index={i} src={item.iconImg} title={item.title} size={item.size} key={i} />
+                            <Box
+                                onMouseEnter={()=>this.setState({actionIndex:i})}
+                                onMouseLeave={()=>this.setState({actionIndex:1})}
+                                actionClass={actionIndex === i ? styles.actionStatus : ""}
+                                src={item.iconImg}
+                                title={item.title}
+                                size={item.size}
+                                key={i}
+                            />
                         ))
                     }
                 </Row>
@@ -47,10 +60,10 @@ class Box extends Component{
         super(props);
     }
     render(){
-        const { src, title, size, index } = this.props;
+        const { src, title, size, actionClass, onMouseEnter, onMouseLeave } = this.props;
         return (
             <Col xs={6} md={4} className={styles.cellBox}>
-                <div className={styles.cell + " " + (index === 1 ? styles.actionStatus : "")}>
+                <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={styles.cell + " " + actionClass}>
                     <div className={styles.iconImg}>
                         <img src={src} />
                     </div>

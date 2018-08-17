@@ -268,7 +268,7 @@ export const product = {
             },
             {
                 iconImg:productIconImg3,
-                title:"foreign currency contract",
+                title:"Foreign currency contract",
                 description:"Cryptocurrencies opens up a variety of foreign exchange trading channels, instant trading for global area"
             },
             {
@@ -278,12 +278,12 @@ export const product = {
             },
             {
                 iconImg:productIconImg5,
-                title:"quantitative trading",
+                title:"Quantitative trading",
                 description:"Rewards by posting strategies，tradable quantitative strategies"
             },
             {
                 iconImg:productIconImg6,
-                title:"advanced trading tools",
+                title:"Advanced trading tools",
                 description:"Noticing and conducting your trading strategies by Robo-Advisor, technical index and powerful API"
             }
         ]
