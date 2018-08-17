@@ -79,6 +79,108 @@ export const head = {
                 title:"Cumulative revenue distributed in yesterday"
             }
         ]
+    },
+
+    JAP:{
+        nav:[
+            {
+                title:"核心優勢"
+            },
+            {
+                title:"白書"
+            },
+            {
+                title:"路線図"
+            }
+        ],
+        title:"金融を冪時代に入らせる",
+        bannerText:["全球始めのデジタル先物＆外貨取引所","金融を冪時代に入らせる"],
+        bannerBottomText:[
+            {
+                title:"目前流通高: ",
+                number:"0 B7T"
+            },
+            {
+                title:"今日産出リアルタイム数量: ",
+                number:"0 B7T"
+            },
+            {
+                title:"今日分配待ち収入: ",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"昨日分配済み収入: ",
+                number:"0.0000000BTC"
+            }
+        ]
+    },
+
+    AR:{
+        nav:[
+            {
+                title:"خريطة الطريق"
+            },
+            {
+                title:" ورقة بيضاء"
+            },
+            {
+                title:"الميزة الأساسية "
+            }
+        ],
+        title:"جعل المالية للدخول فى عصر السلطة",
+        bannerText:["أول مصرف للعقود الآجلة الرقمية والعملات الأجنبية في العالم","جعل المالية للدخول فى عصر السلطة"],
+        bannerBottomText:[
+            {
+                title:"سيولة حالية: 0 B7T",
+                number:""
+            },
+            {
+                title:"كمية انتاج اليوم في الوقت الحقيقي: 0 B7T",
+                number:""
+            },
+            {
+                title:"الدخل اليوم الذي لم يتم توزيعه: 0.0000000BTC",
+                number:""
+            },
+            {
+                title:"الدخل المكتسب بالأمس: 0.0000000BTC",
+                number:""
+            }
+        ]
+    },
+
+    KOR:{
+        nav:[
+            {
+                title:"핵심 우세"
+            },
+            {
+                title:"화이트"
+            },
+            {
+                title:"페이퍼 노선도"
+            }
+        ],
+        title:"금융이 멱시대로 들어서다",
+        bannerText:["전 세계 최초로 된 디지텔 선물(금융)&외환 시장","금융이 멱시대로 들어서다"],
+        bannerBottomText:[
+            {
+                title:"현재 유통량: ",
+                number:"0 B7T"
+            },
+            {
+                title:"오늘 산출 실시 수량: ",
+                number:"0 B7T"
+            },
+            {
+                title:"오늘 분배 대기 수입: ",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"어제 분배 완료 수입: ",
+                number:"0.0000000BTC"
+            }
+        ]
     }
 
 
@@ -92,6 +194,21 @@ export const kChart = {
     },
 
     EN:{
+        kChart:K1e,
+        table:K2e
+    },
+
+    JAP:{
+        kChart:K1e,
+        table:K2e
+    },
+
+    AR:{
+        kChart:K1e,
+        table:K2e
+    },
+
+    KOR:{
         kChart:K1e,
         table:K2e
     },
@@ -170,7 +287,115 @@ export const product = {
                 description:"Noticing and conducting your trading strategies by Robo-Advisor, technical index and powerful API"
             }
         ]
-    }
+    },
+
+    JAP:{
+        title:"製品優勢",
+        products:[
+            {
+                iconImg:productIconImg1,
+                title:"新型デジタル資産契約",
+                description:"多種なデジタル資産、契約が多様、てこ敏捷、自由選択、投票で決めることができる"
+            },
+            {
+                iconImg:productIconImg2,
+                title:"創新指数",
+                description:"創新指数により契約製品を開発し、資産が違う時間に値段の起伏をフォローする"
+            },
+            {
+                iconImg:productIconImg3,
+                title:"外貨契約",
+                description:"デジタル貨幣は多種類な外貨取引ルートを作り出し、全球が即時に取引することができる"
+            },
+            {
+                iconImg:productIconImg4,
+                title:"ETF組合取引",
+                description:"多様化カゴ、投資しやすい、ロングラインに相応しい"
+            },
+            {
+                iconImg:productIconImg5,
+                title:"量化取引",
+                description:"策略を発表しプラットフォームの奨励を貰う。量化策略が取引りすることができる"
+            },
+            {
+                iconImg:productIconImg6,
+                title:"先進な取引工具",
+                description:"インテリジェント投資、技術指標を通して、API通知を強め、取引策略を実行する"
+            }
+        ]
+    },
+
+    AR:{
+        title:"ميزة المنتج",
+        products:[
+            {
+                iconImg:productIconImg1,
+                title:"عقد الأصول الرقمية الجديدة",
+                description:"مجموعة متنوعة من الأصول الرقمية، ومجموعة متنوعة من أنواع العقود، رافعة مرنة، اختيار حري، القرار وفقا للتصويت"
+            },
+            {
+                iconImg:productIconImg2,
+                title:"مؤشر الابتكار",
+                description:"تطوير منتجات تعاقدية على أساس مؤشر الابتكار، لتتبع تقلبات أسعار الأصول فى ضمن أطر زمنية مختلفة"
+            },
+            {
+                iconImg:productIconImg3,
+                title:"عقد العملات الأجنبية",
+                description:"العملات الرقمية لفتح مجموعة متنوعة من قنوات تداول العملات الأجنبية، للقيام بالتجارة العالمية في الوقت الحقيقي"
+            },
+            {
+                iconImg:productIconImg4,
+                title:"صفقة مركبة ETF",
+                description:"سلال متنوعة، سهلة للاستثمار، ومناسبة للفترة الطويلة"
+            },
+            {
+                iconImg:productIconImg5,
+                title:"معاملة الكمية",
+                description:"إطلاق استراتيجية للحصول على مكافآت المنصة، يمكن تداول استراتيجية الكمية"
+            },
+            {
+                iconImg:productIconImg6,
+                title:"أدوات التداول المتقدمة",
+                description:"من خلال الاستثمار الذكي، المؤشرات الفنية، API قوية لإخطار وتنفيذ استراتيجية التداول الخاصة بك."
+            }
+        ]
+    },
+
+    KOR:{
+        title:"제품 우세",
+        products:[
+            {
+                iconImg:productIconImg1,
+                title:"신형 디지털 자산 계약 ",
+                description:"다양한 디지털 자산,다양한 계약 유형,지레 원활,자유선택,투표가능)결정"
+            },
+            {
+                iconImg:productIconImg2,
+                title:"창신 지수",
+                description:"창신 지수 계약 제품을 기초로 자산이 다른 시간구조 내에 가격 파동 추적"
+            },
+            {
+                iconImg:productIconImg3,
+                title:"외화 계약",
+                description:"디지텔 화페가 다양한 외화 거래 통로 관통하여 전 세계에서 즉시 거래"
+            },
+            {
+                iconImg:productIconImg4,
+                title:"ETF 조합 거래",
+                description:"다양한 바구니,투자가 편리하여  긴 시간 보유 적절하다"
+            },
+            {
+                iconImg:productIconImg5,
+                title:"계량화 거래",
+                description:"책략 발표하여 플렛폼에서 장려 획득함으로 계량화 책략 거래 가능하다"
+            },
+            {
+                iconImg:productIconImg6,
+                title:"선진적인 거래 툴",
+                description:"지능화한 투자 고문을 통해 기술 지표,강대한API통지와 자신의 거래 책략을 집행하다"
+            }
+        ]
+    },
 
 };
 
@@ -254,7 +479,127 @@ export const technology = {
                 ]
             },
         ]
-    }
+    },
+
+    JAP:{
+        title:"技術優勢",
+        technology:[
+            {
+                iconImg:technologyIconImg1,
+                title:"金融級な安全システム",
+                description:[
+                    "多層、マルチクラスターシステム枠組み",
+                    "何個の海外加速ノードはインターネットが滞りがなく順調するのを確保する",
+                    "専門な分布式枠組みとDDOS攻撃を防止システム"
+                ]
+            },
+            {
+                iconImg:technologyIconImg2,
+                title:"高性能、高流動性",
+                description:[
+                    "140万/秒に達する高性能仲介エンジン技術",
+                    "費用が低い、透明",
+                    "ビットコインダークプールサービスを提供する"
+                ]
+            },
+            {
+                iconImg:technologyIconImg3,
+                title:"全てのプラットフォームを適用し、多言語がある",
+                description:[
+                    "Windows、Mac、iOS、Android等違いなターミナルを適用する",
+                    "英語、中国語簡体字、中国語繁体字、韓語、日本語等の主流言語を提供する"
+                ]
+            },
+            {
+                iconImg:technologyIconImg4,
+                title:"中心化",
+                description:[
+                    "チェーンで全ての取引環節を完成し、資産が信託されるのを避ける",
+                    "DAOが運営を組織する。公開、透明、民主"
+                ]
+            },
+        ]
+    },
+
+    AR:{
+        title:"ميزة فنية",
+        technology:[
+            {
+                iconImg:technologyIconImg1,
+                title:"نظام الأمن من المستوى المالي",
+                description:[
+                    "هيكل النظام من متعدد المستويات ومتعدد المجموعات",
+                    "متعددة نقاط التسريع الخارجية لضمان سلسة الشبكة",
+                    "الهياكل الموزعة المهنية ونظام الهجوم ضد DDOS"
+                ]
+            },
+            {
+                iconImg:technologyIconImg2,
+                title:"عالية الأداء، سيولة عالية",
+                description:[
+                    "تكنولوجيا محرك اقتران عالية الأداء ما يصل إلى 1.4 مليون / كل ثانية",
+                    "منخفضة التكلفة، وشفافة",
+                    "توفير خدمة خلفية بيتكوين"
+                ]
+            },
+            {
+                iconImg:technologyIconImg3,
+                title:"منصة كاملة، متعددة اللغات",
+                description:[
+                    "دعم المطاريف المختلفة مثل Windows ، Mac ، iOS ، Android وإلخ",
+                    "توفير اللغات السائدة مثل الإنجليزية ، والصينية المبسطة ، والصينية التقليدية ، والكورية ، واليابانية وإلخ"
+                ]
+            },
+            {
+                iconImg:technologyIconImg4,
+                title:"لامركزية",
+                description:[
+                    "إكمال جميع روابط التداول على السلسلة، لتجنب استضافة الأصول",
+                    "منظمة DAO لتشغيل العمليات، مفتوحة وشفافية وديمقراطية"
+                ]
+            },
+        ]
+    },
+
+    KOR:{
+        title:"기술 우세",
+        technology:[
+            {
+                iconImg:technologyIconImg1,
+                title:"금융급 안전 시스템",
+                description:[
+                    "다중층화,다군집시스템 구조",
+                    "다수의 국외 가속 노드로 인터넷 유창을 화보",
+                    "전문 분포식 구조와DDOS공격 예방 시스템"
+                ]
+            },
+            {
+                iconImg:technologyIconImg2,
+                title:"고성능,고유동성",
+                description:[
+                    "140만개/초에 달하는 고성능 중재 엔진 기술",
+                    "비용낮고,투명하다",
+                    "비트코인 암지 서비스 제공"
+                ]
+            },
+            {
+                iconImg:technologyIconImg3,
+                title:"다 플렛폼,다종 언어",
+                description:[
+                    "Windows、Mac、iOS、Android등 다른 단말 지지",
+                    "영어,중국어 간체,중국어 번체,한국어,일본어 등 주류 언너"
+                ]
+            },
+            {
+                iconImg:technologyIconImg4,
+                title:"중앙 집권화",
+                description:[
+                    "체인에서 모든 거래 환절 완성함으로 자산 위탁 관리 방지한다",
+                    "DAO저직운영,공개,투명,민주"
+                ]
+            },
+        ]
+    },
 
 };
 
@@ -262,13 +607,28 @@ export const documents = {
 
     CN:{
         title:"下载白皮书",
-        content:"如果想要深入了解我们的业务，请下载白皮书阅读详情。"
+        content:"如果想要深入了解我们的业务，请下载白皮书阅读详情"
     },
 
     EN:{
         title:"Download Whitepaper",
-        content:"Please download our whitepaper for more details."
-    }
+        content:"Please download our whitepaper for more details"
+    },
+
+    JAP:{
+        title:"白書ダウンロード",
+        content:"私達の業務を深く了解したければ、白書をダウンロードしお読みください"
+    },
+
+    AR:{
+        title:"تحميل ورقة بيضاء",
+        content:"إذا ترغب معرفة المزيد عن أعمالنا ، يرجى تحميل الورقة البيضاء"
+    },
+
+    KOR:{
+        title:"화이트 페이퍼 다운로드",
+        content:"저희 업무를 더 알고 싶으면 상세내용은 화이트 페이퍼를 다운로드 하셔서 읽으세요"
+    },
 
 };
 
@@ -280,7 +640,19 @@ export const roadMap = {
 
     EN:{
         img:roadMapEN
-    }
+    },
+
+    JAP:{
+        img:roadMapEN
+    },
+
+    AR:{
+        img:roadMapEN
+    },
+
+    KOR:{
+        img:roadMapEN
+    },
 
 };
 
@@ -310,7 +682,46 @@ export const download = {
             "Check the market and trade at any time"
         ],
         img:""
-    }
+    },
+
+    JAP:{
+        title:"ダウンロード",
+        description1:[
+            "B7スマートフォンクライアントをダウンロードする",
+            "リアルタイムに市況を調査し、取引を行う"
+        ],
+        description2:[
+            "",
+            ""
+        ],
+        img:""
+    },
+
+    AR:{
+        title:"تحميل",
+        description1:[
+            "قم بتنزيل B7 عميل الجوال",
+            "تحقق من السوق وتداول التجارة في أي وقت"
+        ],
+        description2:[
+            "",
+            ""
+        ],
+        img:""
+    },
+
+    KOR:{
+        title:"다운로드",
+        description1:[
+            "B7 핸드폰 클라이언트 다운로드",
+            "수시로 시세 검색하여 거래 진행"
+        ],
+        description2:[
+            "",
+            ""
+        ],
+        img:""
+    },
 
 };
 
@@ -400,6 +811,135 @@ export const foot = {
                 ]
             }
         ]
-    }
+    },
+
+    JAP:{
+        logo:"",
+        logoTitle:"Digital currency futures market",
+        nav:[
+            {
+                title:"私達に関して",
+                items:[
+                    {
+                        title:"B7に関して"
+                    },
+                    {
+                        title:"私達に加入"
+                    }
+                ]
+            },
+            {
+                title:"製品",
+                items:[
+                    {
+                        title:"デジタル貨幣先物"
+                    },
+                    {
+                        title:"外貨"
+                    }
+                ]
+            },
+            {
+                title:"サービス支持",
+                items:[
+                    {
+                        title:"サービス条項"
+                    },
+                    {
+                        title:"免責声明"
+                    },
+                    {
+                        title:"費用の比率"
+                    }
+                ]
+            }
+        ]
+    },
+
+    AR:{
+        logo:"",
+        logoTitle:"Digital currency futures market",
+        nav:[
+            {
+                title:"حول نحن",
+                items:[
+                    {
+                        title:"حول B7"
+                    },
+                    {
+                        title:"انضم إلينا"
+                    }
+                ]
+            },
+            {
+                title:"منتجات",
+                items:[
+                    {
+                        title:"العقود الآجلة للعملة الرقمية"
+                    },
+                    {
+                        title:"العملات الأجنبية"
+                    }
+                ]
+            },
+            {
+                title:"دعم الخدمة",
+                items:[
+                    {
+                        title:"شروط الخدمة"
+                    },
+                    {
+                        title:"بيان إخلاء المسؤولية"
+                    },
+                    {
+                        title:"الاسعار"
+                    }
+                ]
+            }
+        ]
+    },
+
+    KOR:{
+        logo:"",
+        logoTitle:"Digital currency futures market",
+        nav:[
+            {
+                title:"about us",
+                items:[
+                    {
+                        title:"about B7"
+                    },
+                    {
+                        title:"가입하기"
+                    }
+                ]
+            },
+            {
+                title:"제품",
+                items:[
+                    {
+                        title:"디지털 화페 선물"
+                    },
+                    {
+                        title:"외와"
+                    }
+                ]
+            },
+            {
+                title:"서비스 지원",
+                items:[
+                    {
+                        title:"서비스 조항"
+                    },
+                    {
+                        title:"면책 성명"
+                    },
+                    {
+                        title:"요금율"
+                    }
+                ]
+            }
+        ]
+    },
 
 };

@@ -8,7 +8,7 @@ export default class Head extends Component {
     }
     render(){
 
-        const { contentText } = this.props;
+        const { contentText, languageList, language } = this.props;
 
         return (
             <div className={styles.header}>
@@ -35,7 +35,7 @@ export default class Head extends Component {
                                 ))
                             }
                             {/*<a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>*/}
-                            <Menu onClick={this.props.handleMenuClick} />
+                            <Menu languageList={languageList} language={language} onClick={this.props.handleMenuClick} />
                         </div>
                     </div>
                 </div>
@@ -60,8 +60,8 @@ export class Menu extends Component{
     constructor(props){
         super(props);
         this.state = {
-            value:"CN",
-            menuList:["CN", "EN"],
+            value:props.language,
+            menuList:props.languageList,
             showMenuList:false
         };
     }

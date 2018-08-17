@@ -20,7 +20,8 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            language:"CN"
+            language:"EN",
+            languageList:[ "CN", "EN", "JAP", "AR", "KOR" ]
         };
     }
     onChangeLanguage(language){
@@ -28,11 +29,11 @@ class App extends Component {
     }
 
   render() {
-        const { language } = this.state;
+        const { language, languageList } = this.state;
         const { head, kChart, product, technology, documents, roadMap, download, foot } = Texts;
     return (
       <div style={{minWidth:"1250px"}}>
-        <Head contentText={head[language]} handleMenuClick={(language)=>this.onChangeLanguage(language)} />
+        <Head languageList={languageList} language={language} contentText={head[language]} handleMenuClick={(language)=>this.onChangeLanguage(language)} />
         <ChartArea>
             <KChart contentText={kChart[language]}/>
         </ChartArea>
