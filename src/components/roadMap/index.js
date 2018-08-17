@@ -7,7 +7,7 @@ export default class RoadMap extends Component{
         const { contentText } = this.props;
 
         return (
-            <div className={styles.roadMap}>
+            <div id="DevelopmentPath" className={styles.roadMap}>
                 <div className={styles.content}>
                     <img src={contentText.img} />
                 </div>

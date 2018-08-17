@@ -7,7 +7,7 @@ export default class Documents extends Component{
         const { contentText } = this.props;
 
         return (
-            <div className={styles.documents}>
+            <div id="Whitepaper" className={styles.documents}>
                 <div className={styles.title}>{contentText.title}</div>
                 <div className={styles.content}>{contentText.content}</div>
             </div>

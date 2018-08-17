@@ -26,13 +26,16 @@ export const head = {
     CN:{
         nav:[
             {
-                title:"核心优势"
+                title:"核心优势",
+                href:"#CoreAdvantages"
             },
             {
-                title:"白皮书"
+                title:"白皮书",
+                href:"#Whitepaper"
             },
             {
-                title:"路线图"
+                title:"路线图",
+                href:"#DevelopmentPath"
             }
         ],
         title:"让金融进入幂时代",
@@ -60,13 +63,16 @@ export const head = {
     EN:{
         nav:[
             {
-                title:"Core Advantages"
+                title:"Core Advantages",
+                href:"#CoreAdvantages"
             },
             {
-                title:"Whitepaper"
+                title:"Whitepaper",
+                href:"#Whitepaper"
             },
             {
-                title:"Development Path"
+                title:"Development Path",
+                href:"#DevelopmentPath"
             }
         ],
         title:"Crypto Derivatives Exchange",
@@ -90,13 +96,16 @@ export const head = {
     JAP:{
         nav:[
             {
-                title:"核心優勢"
+                title:"核心優勢",
+                href:"#CoreAdvantages"
             },
             {
-                title:"白書"
+                title:"白書",
+                href:"#Whitepaper"
             },
             {
-                title:"路線図"
+                title:"路線図",
+                href:"#DevelopmentPath"
             }
         ],
         title:"金融を冪時代に入らせる",
@@ -124,13 +133,16 @@ export const head = {
     AR:{
         nav:[
             {
-                title:"خريطة الطريق"
+                title:"خريطة الطريق",
+                href:"#CoreAdvantages"
             },
             {
-                title:" ورقة بيضاء"
+                title:" ورقة بيضاء",
+                href:"#Whitepaper"
             },
             {
-                title:"الميزة الأساسية "
+                title:"الميزة الأساسية ",
+                href:"#DevelopmentPath"
             }
         ],
         title:"جعل المالية للدخول فى عصر السلطة",
@@ -158,13 +170,16 @@ export const head = {
     KOR:{
         nav:[
             {
-                title:"핵심 우세"
+                title:"핵심 우세",
+                href:"#CoreAdvantages"
             },
             {
-                title:"화이트"
+                title:"화이트",
+                href:"#Whitepaper"
             },
             {
-                title:"페이퍼 노선도"
+                title:"페이퍼 노선도",
+                href:"#DevelopmentPath"
             }
         ],
         title:"금융이 멱시대로 들어서다",

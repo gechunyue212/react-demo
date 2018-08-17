@@ -31,7 +31,7 @@ export default class Head extends Component {
                         <div className={styles.headRight}>
                             {
                                 contentText.nav.map((item,i)=>(
-                                    <a href='javascript:void(0)' key={i} className={styles.actionBtn}>{item.title}</a>
+                                    <a href={item.href} key={i} className={styles.actionBtn}>{item.title}</a>
                                 ))
                             }
                             {/*<a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>*/}
