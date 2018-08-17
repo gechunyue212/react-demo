@@ -21,7 +21,7 @@ class App extends Component {
         super(props);
         this.state = {
             language:"EN",
-            languageList:[ "CN", "EN", "JAP", "AR", "KOR" ]
+            languageList:[ "CN", "EN", "JAP", "KOR" ]
         };
     }
     onChangeLanguage(language){

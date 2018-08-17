@@ -1,7 +1,11 @@
 import K1 from '../img/k1.png';
 import K1e from '../img/k1e.png';
+import K1r from '../img/k1r.png';
+import K1h from '../img/k1h.png';
 import K2 from '../img/k2.png';
 import K2e from '../img/k2e.png';
+import K2r from '../img/k2r.png';
+import K2h from '../img/k2h.png';
 import productIconImg1 from '../../assets/img/Icon1.png';
 import productIconImg2 from '../../assets/img/Icon2.png';
 import productIconImg3 from '../../assets/img/Icon3.png';
@@ -14,6 +18,8 @@ import technologyIconImg3 from '../../assets/img/Bitmap3.png';
 import technologyIconImg4 from '../../assets/img/Bitmap4.png';
 import roadMapEN from '../../assets/img/roadmapEN.png';
 import roadMapCN from '../../assets/img/roadmapCN.png';
+import roadMapJAP from '../../assets/img/roadmaper.png';
+import roadMapKOR from '../../assets/img/roadmaph.png';
 
 export const head = {
 
@@ -199,8 +205,8 @@ export const kChart = {
     },
 
     JAP:{
-        kChart:K1e,
-        table:K2e
+        kChart:K1r,
+        table:K2r
     },
 
     AR:{
@@ -209,8 +215,8 @@ export const kChart = {
     },
 
     KOR:{
-        kChart:K1e,
-        table:K2e
+        kChart:K1h,
+        table:K2h
     },
 
 };
@@ -274,7 +280,7 @@ export const product = {
             {
                 iconImg:productIconImg4,
                 title:"ETF Trading",
-                description:"diverse baskets, easy to operate, suitable for long-term investment"
+                description:"Diverse baskets, easy to operate, suitable for long-term investment"
             },
             {
                 iconImg:productIconImg5,
@@ -632,6 +638,35 @@ export const documents = {
 
 };
 
+export const paper = {
+
+    CN:{
+        text:"",
+        btn:"Download"
+    },
+
+    EN:{
+        text:"",
+        btn:"Download"
+    },
+
+    JAP:{
+        text:"",
+        btn:"Download"
+    },
+
+    AR:{
+        text:"",
+        btn:"Download"
+    },
+
+    KOR:{
+        text:"",
+        btn:"Download"
+    },
+
+};
+
 export const roadMap = {
 
     CN:{
@@ -643,7 +678,7 @@ export const roadMap = {
     },
 
     JAP:{
-        img:roadMapEN
+        img:roadMapJAP
     },
 
     AR:{
@@ -651,7 +686,7 @@ export const roadMap = {
     },
 
     KOR:{
-        img:roadMapEN
+        img:roadMapKOR
     },
 
 };
