@@ -70,13 +70,13 @@
 
           &.hoverWeiXin{
             .qrcodeBox{
-              left: 0;
+              left: -23px;
             }
           }
 
           &.hoverQQ{
             .qrcodeBox{
-              left: 0;
+              left: -23px;
             }
           }
 
@@ -91,7 +91,7 @@
         font-family:PingFangSC-Medium, "Microsoft YaHei";
         color:rgba(97,100,138,1);
         line-height:17px;
-        margin-top: 55px;
+        margin-top: 40px;
       }
 
       .footerLeftQrcodeBox{

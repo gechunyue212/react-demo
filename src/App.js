@@ -24,7 +24,7 @@ class App extends Component {
             languageListData:{
                 "EN":{
                     text:"EN",
-                    documentTitle:"币期官网",
+                    documentTitle:"B7 Official network",
                 },
                 "CN":{
                     text:"CN",
@@ -32,11 +32,11 @@ class App extends Component {
                 },
                 "JAP":{
                     text:"JAP",
-                    documentTitle:"币期官网",
+                    documentTitle:"コイ期公式サイト",
                 },
                 "KOR":{
                     text:"KOR",
-                    documentTitle:"币期官网",
+                    documentTitle:"화페 기한 홈사이트",
                 }
             }
         };

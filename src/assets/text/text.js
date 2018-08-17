@@ -685,23 +685,293 @@ export const paper = {
 export const roadMap = {
 
     CN:{
-        img:roadMapCN
+        img:roadMapCN,
+        title:"路线图",
+        items:[
+            {
+                title:"2018Q1",
+                content:[
+                    "提出商业概念并验证",
+                ],
+                active:false,
+                turnDown:false
+            },
+            {
+                title:"2018Q2",
+                content:[
+                    "组建团队",
+                    "完成概念验证",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2018Q3",
+                content:[
+                    "白皮书1.0、2.0版本发布",
+                    "完成融资",
+                    "币币交易、交易即挖矿、存币即挖矿、邀请挖矿",
+                    "平台通证交易",
+                    "团购节点",
+                ],
+                active:true,
+                turnDown:false
+            },
+            {
+                title:"2018Q4",
+                content:[
+                    "创新指数",
+                    "定期合约",
+                    "ETF",
+                    "投票功能",
+                    "通证经济与实体经济孵化实验区",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2019Q1",
+                content:[
+                    "量化工具",
+                    "智能投顾",
+                    "外汇合约",
+                ],
+                active:false,
+                turnDown:false
+            }
+        ]
     },
 
     EN:{
-        img:roadMapEN
+        img:roadMapEN,
+        title:"RoadMap",
+        items:[
+            {
+                title:"2018Q1",
+                content:[
+                    "提出商业概念并验证",
+                ],
+                active:false,
+                turnDown:false
+            },
+            {
+                title:"2018Q2",
+                content:[
+                    "组建团队",
+                    "完成概念验证",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2018Q3",
+                content:[
+                    "白皮书1.0、2.0版本发布",
+                    "完成融资",
+                    "币币交易、交易即挖矿、存币即挖矿、邀请挖矿",
+                    "平台通证交易",
+                    "团购节点",
+                ],
+                active:true,
+                turnDown:false
+            },
+            {
+                title:"2018Q4",
+                content:[
+                    "创新指数",
+                    "定期合约",
+                    "ETF",
+                    "投票功能",
+                    "通证经济与实体经济孵化实验区",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2019Q1",
+                content:[
+                    "量化工具",
+                    "智能投顾",
+                    "外汇合约",
+                ],
+                active:false,
+                turnDown:false
+            }
+        ]
     },
 
     JAP:{
-        img:roadMapJAP
+        img:roadMapJAP,
+        title:"路線図",
+        items:[
+            {
+                title:"2018Q1",
+                content:[
+                    "商業概念を提出し認証する",
+                ],
+                active:false,
+                turnDown:false
+            },
+            {
+                title:"2018Q2",
+                content:[
+                    "チームを組織する",
+                    "概念認証を完成する",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2018Q3",
+                content:[
+                    "白書1.0、2.0バージョンを発布する",
+                    "融資を完成する",
+                    "貨幣取引、取引が即ち採鉱、貨幣保存が即ち採鉱、採鉱を誘う",
+                    "プラットフォームトークン取引",
+                    "団体購入段階",
+                ],
+                active:true,
+                turnDown:false
+            },
+            {
+                title:"2018Q4",
+                content:[
+                    "創新指数",
+                    "定期契約",
+                    "ETF",
+                    "投票機能",
+                    "トークン経済と実体経済の孵化実験区",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2019Q1",
+                content:[
+                    "量化工具",
+                    "インテリジェント投資",
+                    "外貨契約",
+                ],
+                active:false,
+                turnDown:false
+            }
+        ]
     },
 
     AR:{
-        img:roadMapEN
+        img:roadMapEN,
+        title:"路线图",
+        items:[
+            {
+                title:"2018Q1",
+                content:[
+                    "提出商业概念并验证",
+                ],
+                active:false,
+                turnDown:false
+            },
+            {
+                title:"2018Q2",
+                content:[
+                    "组建团队",
+                    "完成概念验证",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2018Q3",
+                content:[
+                    "白皮书1.0、2.0版本发布",
+                    "完成融资",
+                    "币币交易、交易即挖矿、存币即挖矿、邀请挖矿",
+                    "平台通证交易",
+                    "团购节点",
+                ],
+                active:true,
+                turnDown:false
+            },
+            {
+                title:"2018Q4",
+                content:[
+                    "创新指数",
+                    "定期合约",
+                    "ETF",
+                    "投票功能",
+                    "通证经济与实体经济孵化实验区",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2019Q1",
+                content:[
+                    "量化工具",
+                    "智能投顾",
+                    "外汇合约",
+                ],
+                active:false,
+                turnDown:false
+            }
+        ]
     },
 
     KOR:{
-        img:roadMapKOR
+        img:roadMapKOR,
+        title:"노선도",
+        items:[
+            {
+                title:"2018Q1",
+                content:[
+                    "상업개념 및 검증 제출",
+                ],
+                active:false,
+                turnDown:false
+            },
+            {
+                title:"2018Q2",
+                content:[
+                    "팀 구성",
+                    "개념 검증 완성",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2018Q3",
+                content:[
+                    "화이트 페이퍼1.0、2.0 버전 발표",
+                    "융자 완성",
+                    "화페대 화페 거래,거래 즉 채굴,화페 즉 채굴,요청 채굴",
+                    "플랫폼 토큰 거래",
+                    "단체 구매 노드",
+                ],
+                active:true,
+                turnDown:false
+            },
+            {
+                title:"2018Q4",
+                content:[
+                    "창신 지수",
+                    "정기 계약",
+                    "ETF",
+                    "투표 기능",
+                    "토큰경제와 오프라인 경제부화 실험구역",
+                ],
+                active:false,
+                turnDown:true
+            },
+            {
+                title:"2019Q1",
+                content:[
+                    "계량화 툴",
+                    "지능 투자 고문",
+                    "외화 계약",
+                ],
+                active:false,
+                turnDown:false
+            }
+        ]
     },
 
 };
@@ -711,8 +981,8 @@ export const download = {
     CN:{
         title:"下载",
         description1:[
-            "下载B7手机客户端",
-            "随时查询行情、进行交易"
+            "多平台终端接入",
+            "覆盖IOS、Android、Windows、Mac多个平台"
         ],
         description2:[
             "",
@@ -724,8 +994,8 @@ export const download = {
     EN:{
         title:"Download",
         description1:[
-            "Download the app from",
-            "google play store&iTunes"
+            "Multi-platform terminal access",
+            "Cover multiple platforms of IOS, Android, Windows, Mac"
         ],
         description2:[
             "Download B7 mobile phone APP",
@@ -737,8 +1007,8 @@ export const download = {
     JAP:{
         title:"ダウンロード",
         description1:[
-            "B7スマートフォンクライアントをダウンロードする",
-            "リアルタイムに市況を調査し、取引を行う"
+            "マルチプラットフォームがアクセスします",
+            "IOS、Android、Windows、Macなどのマルチプラットフォームにカバーします"
         ],
         description2:[
             "",
@@ -763,8 +1033,8 @@ export const download = {
     KOR:{
         title:"다운로드",
         description1:[
-            "B7 핸드폰 클라이언트 다운로드",
-            "수시로 시세 검색하여 거래 진행"
+            "멀티 플랫폼 단말 접속",
+            "IOS、Android、Windows、Mac 많은 플랫폼을 뒤덮다"
         ],
         description2:[
             "",

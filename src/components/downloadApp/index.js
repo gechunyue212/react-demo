@@ -10,8 +10,9 @@ export default class DownLoadApp extends Component{
             <div className={styles.box}>
                 <div className={styles.content}>
                     <div className={styles.download}>
-                        <div className={styles.downloadTitle}>{contentText.title}</div>
-                        <div className={styles.downloadDescription1}>{contentText.description1[0]}<br/>{contentText.description1[1]}</div>
+                        {/*<div className={styles.downloadTitle}>{contentText.title}</div>*/}
+                        <div className={styles.downloadDescription1}>{contentText.description1[0]}</div>
+                        <div className={styles.downloadDescription3}>{contentText.description1[1]}</div>
                         <div style={{height:"30px"}} />
                         <div className={styles.downloadBtns}>
                             <div className={styles.downloadBtn1}/>
