@@ -57,11 +57,11 @@ class App extends Component {
         <ChartArea>
             <KChart contentText={kChart[language]}/>
         </ChartArea>
+          <div id="CoreAdvantages" style={{height:"100px"}} />
+          <BrBox title={product[language].title} />
+          <div style={{height:"85px"}} />
+          <ProductList contentText={product[language]} />
           <SkillArea>
-              <div id="CoreAdvantages" style={{height:"100px"}} />
-              <BrBox title={product[language].title} />
-              <div style={{height:"85px"}} />
-              <ProductList contentText={product[language]} />
               <div style={{height:"46px"}} />
               <BrBox title={technology[language].title} />
               <div style={{height:"64px"}} />
