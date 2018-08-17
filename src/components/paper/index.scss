@@ -43,7 +43,7 @@
     }
 
     .textBoxTitle{
-      font-size:18px;
+      font-size:14px;
       font-family:PingFangSC-Medium, "Microsoft YaHei";
       color:rgba(44,43,95,1);
       line-height:25px;
@@ -51,11 +51,11 @@
       padding-top: 10px;
     }
     .textBoxSize{
-      font-size:16px;
+      font-size:12px;
       font-family:PingFangSC-Regular, "Microsoft YaHei";
       color:rgba(155,155,155,1);
       line-height:22px;
-      padding-left: 45px;
+      text-align: center;
     }
     .textBoxBtn{
       display: none;
@@ -63,7 +63,7 @@
       height: 48px;
       line-height: 48px;
       text-align: center;
-      font-size:16px;
+      font-size:14px;
       font-family:PingFangSC-Regular, "Microsoft YaHei";
       color:rgba(40,26,85,1);
       border-radius:4px;

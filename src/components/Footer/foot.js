@@ -7,7 +7,8 @@ import talegram from '../../assets/img/Group 30.png';
 import weibo from '../../assets/img/Group 35.png';
 import weixin from '../../assets/img/Group 26.png';
 import qq from '../../assets/img/Group 31.png';
-import qrcode from '../../assets/img/qrcode.png';
+import qrcode1 from '../../assets/img/qrcode.png';
+import qrcode2 from '../../assets/img/qrcode2.png';
 
 const btnArr = [
     {
@@ -28,55 +29,15 @@ const btnArr = [
     },
     {
         img:weixin,
-        href:"javascript:void(0)"
+        href:"javascript:void(0)",
+        className:styles.hoverWeiXin,
+        qrcodeDom:(<div className={styles.qrcodeBox}><img src={qrcode1} /></div>)
     },
     {
         img:qq,
-        href:"javascript:void(0)"
-    },
-];
-
-const navArr = [
-    {
-        title: "关于我们",
-        nav:[
-            {
-                text:"关于B7"
-            }
-        ]
-    },
-    {
-        title: "产品",
-        nav:[
-            {
-                text:"数字货币期货"
-            },
-            {
-                text:"外汇"
-            }
-        ]
-    },
-    {
-        title: "条款说明",
-        nav:[
-            {
-                text:"服务条款"
-            },
-            {
-                text:"免责声明"
-            },
-            {
-                text:"费率"
-            }
-        ]
-    },
-    {
-        title: "公众号",
-        nav:[
-            {
-                text:(<div className={styles.qrcode}><img src={qrcode} /></div>)
-            }
-        ]
+        href:"javascript:void(0)",
+        className:styles.hoverQQ,
+        qrcodeDom:(<div className={styles.qrcodeBox}><img src={qrcode2} /></div>)
     },
 ];
 
@@ -94,7 +55,15 @@ export default class Footer extends Component{
                         <div className={styles.footerLogoBtn}>
                             {
                                 btnArr.map((item,i)=>(
-                                    <a target="_blank" href={item.href} key={i} className={styles.btn}><img src={item.img} /></a>
+                                    <a target="_blank" href={item.href} key={i} className={styles.btn + " " + (item.className ? item.className : "")}>
+                                        <img src={item.img} />
+                                        {
+                                            item.qrcodeDom ?
+                                                item.qrcodeDom
+                                                :
+                                                null
+                                        }
+                                    </a>
                                 ))
                             }
                         </div>
@@ -115,14 +84,6 @@ export default class Footer extends Component{
                                 </div>
                             ))
                         }
-                        <div key={"qrcode"} className={styles.navItems} >
-                            <div className={styles.navItemsTitle}>{"公众号"}</div>
-                            <div className={styles.navItemsContent}>
-                                <a href={"javascript:void(0)"} key={"qrcodeBox"} className={styles.navItem}>
-                                    <div className={styles.qrcode}><img src={qrcode} /></div>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

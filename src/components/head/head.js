@@ -40,13 +40,15 @@ export default class Head extends Component {
                     </div>
                 </div>
                 <div className={styles["banner-bottom"]}>
-                    {
-                        contentText.bannerBottomText.map((item,i)=>(
-                            <div key={i} className={styles["banner-bottom-item"]}>
-                                {item.title}<span className={styles["orange-text"]}>{item.number}</span>
-                            </div>
-                        ))
-                    }
+                    <div className={styles["banner-bottom-box"]}>
+                        {
+                            contentText.bannerBottomText.map((item,i)=>(
+                                <div key={i} className={styles["banner-bottom-item"]}>
+                                    {item.title}<span className={styles["orange-text"]}>{item.number}</span>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         );
@@ -58,8 +60,8 @@ export class Menu extends Component{
     constructor(props){
         super(props);
         this.state = {
-            value:"cn",
-            menuList:["cn", "en"],
+            value:"CN",
+            menuList:["CN", "EN"],
             showMenuList:false
         };
     }

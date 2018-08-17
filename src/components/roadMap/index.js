@@ -3,11 +3,13 @@ import styles from './index.scss';
 
 export default class RoadMap extends Component{
     render(){
+
+        const { contentText } = this.props;
+
         return (
             <div className={styles.roadMap}>
-                <div className={styles.title}>Roadmap</div>
                 <div className={styles.content}>
-                    <img src="" />
+                    <img src={contentText.img} />
                 </div>
             </div>
         );

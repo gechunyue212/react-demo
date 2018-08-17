@@ -12,10 +12,12 @@ import technologyIconImg1 from '../../assets/img/Bitmap1.png';
 import technologyIconImg2 from '../../assets/img/Bitmap2.png';
 import technologyIconImg3 from '../../assets/img/Bitmap3.png';
 import technologyIconImg4 from '../../assets/img/Bitmap4.png';
+import roadMapEN from '../../assets/img/roadmapEN.png';
+import roadMapCN from '../../assets/img/roadmapCN.png';
 
 export const head = {
 
-    cn:{
+    CN:{
         nav:[
             {
                 title:"核心优势"
@@ -32,11 +34,11 @@ export const head = {
         bannerBottomText:[
             {
                 title:"当前流通量: ",
-                number:"0 B7coin"
+                number:"0 B7T"
             },
             {
                 title:"今日产出实时数量: ",
-                number:"0 B7coin"
+                number:"0 B7T"
             },
             {
                 title:"今日待分配收入: ",
@@ -49,7 +51,7 @@ export const head = {
         ]
     },
 
-    en:{
+    EN:{
         nav:[
             {
                 title:"Core Advantages"
@@ -84,12 +86,12 @@ export const head = {
 
 export const kChart = {
 
-    cn:{
+    CN:{
         kChart:K1,
         table:K2
     },
 
-    en:{
+    EN:{
         kChart:K1e,
         table:K2e
     },
@@ -98,7 +100,7 @@ export const kChart = {
 
 export const product = {
 
-    cn:{
+    CN:{
         title:"产品优势",
         products:[
             {
@@ -129,12 +131,12 @@ export const product = {
             {
                 iconImg:productIconImg6,
                 title:"先进的交易工具",
-                description:"通过智能投顾、技术指标、强大API通知和执行你的交易策略。"
+                description:"通过智能投顾、技术指标、强大API通知和执行你的交易策略"
             }
         ]
     },
 
-    en:{
+    EN:{
         title:"Product Advantages",
         products:[
             {
@@ -150,7 +152,7 @@ export const product = {
             {
                 iconImg:productIconImg3,
                 title:"foreign currency contract",
-                description:"Cryptocurrencies opens up a variety of foreign exchange trading channels, instant trading for global area."
+                description:"Cryptocurrencies opens up a variety of foreign exchange trading channels, instant trading for global area"
             },
             {
                 iconImg:productIconImg4,
@@ -165,17 +167,16 @@ export const product = {
             {
                 iconImg:productIconImg6,
                 title:"advanced trading tools",
-                description:"Noticing and conducting your trading strategies by Robo-Advisor, technical index and powerful API."
+                description:"Noticing and conducting your trading strategies by Robo-Advisor, technical index and powerful API"
             }
         ]
     }
 
 };
 
-
 export const technology = {
 
-    cn:{
+    CN:{
         title:"技术优势",
         technology:[
             {
@@ -215,7 +216,7 @@ export const technology = {
         ]
     },
 
-    en:{
+    EN:{
         title:"Technology Advantages",
         technology:[
             {
@@ -257,22 +258,48 @@ export const technology = {
 
 };
 
+export const documents = {
+
+    CN:{
+        title:"下载白皮书",
+        content:"如果想要深入了解我们的业务，请下载白皮书阅读详情。"
+    },
+
+    EN:{
+        title:"Download Whitepaper",
+        content:"Please download our whitepaper for more details."
+    }
+
+};
+
+export const roadMap = {
+
+    CN:{
+        img:roadMapCN
+    },
+
+    EN:{
+        img:roadMapEN
+    }
+
+};
+
 export const download = {
 
-    cn:{
+    CN:{
         title:"下载",
         description1:[
-            "Download the app from",
-            "google play store&iTunes"
-        ],
-        description2:[
             "下载B7手机客户端",
             "随时查询行情、进行交易"
+        ],
+        description2:[
+            "",
+            ""
         ],
         img:""
     },
 
-    en:{
+    EN:{
         title:"Download",
         description1:[
             "Download the app from",
@@ -287,10 +314,9 @@ export const download = {
 
 };
 
-
 export const foot = {
 
-    cn:{
+    CN:{
         logo:"",
         logoTitle:"数字货币期货交易场",
         nav:[
@@ -309,10 +335,10 @@ export const foot = {
                 title:"产品",
                 items:[
                     {
-                        title:"数字货币期货(线上)"
+                        title:"数字货币期货"
                     },
                     {
-                        title:"外汇(线上)"
+                        title:"外汇"
                     }
                 ]
             },
@@ -327,18 +353,15 @@ export const foot = {
                     },
                     {
                         title:"费率"
-                    },
-                    {
-                        title:"合约交易 (原型)"
                     }
                 ]
             }
         ]
     },
 
-    en:{
+    EN:{
         logo:"",
-        logoTitle:"数字货币期货交易场",
+        logoTitle:"Digital currency futures market",
         nav:[
             {
                 title:"About Us",
@@ -355,10 +378,10 @@ export const foot = {
                 title:"Our Product",
                 items:[
                     {
-                        title:"Digital Future Trading (online)"
+                        title:"Digital Future Trading"
                     },
                     {
-                        title:"Foreign Exchange (online)"
+                        title:"Foreign Exchange"
                     }
                 ]
             },
@@ -373,9 +396,6 @@ export const foot = {
                     },
                     {
                         title:"Our fees"
-                    },
-                    {
-                        title:"Contract Trading (Prototype)"
                     }
                 ]
             }

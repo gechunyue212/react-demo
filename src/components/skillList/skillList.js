@@ -37,7 +37,7 @@ class Box extends Component{
                     <div className={styles.iconImg}>
                         <img src={src} />
                     </div>
-                    <div className={styles.textBox + " " + (language === "en" ? styles.heightEn : styles.heightCn)} >
+                    <div className={styles.textBox + " " + (language === "EN" ? styles.heightEn : styles.heightCn)} >
                         <div className={styles.textBoxTitle}>{title}</div>
                         <div className={styles.brBox} />
                         {

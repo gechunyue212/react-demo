@@ -110,6 +110,10 @@
         height: 50px;
         z-index: 2;
         text-align: center;
+        .banner-bottom-box{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         .banner-bottom-item {
             width: 25%;
             float: left;
