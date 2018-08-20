@@ -1,0 +1,29 @@
+.headBox{
+  width: 100%;
+  height: 1.07rem;
+  position: relative;
+  background:rgba(255,255,255,1);
+
+  .headLogo{
+    width: 1.9rem;
+    height: 0.64rem;
+    margin: 0 auto;
+    padding-top: 0.24rem;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .headBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.06rem;
+    height: 1.06rem;
+    background: url("../../assets/mobileImg/head_nav.png") no-repeat center right;
+    background-size: cover;
+  }
+
+}

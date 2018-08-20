@@ -1,0 +1,75 @@
+.bannerBox{
+  width: 100%;
+  height: 4.2rem;
+  background: url("../../assets/mobileImg/banner_bg.png") no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 0.75rem;
+  position: relative;
+
+  .bannerTitle{
+    height: 0.68rem;
+    font-size: 0.45rem;
+    font-family: PingFangSC-Semibold, "Microsoft YaHei";
+    color: rgba(242,188,15,1);
+    line-height: 0.68rem;
+    position: relative;
+    padding-left: 0.65rem;
+
+    .bannerTitleBg{
+      position: absolute;
+      left: 0.65rem;
+      bottom: 0;
+      width: 5.5rem;
+      height: 0.3rem;
+      background: rgba(150,148,231,0.2);
+    }
+
+  }
+
+  .bannerContent{
+    max-width: 5.88rem;
+    font-size: 0.24rem;
+    font-family:PingFangSC-Light, "Microsoft YaHei";
+    color: rgba(255,255,255,1);
+    line-height: 0.32rem;
+    padding-left: 0.65rem;
+    padding-top: 0.55rem;
+  }
+
+  .bannerBottomList{
+    width: 100%;
+    height: 0.6rem;
+    background:rgba(11,11,36,0.22);
+    box-sizing: border-box;
+    padding-top: 0.08rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .bannerBottomItem{
+      width: 50%;
+      height: 0.3rem;
+      text-align: center;
+      font-size: 0.22rem;
+      font-family: PingFangSC-Regular, "Microsoft YaHei";
+      border-right:1px solid rgba(73,66,117,1);
+      display: inline-block;
+      line-height: 0.3rem;
+      &:last-child{
+        border-right: none;
+      }
+
+      .bannerBottomItemTitle{
+        color:rgba(255,255,255,1);
+      }
+
+      .bannerBottomItemNum{
+        color: #FEAE35;
+      }
+
+    }
+
+  }
+
+}

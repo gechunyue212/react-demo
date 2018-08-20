@@ -998,8 +998,8 @@ export const download = {
             "Cover multiple platforms of IOS, Android, Windows, Mac"
         ],
         description2:[
-            "Download B7 mobile phone APP",
-            "Check the market and trade at any time"
+            "",
+            ""
         ],
         img:""
     },
