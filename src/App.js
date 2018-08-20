@@ -147,16 +147,16 @@ class MobileApp extends Component {
 
         const { language, languageListData } = this.state;
         const languageList = Object.keys(languageListData); // [ "EN", "CN" ]
-        const { head } = MobileTexts;
+        const { head,kChart,product,documents} = MobileTexts;
 
         return (
             <div>
                 <MobileHead onChangeLanguage={this.onChangeLanguage} languageList={languageList} language={language} />
                 <MobileBanner contentText={head[language]} />
-                <MobileKChart/>
-                <MobileProducts/>
+                {/* <MobileKChart contentText={kChart[language]}></MobileKChart> */}
+                <MobileProducts contentText={product[language]}/>
                 <MobileTechnologys/>
-                <MobileDocuments/>
+                <MobileDocuments contentText={documents[language]}/>
                 <MobileRoadMap/>
                 <MobileDownload/>
                 <MobileFooter/>

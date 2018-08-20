@@ -1,0 +1,15 @@
+.k-chart-box {
+  margin: 0 auto;
+  background: #281a55;
+}
+
+.k-chart-box .k-chart-content {
+  width: 7.11rem;
+  height: 3rem;
+  padding: 0.2rem;
+}
+
+.k-chart-box .k-table {
+  width: 7.10rem;
+  height: 4.19rem;
+}
