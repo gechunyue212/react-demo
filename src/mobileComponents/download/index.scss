@@ -1,0 +1,41 @@
+.download{
+    width:7.5rem;
+    margin:auto;
+    text-align: center;
+    .title{
+        font-size:0.42rem;
+        font-family:PingFangSC-Regular;
+        color:rgba(51,51,51,1);
+        text-align: center;
+    }
+    .bg{
+        width:4rem;
+        height:5.33rem;
+        background:url('../../assets/mobileImg/image1.png') no-repeat center center;
+        background-size: 100% 100%;
+        margin:auto;
+        margin:0.72rem auto 0.59rem auto;
+    }
+    .content{
+        width:4.23rem;
+        font-size:0.34rem;
+        font-family:PingFangSC-Medium;
+        color:rgba(51,51,51,1);
+        margin:auto;
+        margin-bottom: 0.23rem;
+    }
+    >ul{
+        width:6.2rem;
+        margin:auto;
+        display:flex;
+        flex:auto;
+        >li{
+            width:2.86rem;
+            height:0.79rem;
+            margin-top: 0.3rem;
+            &:nth-child(2n){
+                margin-left:0.48rem;
+            }
+        }
+    }
+}
