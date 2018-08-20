@@ -5,7 +5,7 @@ export default class MobileDocuments extends Component{
     render(){
         const { contentText } = this.props;
         return (
-            <div className={styles.documents}>
+            <div className={styles.documents} id="MobileDocuments">
                 <div className={styles.title}>{contentText.title}</div>
                 <div className={styles.content}>{contentText.content}</div>
                 <ul>

@@ -151,6 +151,7 @@ class MobileApp extends Component {
 
         return (
             <div>
+                <div style={{width:"100%", height:"1.07rem"}}></div>
                 <MobileHead onChangeLanguage={this.onChangeLanguage} languageList={languageList} language={language} />
                 <MobileBanner contentText={head[language]} />
                 <MobileKChart contentText={kChart[language]}></MobileKChart>

@@ -6,9 +6,9 @@ import img3 from '../../assets/mobileImg/Group 16.png';
 import img4 from '../../assets/mobileImg/Group 20.png';
 export default class MobileDownload extends Component{
     render(){
-        const { contentText } = this.props
+        const { contentText } = this.props;
         return (
-            <div className={styles.download}>
+            <div className={styles.download} id="MobileDownload">
                 <div className={styles.title}>{contentText.title}</div>
                 <div className={styles.bg}></div>
                 <div className={styles.content}>{contentText.content}</div>

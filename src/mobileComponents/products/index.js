@@ -5,7 +5,7 @@ export default class MobileProducts extends Component{
     render(){
         const { contentText } = this.props;
         return (
-            <div className={styles.MobileProduct}>
+            <div className={styles.MobileProduct} id="MobileProducts">
                 <div className={styles.head}>{contentText.title}</div>
                 {
                     contentText.products.map((item,i)=>(
