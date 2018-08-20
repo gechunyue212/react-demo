@@ -181,3 +181,81 @@ export const download ={
         content:"Download the app from google play store&iTunes"
     }
 }
+
+export const foot = {
+    CN:{
+        nav:[
+            {
+                title:"关于我们",
+                items:[
+                    {
+                        title:"关于B7"
+                    }
+                ]
+            },
+            {
+                title:"产品",
+                items:[
+                    {
+                        title:"数字货币期货"
+                    },
+                    {
+                        title:"外汇"
+                    }
+                ]
+            },
+            {
+                title:"条款说明",
+                items:[
+                    {
+                        title:"服务条款"
+                    },
+                    {
+                        title:"免责声明"
+                    },
+                    {
+                        title:"费率"
+                    }
+                ]
+            }
+        ]
+    },
+
+    EN:{
+        nav:[
+            {
+                title:"About Us",
+                items:[
+                    {
+                        title:"About B7"
+                    }
+                ]
+            },
+            {
+                title:"Our Product",
+                items:[
+                    {
+                        title:"Digital Future Trading"
+                    },
+                    {
+                        title:"Foreign Exchange"
+                    }
+                ]
+            },
+            {
+                title:"Support Center",
+                items:[
+                    {
+                        title:"Terms of Service"
+                    },
+                    {
+                        title:"Disclosures"
+                    },
+                    {
+                        title:"Our fees"
+                    }
+                ]
+            }
+        ]
+    }
+}

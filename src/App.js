@@ -147,7 +147,7 @@ class MobileApp extends Component {
 
         const { language, languageListData } = this.state;
         const languageList = Object.keys(languageListData); // [ "EN", "CN" ]
-        const { head,kChart,product,documents,download} = MobileTexts;
+        const { head,kChart,product,documents,download,foot} = MobileTexts;
 
         return (
             <div>
@@ -159,7 +159,7 @@ class MobileApp extends Component {
                 <MobileDocuments contentText={documents[language]}/>
                 <MobileRoadMap/>
                 <MobileDownload contentText={download[language]}/>
-                <MobileFooter/>
+                <MobileFooter contentText={foot[language]}/>
             </div>
         );
     }
