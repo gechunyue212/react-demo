@@ -1,7 +1,8 @@
 .headBox{
   width: 100%;
   height: 1.07rem;
-  position: relative;
+  position: fixed;
+  z-index: 1000;
   background:rgba(255,255,255,1);
 
   .headLogo{
@@ -22,8 +23,83 @@
     right: 0;
     width: 1.06rem;
     height: 1.06rem;
-    background: url("../../assets/mobileImg/head_nav.png") no-repeat center right;
-    background-size: cover;
+    img{
+      height: 120%;
+      position: absolute;
+      top: -0.08rem;
+      right: 0;
+    }
+  }
+
+  .rightNavBox{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 1.07rem;
+
+    .rightNavBgColor{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:rgba(0,0,0,0.3);
+    }
+    .rightNav{
+      width: 5.55rem;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0.99rem 0 0 0.56rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      background:linear-gradient(135deg,rgba(81,52,178,1),rgba(177,117,235,1));
+      .rightNavBg{
+        position: absolute;
+        bottom: 1.65rem;
+        left: 0;
+        width: 100%;
+        height: 3.17rem;
+        img{
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .rightNavBtn{
+        height: 0.68rem;
+        font-size: 0.32rem;
+        font-family: PingFangSC-Regular, "Microsoft YaHei";
+        color: rgba(255,255,255,1);
+        line-height: 0.68rem;
+        margin-bottom: 0.66rem;
+        display: block;
+        &.leftPadding{
+          padding-left: 0.29rem;
+        }
+      }
+
+    }
+  }
+
+  .showNav{
+    display: block;
+    .rightNav{
+      right: 0;
+      transition: right 0.5s;
+    }
+  }
+
+  .hideNav{
+    display: none;
+    .rightNav{
+      right: -5.6rem;
+      transition: right 0.5s;
+    }
   }
 
 }

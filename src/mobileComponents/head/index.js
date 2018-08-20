@@ -1,13 +1,49 @@
 import React, { Component } from 'react';
 import styles from './index.scss';
 import HeadLogo from '../../assets/mobileImg/head_logo.png';
+import NavBtn from '../../assets/mobileImg/head_nav.png';
+import MavBtnBgImg from '../../assets/mobileImg/right_nav_bg.png';
 
 export default class MobileHead extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            navStatus:false,
+        };
+    }
+
+    toggleOpenNav = ()=>{
+        const { navStatus } = this.state;
+        this.setState({ navStatus:!navStatus });
+    };
+
     render(){
+
+        const { navStatus } = this.state;
+
         return (
             <div className={styles.headBox}>
                 <div className={styles.headLogo}><img src={HeadLogo} /></div>
-                <div className={styles.headBtn}/>
+                <div onClick={this.toggleOpenNav} className={styles.headBtn}>
+                    <img src={NavBtn} />
+                </div>
+                <div className={styles.rightNavBox + " " + (navStatus ? styles.showNav : styles.hideNav)}>
+                    <div className={styles.rightNavBgColor}/>
+                    <div className={styles.rightNav}>
+                        <div className={styles.rightNavBg}>
+                            <img src={MavBtnBgImg} />
+                        </div>
+                        <a href="#MobileProducts" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>产品优势</a>
+                        <a href="#MobileTechnologys" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>技术优势</a>
+                        <a href="#MobileDocuments" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>白皮书</a>
+                        <a href="#MobileRoadMap" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>路线图</a>
+                        <a href="#MobileDownload" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>下载</a>
+                        <div className={styles.rightNavBtn}>语言切换</div>
+                        <a href="javascript:void(0)" onClick={this.toggleOpenNav} className={styles.rightNavBtn + " " + styles.leftPadding}>CN</a>
+                        <a href="javascript:void(0)" onClick={this.toggleOpenNav} className={styles.rightNavBtn + " " + styles.leftPadding}>EN</a>
+                    </div>
+                </div>
             </div>
         );
     }
