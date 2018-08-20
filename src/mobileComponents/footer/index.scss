@@ -45,12 +45,15 @@
         }
         .footerLogoBtn{
             clear:both;
-            width:5rem;
-            margin: auto;
-            
+            // width:5rem;
+            padding-left:0.95rem;
+            padding-right:1.15rem;
+            margin: auto;  
             >a{
                 padding-right:0.3rem;
-                
+                &:first-child{
+                    padding-left: 0.3rem;
+                }
                 &:last-child{
                     padding-right: 0;
                 }
