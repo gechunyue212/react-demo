@@ -37,14 +37,15 @@
                 color:rgba(199,204,230,1);
                 line-height:0.28rem;
             }
-            &:after{
-                content: '';
-                clear: both;
-                display: block;
-            }
+            // &:after{
+            //     content: '';
+            //     clear: both;
+            //     display: block;
+            // }
         }
         .footerLogoBtn{
-            width:5.4rem;
+            clear:both;
+            width:5rem;
             margin: auto;
             
             >a{

@@ -42,14 +42,9 @@
   line-height: 0.28rem;
 }
 
-.footer .box:after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
 .footer .footerLogoBtn {
-  width: 5.4rem;
+  clear: both;
+  width: 5rem;
   margin: auto;
 }
 
