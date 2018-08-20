@@ -11,6 +11,7 @@ export default class MobileKChart extends Component{
                 <div className={styles["k-chart"]}>
                     <img src={contentText.kChart}/>
                 </div>
+                <div className={styles.brBox}/>
                 <div className={styles["k-table"]}>
                     <img src={contentText.table}/>
                 </div>

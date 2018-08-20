@@ -1,13 +1,25 @@
 .k-chart-box{
+    width: 100%;
     margin:0 auto;
+    box-sizing: border-box;
+    padding: 0.2rem 0.2rem 0.41rem;
     background:rgba(40,26,85,1);
-    .k-chart-content{
-        width:7.11rem;
+    .k-chart{
+        width: 100%;
         height:3rem;
-        padding:0.2rem;
+        img{
+            width: 100%;
+        }
+    }
+    .brBox{
+        width: 100%;
+        height: 0.2rem;
     }
     .k-table{
-        width:7.10rem;
-        height:4.19rem;
+        width: 100%;
+        height: 4.19rem;
+        img{
+            width: 100%;
+        }
     }
 }
