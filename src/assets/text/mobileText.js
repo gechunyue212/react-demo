@@ -74,10 +74,10 @@ export const kChart = {
         table:t1
     },
 
-    // EN:{
-    //     kChart:K1e,
-    //     table:K2e
-    // },
+    EN:{
+        kChart:K1,
+        table:t1
+    },
 };
 
 export const product = {
@@ -169,4 +169,15 @@ export const documents ={
         content:"The original documents have been published in English. Documents in other languages have been translated by our supporters from crypto community around the globe. In case of conflict between a translated and the English version, the English version should be your reference to validate the facts and figures.",
         scontent:"WHITE PAPER"
     },
+}
+
+export const download ={
+    CN:{
+        title:"Download our APP",
+        content:"Download the app from google play store&iTunes"
+    },
+    EN:{
+        title:"Download our APP",
+        content:"Download the app from google play store&iTunes"
+    }
 }
