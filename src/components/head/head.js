@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './head.scss';
-import logo from '../../assets/img/logo.png';
+// import logo from '../../assets/img/logo.png';
 import logoSvg from '../../assets/img/logo.svg';
 
 export default class Head extends Component {

@@ -44,8 +44,8 @@ export default class MobileHead extends Component{
                     <img src={NavBtn} />
                 </div>
                 <div className={styles.rightNavBox + " " + (navStatus ? styles.showNav : styles.hideNav)}>
-                    <div className={styles.rightNavBgColor}/>
-                    <div className={styles.rightNav}>
+                    <div className={styles.rightNavBgColor + " " + (navStatus ? styles.rightNavBgColorShow : styles.rightNavBgColorHide)}/>
+                    <div className={styles.rightNav + " " + (navStatus ? styles.rightNavShow : styles.rightNavHide)}>
                         <div className={styles.rightNavBg}>
                             <img src={MavBtnBgImg} />
                         </div>
