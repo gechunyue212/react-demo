@@ -11,6 +11,10 @@ import productIconImg3 from '../mobileImg/Icon3@3x.png';
 import productIconImg4 from '../mobileImg/Icon4@3x.png';
 import productIconImg5 from '../mobileImg/Icon5@3x.png';
 import productIconImg6 from '../mobileImg/Icon6@3x.png';
+import technologyIconImg1 from '../../assets/img/Bitmap1.png';
+import technologyIconImg2 from '../../assets/img/Bitmap2.png';
+import technologyIconImg3 from '../../assets/img/Bitmap3.png';
+import technologyIconImg4 from '../../assets/img/Bitmap4.png';
 export const head = {
 
     CN:{
@@ -170,7 +174,7 @@ export const documents ={
 
     EN:{
         title:"Documents",
-        content:"The original documents have been published in English. Documents in other languages have been translated by our supporters from crypto community around the globe. In case of conflict between a translated and the English version, the English version should be your reference to validate the facts and figures.",
+        content:"Please download our whitepaper for more details",
         scontent:"WHITE PAPER"
     },
 }
@@ -186,12 +190,12 @@ export const roadmap ={
 
 export const download ={
     CN:{
-        title:"Download our APP",
-        content:"Download the app from google play store&iTunes"
+        title:"多平台终端接入",
+        content:"覆盖IOS、Android、Windows、Mac多个平台"
     },
     EN:{
-        title:"Download our APP",
-        content:"Download the app from google play store&iTunes"
+        title:"Multi-platform terminal access",
+        content:"Cover multiple platforms of IOS, Android, Windows, Mac"
     }
 }
 
@@ -272,3 +276,86 @@ export const foot = {
         ]
     }
 }
+
+export const technology = {
+
+    CN:{
+        title:"技术优势",
+        technology:[
+            {
+                iconImg:technologyIconImg1,
+                title:"金融级安全系统",
+                description:[
+                    "多层、多集群系统架构",
+                    "多个国外加速节点确保网络畅通",
+                    "专业分布式架构和防DDOS攻击系统"
+                ]
+            },
+            {
+                iconImg:technologyIconImg2,
+                title:"高性能、高流动性",
+                description:[
+                    "高达140万单/每秒高性能撮合引擎技术",
+                    "费用低、透明",
+                    "提供比特币暗池服务"
+                ]
+            },
+            {
+                iconImg:technologyIconImg3,
+                title:"全平台、多语言",
+                description:[
+                    "支持Windows、Mac、iOS、Android等不同终端",
+                    "提供英语、中文简体、中文繁体、韩语、日语等主流语言"
+                ]
+            },
+            {
+                iconImg:technologyIconImg4,
+                title:"去中心化",
+                description:[
+                    "链上完成一切交易环节，避免资产被托管",
+                    "DAO组织运营，公开、透明、民主"
+                ]
+            },
+        ]
+    },
+
+    EN:{
+        title:"Technology Advantages",
+        technology:[
+            {
+                iconImg:technologyIconImg1,
+                title:"Security system at financial level",
+                description:[
+                    "Multi-layer and multi-cluster system architecture",
+                    "Multiple foreign acceleration nodes ensure smooth network",
+                    "Professional distributed architecture and anti - DDOS attack system"
+                ]
+            },
+            {
+                iconImg:technologyIconImg2,
+                title:"High performance, high liquidity",
+                description:[
+                    "Up to 1.4 million deals every second high performance matching engine technology",
+                    "Cost-effective， transparent",
+                    "Provide BTC “dark pools” service"
+                ]
+            },
+            {
+                iconImg:technologyIconImg3,
+                title:"All-platform, multi-language",
+                description:[
+                    "Accessible by iOS, Android, Windows and Mac platforms. All functions are supported.",
+                    "Support mainstream languages such as : English, Chinese Simplified, Chinese Traditional, Korean, Japanese, etc."
+                ]
+            },
+            {
+                iconImg:technologyIconImg4,
+                title:"Decentrialized",
+                description:[
+                    "Complete all transaction links on the chain to avoid asset custody",
+                    "DAO organizes operations, open, transparent and democratic"
+                ]
+            },
+        ]
+    }, 
+};

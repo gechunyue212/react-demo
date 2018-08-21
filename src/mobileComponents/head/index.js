@@ -10,17 +10,33 @@ export default class MobileHead extends Component{
         super(props);
         this.state = {
             navStatus:false,
+            value:props.language,
+            menuList:props.languageList,
+            languageListData:props.languageListData,
         };
     }
 
     toggleOpenNav = ()=>{
         const { navStatus } = this.state;
         this.setState({ navStatus:!navStatus });
+        
     };
 
+    handleClick = (value) => {
+        console.log(value);
+        const { navStatus } = this.state;
+        this.setState({
+            value,
+            navStatus:!navStatus
+        });
+        // if(typeof this.props.onClick === 'function'){
+            this.props.handleMenuClick(value);
+        // }
+    }
     render(){
 
         const { navStatus } = this.state;
+        const { menuList, value, languageListData } = this.state;
 
         return (
             <div className={styles.headBox}>
@@ -40,8 +56,11 @@ export default class MobileHead extends Component{
                         <a href="#MobileRoadMap" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>路线图</a>
                         <a href="#MobileDownload" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>下载</a>
                         <div className={styles.rightNavBtn}>语言切换</div>
-                        <a href="javascript:void(0)" onClick={this.toggleOpenNav} className={styles.rightNavBtn + " " + styles.leftPadding}>CN</a>
-                        <a href="javascript:void(0)" onClick={this.toggleOpenNav} className={styles.rightNavBtn + " " + styles.leftPadding}>EN</a>
+                        {
+                            menuList.map((item,i)=>(
+                                <a href="javascript:void(0)" key={i} onClick={()=>this.handleClick(item)} className={styles.rightNavBtn + " " + styles.leftPadding}>{languageListData[item].text}</a> 
+                            ))
+                        }
                     </div>
                 </div>
             </div>

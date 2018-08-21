@@ -80,6 +80,8 @@
         line-height: 0.68rem;
         margin-bottom: 0.66rem;
         display: block;
+        position: relative;
+        z-index: 200;
         &.leftPadding{
           padding-left: 0.29rem;
         }
