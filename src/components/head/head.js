@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './head.scss';
 import logo from '../../assets/img/logo.png';
+import logoSvg from '../../assets/img/logo.svg';
 
 export default class Head extends Component {
     constructor(props){
@@ -25,7 +26,10 @@ export default class Head extends Component {
                     <div className={styles.headBoxContent}>
                         <div className={styles.headLeft}>
                             <div className={styles.logo}>
-                                <img src={logo} />
+                                {/*<img src={logo} />*/}
+                                <embed src={logoSvg} width="110" height="35"
+                                       type="image/svg+xml"
+                                       pluginspage="http://www.adobe.com/svg/viewer/install/" />
                             </div>
                         </div>
                         <div className={styles.headRight}>
@@ -41,13 +45,16 @@ export default class Head extends Component {
                 </div>
                 <div className={styles["banner-bottom"]}>
                     <div className={styles["banner-bottom-box"]}>
-                        {
-                            contentText.bannerBottomText.map((item,i)=>(
-                                <div key={i} className={styles["banner-bottom-item"]}>
-                                    {item.title}<span className={styles["orange-text"]}>{item.number}</span>
-                                </div>
-                            ))
-                        }
+                        {/*{*/}
+                            {/*contentText.bannerBottomText.map((item,i)=>(*/}
+                                {/*<div key={i} className={styles["banner-bottom-item"]}>*/}
+                                    {/*{item.title}<span className={styles["orange-text"]}>{item.number}</span>*/}
+                                {/*</div>*/}
+                            {/*))*/}
+                        {/*}*/}
+                        <div className={styles["banner-bottom-notice"]}>
+                            {contentText.noticeText}
+                        </div>
                     </div>
                 </div>
             </div>

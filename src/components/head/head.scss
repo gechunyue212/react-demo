@@ -106,13 +106,24 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        background:rgba(11,11,36,0.4);
+        background:rgba(11,11,36,0.15);
         height: 50px;
         z-index: 2;
         text-align: center;
         .banner-bottom-box{
             max-width: 1200px;
             margin: 0 auto;
+        }
+        .banner-bottom-notice{
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            text-align: left;
+            font-size:16px;
+            font-family:PingFangSC-Regular, "Microsoft YaHei";
+            color:rgba(119,106,175,1);
+            box-sizing: border-box;
+            padding-left: 10px;
         }
         .banner-bottom-item {
             width: 25%;

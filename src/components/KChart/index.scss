@@ -1,9 +1,61 @@
 .k-chart{
   max-width: 1200px;
-  height: 250px;
+  //height: 250px;
   margin: 0 auto;
   box-sizing: border-box;
   //border:1px solid rgba(62,37,142,1);
+
+  .k-chart-num{
+    width: 100%;
+    height: 140px;
+    &:after{
+      display: block;
+      content: '';
+      clear: both;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .k-chart-numItem{
+      width:288px;
+      height:120px;
+      background:rgba(30,15,76,1);
+      border-radius:6px;
+      border:1px solid rgba(61,37,140,1);
+      box-sizing: border-box;
+      text-align: center;
+      margin-right: 16px;
+      float: left;
+      padding-top: 40px;
+      &:last-child{
+        margin-right: 0;
+      }
+
+      .k-chart-numItem-num{
+        font-size:30px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(245,166,35,1);
+        height: 30px;
+        line-height: 30px;
+      }
+
+      .k-chart-numItem-title{
+        font-size:16px;
+        height: 16px;
+        line-height: 16px;
+        font-family:PingFangSC-Regular, "Microsoft YaHei";
+        color:rgba(255,255,255,1);
+        margin-top: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+    }
+
+  }
 
   .k-chart-content{
     width: 100%;

@@ -40,24 +40,7 @@ export const head = {
         ],
         title:"让金融进入幂时代",
         bannerText:["全球首个数字期货&外汇交易所","让金融进入幂时代"],
-        bannerBottomText:[
-            {
-                title:"当前流通量: ",
-                number:"0 B7T"
-            },
-            {
-                title:"今日产出实时数量: ",
-                number:"0 B7T"
-            },
-            {
-                title:"今日待分配收入: ",
-                number:"0.0000000BTC"
-            },
-            {
-                title:"昨日已分配收入: ",
-                number:"0.0000000BTC"
-            }
-        ]
+        noticeText:"公告"
     },
 
     EN:{
@@ -77,20 +60,7 @@ export const head = {
         ],
         title:"Crypto Derivatives Exchange",
         bannerText:["The first exchange platform for digital asset derivatives & foreign currency in the world","Leading finance to enter an exponential-growth era"],
-        bannerBottomText:[
-            {
-                title:"Current Volume"
-            },
-            {
-                title:"Mining output of today"
-            },
-            {
-                title:"Cumulative revenue to be distributed today"
-            },
-            {
-                title:"Cumulative revenue distributed in yesterday"
-            }
-        ]
+        noticeText:"notice"
     },
 
     JAP:{
@@ -110,24 +80,7 @@ export const head = {
         ],
         title:"金融を冪時代に入らせる",
         bannerText:["全球始めのデジタル先物＆外貨取引所","金融を冪時代に入らせる"],
-        bannerBottomText:[
-            {
-                title:"目前流通高: ",
-                number:"0 B7T"
-            },
-            {
-                title:"今日産出リアルタイム数量: ",
-                number:"0 B7T"
-            },
-            {
-                title:"今日分配待ち収入: ",
-                number:"0.0000000BTC"
-            },
-            {
-                title:"昨日分配済み収入: ",
-                number:"0.0000000BTC"
-            }
-        ]
+        noticeText:"お知らせ"
     },
 
     AR:{
@@ -147,24 +100,7 @@ export const head = {
         ],
         title:"جعل المالية للدخول فى عصر السلطة",
         bannerText:["أول مصرف للعقود الآجلة الرقمية والعملات الأجنبية في العالم","جعل المالية للدخول فى عصر السلطة"],
-        bannerBottomText:[
-            {
-                title:"سيولة حالية: 0 B7T",
-                number:""
-            },
-            {
-                title:"كمية انتاج اليوم في الوقت الحقيقي: 0 B7T",
-                number:""
-            },
-            {
-                title:"الدخل اليوم الذي لم يتم توزيعه: 0.0000000BTC",
-                number:""
-            },
-            {
-                title:"الدخل المكتسب بالأمس: 0.0000000BTC",
-                number:""
-            }
-        ]
+        noticeText:"إعلان"
     },
 
     KOR:{
@@ -184,24 +120,7 @@ export const head = {
         ],
         title:"금융이 멱시대로 들어서다",
         bannerText:["전 세계 최초로 된 디지텔 선물(금융)&외환 시장","금융이 멱시대로 들어서다"],
-        bannerBottomText:[
-            {
-                title:"현재 유통량: ",
-                number:"0 B7T"
-            },
-            {
-                title:"오늘 산출 실시 수량: ",
-                number:"0 B7T"
-            },
-            {
-                title:"오늘 분배 대기 수입: ",
-                number:"0.0000000BTC"
-            },
-            {
-                title:"어제 분배 완료 수입: ",
-                number:"0.0000000BTC"
-            }
-        ]
+        noticeText:"발표"
     }
 
 
@@ -211,27 +130,117 @@ export const kChart = {
 
     CN:{
         kChart:K1,
-        table:K2
+        table:K2,
+        numItems:[
+            {
+                title:"当前流通量",
+                number:"0 B7T"
+            },
+            {
+                title:"今日产出实时数量",
+                number:"0 B7T"
+            },
+            {
+                title:"今日待分配收入",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"昨日已分配收入",
+                number:"0.0000000BTC"
+            }
+        ]
     },
 
     EN:{
         kChart:K1e,
-        table:K2e
+        table:K2e,
+        numItems:[
+            {
+                title:"Current Volume",
+                number:"0 B7T"
+            },
+            {
+                title:"Mining output of today",
+                number:"0 B7T"
+            },
+            {
+                title:"Cumulative revenue to be distributed today",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"Cumulative revenue distributed in yesterday",
+                number:"0.0000000BTC"
+            }
+        ]
     },
 
     JAP:{
         kChart:K1r,
-        table:K2r
+        table:K2r,
+        numItems:[
+            {
+                title:"目前流通高",
+                number:"0 B7T"
+            },
+            {
+                title:"今日産出リアルタイム数量",
+                number:"0 B7T"
+            },
+            {
+                title:"今日分配待ち収入",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"昨日分配済み収入",
+                number:"0.0000000BTC"
+            }
+        ]
     },
 
     AR:{
         kChart:K1e,
-        table:K2e
+        table:K2e,
+        numItems:[
+            {
+                title:"سيولة حالية",
+                number:"0 B7T"
+            },
+            {
+                title:"كمية انتاج اليوم في الوقت الحقيقي",
+                number:"0 B7T"
+            },
+            {
+                title:"الدخل اليوم الذي لم يتم توزيعه",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"الدخل المكتسب بالأمس",
+                number:"0.0000000BTC"
+            }
+        ]
     },
 
     KOR:{
         kChart:K1h,
-        table:K2h
+        table:K2h,
+        numItems:[
+            {
+                title:"현재 유통량",
+                number:"0 B7T"
+            },
+            {
+                title:"오늘 산출 실시 수량",
+                number:"0 B7T"
+            },
+            {
+                title:"오늘 분배 대기 수입",
+                number:"0.0000000BTC"
+            },
+            {
+                title:"어제 분배 완료 수입",
+                number:"0.0000000BTC"
+            }
+        ]
     },
 
 };
