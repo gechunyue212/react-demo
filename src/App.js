@@ -147,7 +147,7 @@ class MobileApp extends Component {
 
         const { language, languageListData } = this.state;
         const languageList = Object.keys(languageListData); // [ "EN", "CN" ]
-        const { head,kChart,product,documents,download,foot} = MobileTexts;
+        const { head,kChart,product,documents,download,foot,roadmap} = MobileTexts;
 
         return (
             <div>
@@ -158,7 +158,7 @@ class MobileApp extends Component {
                 <MobileProducts contentText={product[language]}/>
                 <MobileTechnologys/>
                 <MobileDocuments contentText={documents[language]}/>
-                <MobileRoadMap/>
+                <MobileRoadMap contentText={roadmap[language]}/>
                 <MobileDownload contentText={download[language]}/>
                 <MobileFooter contentText={foot[language]}/>
             </div>

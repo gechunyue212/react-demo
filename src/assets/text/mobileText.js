@@ -1,6 +1,10 @@
 
 import K1 from '../mobileImg/k1.png';
 import t1 from '../mobileImg/t1.png';
+import K2 from '../mobileImg/k2.png';
+import t2 from '../mobileImg/t2.png';
+import road1 from '../mobileImg/roadmap@3x.png';
+import road2 from '../mobileImg/roadmap2.png';
 import productIconImg1 from '../mobileImg/icon1@3x.png';
 import productIconImg2 from '../mobileImg/Icon2@3x.png';
 import productIconImg3 from '../mobileImg/Icon3@3x.png';
@@ -75,8 +79,8 @@ export const kChart = {
     },
 
     EN:{
-        kChart:K1,
-        table:t1
+        kChart:K2,
+        table:t2
     },
 };
 
@@ -169,6 +173,15 @@ export const documents ={
         content:"The original documents have been published in English. Documents in other languages have been translated by our supporters from crypto community around the globe. In case of conflict between a translated and the English version, the English version should be your reference to validate the facts and figures.",
         scontent:"WHITE PAPER"
     },
+}
+
+export const roadmap ={
+    CN:{
+        img:road1
+    },
+    EN:{
+        img:road2
+    }
 }
 
 export const download ={
