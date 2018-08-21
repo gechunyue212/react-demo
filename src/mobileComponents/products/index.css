@@ -32,10 +32,7 @@
 }
 
 .MobileProduct .cellBox .contentBox .content {
-  widows: 4.82rem;
-  height: 0.68rem;
   font-size: 0.2rem;
   font-family: PingFangSC-Regular;
   color: #424753;
-  line-height: 0.28rem;
 }

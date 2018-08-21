@@ -23,7 +23,6 @@ export default class MobileHead extends Component{
     };
 
     handleClick = (value) => {
-        console.log(value);
         const { navStatus } = this.state;
         this.setState({
             value,
