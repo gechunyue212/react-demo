@@ -8,7 +8,7 @@ export default class Head extends Component {
     }
     render(){
 
-        const { contentText, languageList, language } = this.props;
+        const { contentText, languageList, language, languageListData } = this.props;
 
         return (
             <div className={styles.header}>
@@ -35,7 +35,7 @@ export default class Head extends Component {
                                 ))
                             }
                             {/*<a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>*/}
-                            <Menu languageList={languageList} language={language} onClick={this.props.handleMenuClick} />
+                            <Menu languageList={languageList} languageListData={languageListData} language={language} onClick={this.props.handleMenuClick} />
                         </div>
                     </div>
                 </div>
@@ -62,6 +62,7 @@ export class Menu extends Component{
         this.state = {
             value:props.language,
             menuList:props.languageList,
+            languageListData:props.languageListData,
             showMenuList:false
         };
     }
@@ -77,14 +78,15 @@ export class Menu extends Component{
     }
 
     render(){
-        const { menuList, value, showMenuList } = this.state;
+        const { menuList, value, showMenuList, languageListData } = this.state;
+        const language = languageListData[value].text;
         return (
             <div className={styles.menu}>
-                <div className={styles.menuTitle} onClick={() => this.setState({showMenuList:!showMenuList})}>{value + " >"}</div>
+                <div className={styles.menuTitle} onClick={() => this.setState({showMenuList:!showMenuList})}>{language + " >"}</div>
                 <div className={styles.menuListBox + " " + (showMenuList ? styles.show : styles.hide)}>
                     {
                         menuList.map((item,i)=>(
-                            <div className={styles.menuItem} onClick={()=>this.handleClick(item)} key={i}>{item}</div>
+                            <div className={styles.menuItem} onClick={()=>this.handleClick(item)} key={i}>{languageListData[item].text}</div>
                         ))
                     }
                 </div>

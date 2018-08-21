@@ -64,19 +64,19 @@ class PCApp extends Component {
             language:"EN",
             languageListData:{
                 "EN":{
-                    text:"EN",
+                    text:"English",
                     documentTitle:"B7 Official network",
                 },
                 "CN":{
-                    text:"CN",
+                    text:"中文简体",
                     documentTitle:"币期官网",
                 },
                 "JAP":{
-                    text:"JAP",
+                    text:"日本語",
                     documentTitle:"コイ期公式サイト",
                 },
                 "KOR":{
-                    text:"KOR",
+                    text:"한국어",
                     documentTitle:"화페 기한 홈사이트",
                 }
             }
