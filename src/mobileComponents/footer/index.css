@@ -11,29 +11,36 @@
   display: block;
 }
 
-.footer .box {
+.footer .wrap {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.footer .wrap .box {
   margin-top: 0.47rem;
   float: left;
   padding-bottom: 0.38rem;
+  position: relative;
+  right: 50%;
 }
 
-.footer .box:first-child {
-  padding-left: 0.66rem;
+.footer .wrap .box:first-child {
   padding-right: 0.4rem;
 }
 
-.footer .box:nth-child(2) {
-  margin-right: 0.5rem;
+.footer .wrap .box:nth-child(2) {
+  padding-right: 0.5rem;
 }
 
-.footer .box .title {
+.footer .wrap .box .title {
   font-size: 0.26rem;
   font-family: PingFangSC-Medium;
   color: #61648a;
   line-height: 0.37rem;
 }
 
-.footer .box .navItem {
+.footer .wrap .box .navItem {
   margin-top: 0.1rem;
   display: block;
   font-size: 0.2rem;

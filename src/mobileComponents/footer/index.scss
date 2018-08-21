@@ -9,20 +9,22 @@
         clear: both;
         display: block;
     }
+    .wrap{
+        float:left;
+        position: relative;
+        left:50%;
         .box{
             margin-top:0.47rem;
             float: left;
             padding-bottom:0.38rem;
+            position: relative;
+            right:50%;
             &:first-child{
-                padding-left:0.66rem;
                 padding-right: 0.4rem;
             }
             &:nth-child(2){
-                margin-right: 0.5rem;
+                padding-right: 0.5rem;
             }
-            // &:last-child{
-            //     padding-right: 0.65rem;
-            // }
             .title{
                 font-size:0.26rem;
                 font-family:PingFangSC-Medium;
@@ -37,41 +39,38 @@
                 color:rgba(199,204,230,1);
                 line-height:0.28rem;
             }
-            // &:after{
-            //     content: '';
-            //     clear: both;
-            //     display: block;
-            // }
         }
-        .footerLogoBtn{
-            clear:both;
-            // width:5rem;
-            padding-left:0.95rem;
-            padding-right:1.15rem;
-            margin: auto;  
-            >a{
-                padding-right:0.3rem;
-                &:first-child{
-                    padding-left: 0.3rem;
-                }
-                &:last-child{
-                    padding-right: 0;
-                }
+    }
+
+    .footerLogoBtn{
+        clear:both;
+        // width:5rem;
+        padding-left:0.95rem;
+        padding-right:1.15rem;
+        margin: auto;  
+        >a{
+            padding-right:0.3rem;
+            &:first-child{
+                padding-left: 0.3rem;
             }
-            >img{
-                width:0.65rem;
-                height:0.65rem;
+            &:last-child{
+                padding-right: 0;
             }
         }
-        .fcopy{
-            margin-top: 0.19rem;
-            // width:336px;
-            height:0.28rem;
-            font-size:0.2rem;
-            font-family:PingFangSC-Medium;
-            color:rgba(97,100,138,1);
-            line-height:0.28rem;
-            text-align: center;
-            margin-bottom: 0.28rem;
+        >img{
+            width:0.65rem;
+            height:0.65rem;
         }
+    }
+    .fcopy{
+        margin-top: 0.19rem;
+        // width:336px;
+        height:0.28rem;
+        font-size:0.2rem;
+        font-family:PingFangSC-Medium;
+        color:rgba(97,100,138,1);
+        line-height:0.28rem;
+        text-align: center;
+        margin-bottom: 0.28rem;
+    }
 }
