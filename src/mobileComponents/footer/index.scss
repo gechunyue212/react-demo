@@ -1,7 +1,7 @@
 .footer{
     margin-top:0.63rem;
-    width:7.5rem;
-    // height:380px;
+    width:100%;
+    overflow-x: hidden;
     background:rgba(25,28,42,1);
     float:left;
     &:after{
@@ -44,27 +44,22 @@
 
     .footerLogoBtn{
         clear:both;
-        // width:5rem;
-        padding-left:0.95rem;
-        padding-right:1.15rem;
+        width:5.5rem;
         margin: auto;  
         >a{
             padding-right:0.3rem;
-            &:first-child{
-                padding-left: 0.3rem;
-            }
             &:last-child{
                 padding-right: 0;
             }
+            >img{
+                width:0.65rem;
+                height:0.65rem;
+            }
         }
-        >img{
-            width:0.65rem;
-            height:0.65rem;
-        }
+
     }
     .fcopy{
         margin-top: 0.19rem;
-        // width:336px;
         height:0.28rem;
         font-size:0.2rem;
         font-family:PingFangSC-Medium;

@@ -1,6 +1,7 @@
 .footer {
   margin-top: 0.63rem;
-  width: 7.5rem;
+  width: 100%;
+  overflow-x: hidden;
   background: #191c2a;
   float: left;
 }
@@ -51,8 +52,7 @@
 
 .footer .footerLogoBtn {
   clear: both;
-  padding-left: 0.95rem;
-  padding-right: 1.15rem;
+  width: 5.5rem;
   margin: auto;
 }
 
@@ -60,15 +60,11 @@
   padding-right: 0.3rem;
 }
 
-.footer .footerLogoBtn > a:first-child {
-  padding-left: 0.3rem;
-}
-
 .footer .footerLogoBtn > a:last-child {
   padding-right: 0;
 }
 
-.footer .footerLogoBtn > img {
+.footer .footerLogoBtn > a > img {
   width: 0.65rem;
   height: 0.65rem;
 }
