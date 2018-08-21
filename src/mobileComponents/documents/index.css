@@ -14,12 +14,11 @@
 }
 
 .documents .content {
-  width: 6.65rem;
   font-size: 0.24rem;
   font-family: PingFangSC-Regular;
   color: white;
   line-height: 0.36rem;
-  margin: auto;
+  text-align: center;
   margin-bottom: 0.4rem;
 }
 
