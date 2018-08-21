@@ -39,7 +39,7 @@ export default class MobileFooter extends Component{
             <div className={styles.footer}>
             
             {contentText.nav.map((item,i)=>(
-                <div className={styles.box}>
+                <div className={styles.box} key={i}>
                     <div className={styles.title}>{item.title}</div>
                     {
                         item.items.map((pitem,j)=>(

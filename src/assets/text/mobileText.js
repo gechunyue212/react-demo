@@ -1,12 +1,12 @@
 
 import K1 from '../mobileImg/k1.png';
 import t1 from '../mobileImg/t1.png';
-import productIconImg1 from '../mobileImg/Icon1.png';
-import productIconImg2 from '../mobileImg/Icon2.png';
-import productIconImg3 from '../mobileImg/Icon3.png';
-import productIconImg4 from '../mobileImg/Icon4.png';
-import productIconImg5 from '../mobileImg/Icon5.png';
-import productIconImg6 from '../mobileImg/Icon6.png';
+import productIconImg1 from '../mobileImg/icon1@3x.png';
+import productIconImg2 from '../mobileImg/Icon2@3x.png';
+import productIconImg3 from '../mobileImg/Icon3@3x.png';
+import productIconImg4 from '../mobileImg/Icon4@3x.png';
+import productIconImg5 from '../mobileImg/Icon5@3x.png';
+import productIconImg6 from '../mobileImg/Icon6@3x.png';
 export const head = {
 
     CN:{

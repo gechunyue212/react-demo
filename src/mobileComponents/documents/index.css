@@ -31,7 +31,8 @@
 .documents > ul > li .bg {
   width: 3rem;
   height: 3rem;
-  background: url("../../assets/mobileImg/pdf.png") no-repeat center center;
+  background: url("../../assets/mobileImg/pdf@3x.png") no-repeat center center;
+  background-size: 100% 100%;
   margin: auto;
 }
 

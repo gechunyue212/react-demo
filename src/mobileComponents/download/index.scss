@@ -11,7 +11,7 @@
     .bg{
         width:4rem;
         height:5.33rem;
-        background:url('../../assets/mobileImg/image1.png') no-repeat center center;
+        background:url('../../assets/mobileImg/image1@3x.png') no-repeat center center;
         background-size: 100% 100%;
         margin:auto;
         margin:0.72rem auto 0.59rem auto;
@@ -35,6 +35,10 @@
             margin-top: 0.3rem;
             &:nth-child(2n){
                 margin-left:0.48rem;
+            }
+            img{
+                width:2.86rem;
+                height:0.79rem;
             }
         }
     }

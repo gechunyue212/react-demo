@@ -26,7 +26,7 @@ class Box extends Component{
         return (
             <div className={styles.cellBox}>
                 <div className={styles.imgIcon}>
-                    <img src={src} />
+                    <img className={styles.imgIcon} src={src} />
                 </div>
                 <div className={styles.contentBox}>
                     <p className={styles.title}>{title}</p>
