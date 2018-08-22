@@ -49,42 +49,26 @@ export default class Footer extends Component{
         return (
             <div className={styles.footerBox}>
                 <div className={styles.box}>
-                    <div className={styles.footerLeft}>
-                        <div className={styles.footerLogo}><img src={logo} /></div>
-                        <div className={styles.footerLogoTitle}>{contentText.logoTitle}</div>
-                        <div className={styles.footerLogoBtn}>
+                    <div className={`${styles.footerBtnBox} ${styles.clearAfter}`}>
+                        <div className={`${styles.footerBtnLeft} ${styles.clearAfter}`}>
                             {
-                                btnArr.map((item,i)=>(
-                                    <a target="_blank" href={item.href} key={i} className={styles.btn + " " + (item.className ? item.className : "")}>
+                                contentText.nav.map((item, i)=>(
+                                    <a href={item.href} key={i} className={styles.footerBtnItem}>{item.text}</a>
+                                ))
+                            }
+                        </div>
+                        <div className={`${styles.footerBtnRight} ${styles.clearAfter}`}>
+                            {
+                                btnArr.map((item, i)=>(
+                                    <a href={item.href} key={i} className={styles.rightBtnItem}>
                                         <img src={item.img} />
-                                        {
-                                            item.qrcodeDom ?
-                                                item.qrcodeDom
-                                                :
-                                                null
-                                        }
                                     </a>
                                 ))
                             }
                         </div>
-                        <div className={styles.footerCopy}>©2018 B7.com.All Right Reserved</div>
                     </div>
-                    <div className={styles.footerRight}>
-                        {
-                            contentText.nav.map((item,i)=>(
-                                <div key={i} className={styles.navItems} >
-                                    <div className={styles.navItemsTitle}>{item.title}</div>
-                                    <div className={styles.navItemsContent}>
-                                        {
-                                            item.items.map((preItem,j)=>(
-                                                <a href={"javascript:void(0)"} key={j} className={styles.navItem}>{preItem.title}</a>
-                                            ))
-                                        }
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
+                    <div className={styles.hrBox}/>
+                    <div className={styles.copyText}>©2018 B7.com.All Right Reserved</div>
                 </div>
             </div>
         );

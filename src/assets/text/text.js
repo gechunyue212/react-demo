@@ -1057,216 +1057,136 @@ export const download = {
 export const foot = {
 
     CN:{
-        logo:"",
-        logoTitle:"数字货币期货交易场",
         nav:[
             {
-                title:"关于我们",
-                items:[
-                    {
-                        title:"关于B7"
-                    },
-                    {
-                        title:"加入我们"
-                    }
-                ]
-            },
-            {
-                title:"产品",
-                items:[
-                    {
-                        title:"数字货币期货"
-                    },
-                    {
-                        title:"外汇"
-                    }
-                ]
-            },
-            {
-                title:"服务支持",
-                items:[
-                    {
-                        title:"服务条款"
-                    },
-                    {
-                        title:"免责声明"
-                    },
-                    {
-                        title:"费率"
-                    }
-                ]
+                text:"关于我们",
+                href:"javascript:void(0)"
+            },{
+                text:"服务条款",
+                href:"javascript:void(0)"
+            },{
+                text:"免责声明",
+                href:"javascript:void(0)"
+            },{
+                text:"隐私保护",
+                href:"javascript:void(0)"
+            },{
+                text:"费率标准",
+                href:"javascript:void(0)"
+            },{
+                text:"交易指南",
+                href:"javascript:void(0)"
+            },{
+                text:"API文档",
+                href:"javascript:void(0)"
             }
         ]
     },
 
     EN:{
-        logo:"",
-        logoTitle:"Digital currency futures market",
         nav:[
             {
-                title:"About Us",
-                items:[
-                    {
-                        title:"About B7"
-                    },
-                    {
-                        title:"Join Us"
-                    }
-                ]
-            },
-            {
-                title:"Our Product",
-                items:[
-                    {
-                        title:"Digital Future Trading"
-                    },
-                    {
-                        title:"Foreign Exchange"
-                    }
-                ]
-            },
-            {
-                title:"Support Center",
-                items:[
-                    {
-                        title:"Terms of Service"
-                    },
-                    {
-                        title:"Disclosures"
-                    },
-                    {
-                        title:"Our fees"
-                    }
-                ]
+                text:"About us",
+                href:"javascript:void(0)"
+            },{
+                text:"Terms of service",
+                href:"javascript:void(0)"
+            },{
+                text:"Disclaimer",
+                href:"javascript:void(0)"
+            },{
+                text:"Privacy policy",
+                href:"javascript:void(0)"
+            },{
+                text:"Fee standards",
+                href:"javascript:void(0)"
+            },{
+                text:"Trading guide",
+                href:"javascript:void(0)"
+            },{
+                text:"API file",
+                href:"javascript:void(0)"
             }
         ]
     },
 
     JAP:{
-        logo:"",
-        logoTitle:"Digital currency futures market",
         nav:[
             {
-                title:"私達に関して",
-                items:[
-                    {
-                        title:"B7に関して"
-                    },
-                    {
-                        title:"私達に加入"
-                    }
-                ]
-            },
-            {
-                title:"製品",
-                items:[
-                    {
-                        title:"デジタル貨幣先物"
-                    },
-                    {
-                        title:"外貨"
-                    }
-                ]
-            },
-            {
-                title:"サービス支持",
-                items:[
-                    {
-                        title:"サービス条項"
-                    },
-                    {
-                        title:"免責声明"
-                    },
-                    {
-                        title:"費用の比率"
-                    }
-                ]
+                text:"当社について",
+                href:"javascript:void(0)"
+            },{
+                text:"利用規約",
+                href:"javascript:void(0)"
+            },{
+                text:"免責事項",
+                href:"javascript:void(0)"
+            },{
+                text:"プライバシー保護",
+                href:"javascript:void(0)"
+            },{
+                text:"料金基準",
+                href:"javascript:void(0)"
+            },{
+                text:"取引ガイド",
+                href:"javascript:void(0)"
+            },{
+                text:"APIファイル",
+                href:"javascript:void(0)"
             }
         ]
     },
 
     AR:{
-        logo:"",
-        logoTitle:"Digital currency futures market",
         nav:[
             {
-                title:"حول نحن",
-                items:[
-                    {
-                        title:"حول B7"
-                    },
-                    {
-                        title:"انضم إلينا"
-                    }
-                ]
-            },
-            {
-                title:"منتجات",
-                items:[
-                    {
-                        title:"العقود الآجلة للعملة الرقمية"
-                    },
-                    {
-                        title:"العملات الأجنبية"
-                    }
-                ]
-            },
-            {
-                title:"دعم الخدمة",
-                items:[
-                    {
-                        title:"شروط الخدمة"
-                    },
-                    {
-                        title:"بيان إخلاء المسؤولية"
-                    },
-                    {
-                        title:"الاسعار"
-                    }
-                ]
+                text:"",
+                href:"javascript:void(0)"
+            },{
+                text:"",
+                href:"javascript:void(0)"
+            },{
+                text:"",
+                href:"javascript:void(0)"
+            },{
+                text:"",
+                href:"javascript:void(0)"
+            },{
+                text:"",
+                href:"javascript:void(0)"
+            },{
+                text:"",
+                href:"javascript:void(0)"
+            },{
+                text:"",
+                href:"javascript:void(0)"
             }
         ]
     },
 
     KOR:{
-        logo:"",
-        logoTitle:"Digital currency futures market",
         nav:[
             {
-                title:"about us",
-                items:[
-                    {
-                        title:"about B7"
-                    },
-                    {
-                        title:"가입하기"
-                    }
-                ]
-            },
-            {
-                title:"제품",
-                items:[
-                    {
-                        title:"디지털 화페 선물"
-                    },
-                    {
-                        title:"외와"
-                    }
-                ]
-            },
-            {
-                title:"서비스 지원",
-                items:[
-                    {
-                        title:"서비스 조항"
-                    },
-                    {
-                        title:"면책 성명"
-                    },
-                    {
-                        title:"요금율"
-                    }
-                ]
+                text:"저희에 대하여",
+                href:"javascript:void(0)"
+            },{
+                text:"서비스 조항",
+                href:"javascript:void(0)"
+            },{
+                text:"면책 성명",
+                href:"javascript:void(0)"
+            },{
+                text:"프라이버시 보호",
+                href:"javascript:void(0)"
+            },{
+                text:"요율 기준",
+                href:"javascript:void(0)"
+            },{
+                text:"거래 가이드",
+                href:"javascript:void(0)"
+            },{
+                text:"API 문서",
+                href:"javascript:void(0)"
             }
         ]
     },
