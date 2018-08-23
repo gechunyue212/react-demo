@@ -31,13 +31,21 @@ class Box extends Component{
     }
     render(){
         const { src, title, content, language } = this.props;
+        let heightStyle;
+        if(language === "EN"){
+            heightStyle = styles.heightEn;
+        }else if(language === "JAP"){
+            heightStyle = styles.heightJap;
+        }else{
+            heightStyle = styles.heightCn;
+        }
         return (
             <Col xs={9} md={6} className={styles.cellBox}>
                 <div className={styles.cell}>
                     <div className={styles.iconImg}>
                         <img src={src} />
                     </div>
-                    <div className={styles.textBox + " " + (language === "EN" ? styles.heightEn : styles.heightCn)} >
+                    <div className={styles.textBox + " " + (heightStyle)} >
                         <div className={styles.textBoxTitle}>{title}</div>
                         <div className={styles.brBox} />
                         {

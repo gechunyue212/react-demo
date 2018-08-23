@@ -37,8 +37,11 @@
             &.heightCn{
                 height: 154px;
             }
+            &.heightJap{
+                height: 200px;
+            }
             .textBoxTitle{
-                height:25px;
+                //height:25px;
                 font-size:22px;
                 font-family:PingFangSC-Regular, "Microsoft YaHei";
                 color:rgba(40,43,49,1);
