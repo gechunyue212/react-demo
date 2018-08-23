@@ -51,7 +51,7 @@ export default class MobileHead extends Component{
                         </div>
                         {
                             contentText.nav.map((item,i)=>(
-                                <a href={item.href} onClick={this.toggleOpenNav} className={styles.rightNavBtn}>{item.title}</a>
+                                <a href={item.href} onClick={this.toggleOpenNav} className={styles.rightNavBtn} key={i}>{item.title}</a>
                             ))
                         }
                         <div className={styles.rightNavBtn}>{contentText.switch}</div>
