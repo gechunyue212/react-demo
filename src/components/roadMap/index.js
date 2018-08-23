@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './index.scss';
+import RoadMapComponent from './roadMap';
 
 export default class RoadMap extends Component{
     render(){

@@ -37,11 +37,29 @@
         display: block;
         float: left;
         margin-left: 15px;
+        position: relative;
         &:first-child{
           margin-left: 0;
         }
         img{
           width: 100%;
+        }
+
+        .qrcodeBox{
+          position: absolute;
+          top: 30px;
+          left: -22px;
+          width: 70px;
+          height: 70px;
+          display: none;
+        }
+
+      }
+      .hoverWeiXin, .hoverQQ{
+        &:hover{
+          .qrcodeBox{
+            display: block;
+          }
         }
       }
     }
