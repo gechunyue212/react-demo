@@ -1,6 +1,6 @@
 .footerBox{
   width: 100%;
-  height:285px;
+  height: 170px;
   background:rgba(25,28,42,1);
   box-sizing: border-box;
   padding-top: 40px;
@@ -8,147 +8,58 @@
   .box{
     max-width: 1200px;
     margin: 0 auto;
-    &:after{
-      content: '';
-      clear: both;
-      display: block;
-      width: 0;
-      height: 0;
-      visibility: hidden;
-    }
+    height: 100%;
+  }
 
-    .footerLeft{
+  .footerBtnBox{
+    .footerBtnLeft{
       float: left;
-
-      .footerLogo{
-        width: 90px;
-        height: 38px;
+      .footerBtnItem{
+        float: left;
+        font-size:14px;
+        height: 20px;
+        line-height: 20px;
+        box-sizing: content-box;
+        padding-top: 5px;
+        font-family:PingFangSC-Medium, "Microsoft YaHei";
+        color:rgba(97,100,138,1);
+        margin-right: 30px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    .footerBtnRight{
+      float: right;
+      .rightBtnItem{
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: left;
+        margin-left: 15px;
+        &:first-child{
+          margin-left: 0;
+        }
         img{
           width: 100%;
         }
       }
-
-      .footerLogoTitle{
-        font-size:14px;
-        font-family:PingFangSC-Regular, "Microsoft YaHei";
-        color:rgba(97,100,138,1);
-        line-height:22px;
-        margin-top: 11px;
-      }
-
-      .footerLogoBtn{
-        margin-top: 18px;
-        &:after{
-          content: '';
-          clear: both;
-          display: block;
-          width: 0;
-          height: 0;
-          visibility: hidden;
-        }
-        .btn{
-          float: left;
-          width: 25px;
-          height: 25px;
-          margin-right: 10px;
-          display: block;
-
-          &.hoverWeiXin, &.hoverQQ{
-            position: relative;
-            &:hover{
-              .qrcodeBox{
-                display: block;
-              }
-            }
-            .qrcodeBox{
-              width: 70px;
-              height: 70px;
-              position: absolute;
-              display: none;
-            }
-          }
-
-          &.hoverWeiXin{
-            .qrcodeBox{
-              left: -23px;
-            }
-          }
-
-          &.hoverQQ{
-            .qrcodeBox{
-              left: -23px;
-            }
-          }
-
-          img{
-            width: 100%;
-          }
-        }
-      }
-
-      .footerCopy{
-        font-size:12px;
-        font-family:PingFangSC-Medium, "Microsoft YaHei";
-        color:rgba(97,100,138,1);
-        line-height:17px;
-        margin-top: 40px;
-      }
-
-      .footerLeftQrcodeBox{
-        &:after{
-          content: '';
-          clear: both;
-          display: block;
-          width: 0;
-          height: 0;
-          visibility: hidden;
-        }
-        .qrcodeBox{
-          float: left;
-          width: 70px;
-          height: 70px;
-          img{
-            width: 100%;
-          }
-        }
-      }
-
     }
+  }
 
-    .footerRight{
-      float: right;
-      &:after{
-        content: '';
-        clear: both;
-        display: block;
-        width: 0;
-        height: 0;
-        visibility: hidden;
-      }
-      .navItems{
-        float: left;
-        margin-left: 80px;
-        .navItemsTitle{
-          font-size:14px;
-          font-family:PingFangSC-Medium, "Microsoft YaHei";
-          color:rgba(97,100,138,1);
-          line-height:20px;
-        }
-        .navItemsContent{
-          padding-top: 20px;
-          .navItem{
-            display: block;
-            font-size:14px;
-            font-family:PingFangSC-Regular, "Microsoft YaHei";
-            color:rgba(199,204,230,1);
-            line-height:20px;
-            margin-bottom: 7px;
-          }
-        }
-      }
+  .hrBox{
+    max-width: 1200px;
+    height: 2px;
+    background-color: #61688A;
+    margin: 30px auto 15px;
+  }
 
-    }
-
+  .copyText{
+    font-size:12px;
+    font-family:PingFangSC-Medium, "Microsoft YaHei";
+    color:rgba(97,100,138,1);
+    height: 14px;
+    line-height: 14px;
   }
 
   .qrcode{
@@ -159,4 +70,16 @@
     }
   }
 
+}
+
+.clearAfter{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
