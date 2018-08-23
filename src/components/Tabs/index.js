@@ -4,7 +4,7 @@ export default class Tabs extends Component {
     constructor(props){
         super(props);
         this.state={
-            current:props.contentText.head
+            current:"MARKED"
         }
     }
     changebg = (current) =>{
@@ -18,7 +18,7 @@ export default class Tabs extends Component {
         return(
             <div className={s.TabsBox}>
                 <ul className={s.Tabs}>
-                    <li className={current === contentText.head ? s.active : "" } onClick={()=>this.changebg(contentText.head)}><span className={s.bg}></span>{contentText.head}</li>
+                    <li className={current === "MARKED" ? s.active : "" } onClick={()=>this.changebg("MARKED")}><span className={s.bg}></span>{contentText.head}</li>
                     <li className={current === "USDT" ? s.active : "" } onClick={()=>this.changebg("USDT")}>USDT</li>
                     <li className={current === "BTC" ? s.active : "" } onClick={()=>this.changebg("BTC")}>BTC</li>
                     <li className={current === "ETH" ? s.active : "" } onClick={()=>this.changebg('ETH')}>ETH</li>
