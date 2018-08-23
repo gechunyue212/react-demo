@@ -703,7 +703,8 @@ export const roadMap = {
                     "提出商业概念并验证",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 88,
             },
             {
                 title:"2018Q2",
@@ -712,7 +713,8 @@ export const roadMap = {
                     "完成概念验证",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 320,
             },
             {
                 title:"2018Q3",
@@ -724,7 +726,8 @@ export const roadMap = {
                     "团购节点",
                 ],
                 active:true,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 551,
             },
             {
                 title:"2018Q4",
@@ -736,7 +739,8 @@ export const roadMap = {
                     "通证经济与实体经济孵化实验区",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 769,
             },
             {
                 title:"2019Q1",
@@ -746,7 +750,8 @@ export const roadMap = {
                     "外汇合约",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 987,
             }
         ]
     },
@@ -758,53 +763,59 @@ export const roadMap = {
             {
                 title:"2018Q1",
                 content:[
-                    "提出商业概念并验证",
+                    "Proposed a business concept, and verified",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 88,
             },
             {
                 title:"2018Q2",
                 content:[
-                    "组建团队",
-                    "完成概念验证",
+                    "Project team formed",
+                    "Completed the verification of the concept",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 320,
             },
             {
                 title:"2018Q3",
                 content:[
-                    "白皮书1.0、2.0版本发布",
-                    "完成融资",
-                    "币币交易、交易即挖矿、存币即挖矿、邀请挖矿",
-                    "平台通证交易",
-                    "团购节点",
+                    "Released of white paper 1.0 version and 2.0 version",
+                    "Completed financing",
+                    "coin-coin transactions,mining by trading,",
+                    "mining by depositing,mining by inviting",
+                    "platform token trading",
+                    '"Group purchase" node',
                 ],
                 active:true,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 551,
             },
             {
                 title:"2018Q4",
                 content:[
-                    "创新指数",
-                    "定期合约",
+                    "Innovation index",
+                    "Term contracts",
                     "ETF",
-                    "投票功能",
-                    "通证经济与实体经济孵化实验区",
+                    "Voting function",
+                    "Token Economic and offline Economy Incubation Experimental Area",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 769,
             },
             {
                 title:"2019Q1",
                 content:[
-                    "量化工具",
-                    "智能投顾",
-                    "外汇合约",
+                    "Quantitative tools",
+                    "robo-advisor",
+                    "Foreign exchange contracts",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 987,
             }
         ]
     },
@@ -819,7 +830,8 @@ export const roadMap = {
                     "商業概念を提出し認証する",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 88,
             },
             {
                 title:"2018Q2",
@@ -828,7 +840,8 @@ export const roadMap = {
                     "概念認証を完成する",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 320,
             },
             {
                 title:"2018Q3",
@@ -840,7 +853,8 @@ export const roadMap = {
                     "団体購入段階",
                 ],
                 active:true,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 551,
             },
             {
                 title:"2018Q4",
@@ -852,7 +866,8 @@ export const roadMap = {
                     "トークン経済と実体経済の孵化実験区",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 769,
             },
             {
                 title:"2019Q1",
@@ -862,7 +877,8 @@ export const roadMap = {
                     "外貨契約",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 987,
             }
         ]
     },
@@ -877,7 +893,8 @@ export const roadMap = {
                     "提出商业概念并验证",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 88,
             },
             {
                 title:"2018Q2",
@@ -886,7 +903,8 @@ export const roadMap = {
                     "完成概念验证",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 320,
             },
             {
                 title:"2018Q3",
@@ -898,7 +916,8 @@ export const roadMap = {
                     "团购节点",
                 ],
                 active:true,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 551,
             },
             {
                 title:"2018Q4",
@@ -910,7 +929,8 @@ export const roadMap = {
                     "通证经济与实体经济孵化实验区",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 769,
             },
             {
                 title:"2019Q1",
@@ -920,7 +940,8 @@ export const roadMap = {
                     "外汇合约",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 987,
             }
         ]
     },
@@ -935,7 +956,8 @@ export const roadMap = {
                     "상업개념 및 검증 제출",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 88,
             },
             {
                 title:"2018Q2",
@@ -944,7 +966,8 @@ export const roadMap = {
                     "개념 검증 완성",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 320,
             },
             {
                 title:"2018Q3",
@@ -956,7 +979,8 @@ export const roadMap = {
                     "단체 구매 노드",
                 ],
                 active:true,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 551,
             },
             {
                 title:"2018Q4",
@@ -968,7 +992,8 @@ export const roadMap = {
                     "토큰경제와 오프라인 경제부화 실험구역",
                 ],
                 active:false,
-                turnDown:true
+                turnDown:true,
+                leftMargin: 769,
             },
             {
                 title:"2019Q1",
@@ -978,7 +1003,8 @@ export const roadMap = {
                     "외화 계약",
                 ],
                 active:false,
-                turnDown:false
+                turnDown:false,
+                leftMargin: 987,
             }
         ]
     },

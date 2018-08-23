@@ -9,9 +9,9 @@ export default class RoadMap extends Component{
 
         return (
             <div id="DevelopmentPath" className={styles.roadMap}>
-                <div className={styles.content}>
-                    <img src={contentText.img} />
-                </div>
+                <div className={styles.roadMapTitle}>{contentText.title}</div>
+                <div style={{width:"100%",height:"225px"}} />
+                <RoadMapComponent contentText={contentText} />
             </div>
         );
     }
