@@ -59,7 +59,7 @@ export const head = {
             }
         ],
         title:"Crypto Derivatives Exchange",
-        bannerText:["The first exchange platform for digital asset derivatives & foreign currency in the world","Leading finance to enter an exponential-growth era"],
+        bannerText:["The first exchange platform for digital asset derivatives & foreign currency in the world","Leading finance to enter an exponential——growth era"],
         noticeText:"notice"
     },
 
@@ -304,7 +304,7 @@ export const product = {
             {
                 iconImg:productIconImg4,
                 title:"ETF Trading",
-                description:"Diverse baskets, easy to operate, suitable for long-term investment"
+                description:"Diverse baskets, easy to operate, suitable for long——term investment"
             },
             {
                 iconImg:productIconImg5,
@@ -314,7 +314,7 @@ export const product = {
             {
                 iconImg:productIconImg6,
                 title:"Advanced trading tools",
-                description:"Noticing and conducting your trading strategies by Robo-Advisor, technical index and powerful API"
+                description:"Noticing and conducting your trading strategies by Robo——Advisor, technical index and powerful API"
             }
         ]
     },
@@ -478,9 +478,9 @@ export const technology = {
                 iconImg:technologyIconImg1,
                 title:"Security system at financial level",
                 description:[
-                    "Multi-layer and multi-cluster system architecture",
+                    "Multi——layer and multi——cluster system architecture",
                     "Multiple foreign acceleration nodes ensure smooth network",
-                    "Professional distributed architecture and anti - DDOS attack system"
+                    "Professional distributed architecture and anti —— DDOS attack system"
                 ]
             },
             {
@@ -488,13 +488,13 @@ export const technology = {
                 title:"High performance, high liquidity",
                 description:[
                     "Up to 1.4 million deals every second high performance matching engine technology",
-                    "Cost-effective， transparent",
+                    "Cost——effective， transparent",
                     "Provide BTC “dark pools” service"
                 ]
             },
             {
                 iconImg:technologyIconImg3,
-                title:"All-platform, multi-language",
+                title:"All——platform, multi——language",
                 description:[
                     "Accessible by iOS, Android, Windows and Mac platforms. All functions are supported.",
                     "Support mainstream languages such as : English, Chinese Simplified, Chinese Traditional, Korean, Japanese, etc."
@@ -1003,7 +1003,7 @@ export const download = {
     EN:{
         title:"Download",
         description1:[
-            "Multi-platform terminal access",
+            "Multi——platform terminal access",
             "Cover multiple platforms of IOS, Android, Windows, Mac"
         ],
         description2:[
@@ -1192,3 +1192,356 @@ export const foot = {
     },
 
 };
+
+export const tabs = {
+    EN:{
+        head:"MARKED",
+        table:[
+            {
+                tr:[
+                    {
+                        td:"Paris",
+                    },{
+                        td:"Last Price"
+                    },{
+                        td:"Change"
+                    },{
+                        td:"24h Hight"
+                    },{
+                        td:"24h Low"
+                    },{
+                        td:"24h Volume"
+                    }
+                ]              
+            },{
+                tr:[
+                    {
+                        td:"B7T/USDT",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/BTC",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/ETH",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            }
+        ]
+    },
+    CN:{
+        head:"自选",
+        table:[
+            {
+                tr:[
+                    {
+                        td:"交易对",
+                    },{
+                        td:"最新价格"
+                    },{
+                        td:"涨幅"
+                    },{
+                        td:"24h高点"
+                    },{
+                        td:"24h低点"
+                    },{
+                        td:"24h交易量"
+                    }
+                ]              
+            },{
+                tr:[
+                    {
+                        td:"B7T/USDT",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/BTC",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/ETH",
+                    },{
+                        td:"——/￥——"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            }
+        ]
+    },
+    JAP:{
+        head:"自選する",
+        table:[
+            {
+                tr:[
+                    {
+                        td:"取引",
+                    },{
+                        td:"最新値段"
+                    },{
+                        td:"増加量"
+                    },{
+                        td:"24h最高"
+                    },{
+                        td:"24h最低"
+                    },{
+                        td:"24h取引量"
+                    }
+                ]              
+            },{
+                tr:[
+                    {
+                        td:"B7T/USDT",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/BTC",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/ETH",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            }
+        ]
+    },
+    KOR:{
+        head:"자선",
+        table:[
+            {
+                tr:[
+                    {
+                        td:"——거래가",
+                    },{
+                        td:"——최신 가격"
+                    },{
+                        td:"——상승폭"
+                    },{
+                        td:"——24h최고"
+                    },{
+                        td:"——24h최저"
+                    },{
+                        td:"——24h 거래량"
+                    }
+                ]              
+            },{
+                tr:[
+                    {
+                        td:"B7T/USDT",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/BTC",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/ETH",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            }
+        ]
+    },
+    AR:{
+        head:"自选",
+        table:[
+            {
+                tr:[
+                    {
+                        td:"——زوج المعاملة",
+                    },{
+                        td:"آخر سعر"
+                    },{
+                        td:"زيادة"
+                    },{
+                        td:"أعلى فى غضون 24 ساعة"
+                    },{
+                        td:"أدنى فى غضون 24 ساعة"
+                    },{
+                        td:"حجم التداول فى غضون 24 ساعة"
+                    }
+                ]              
+            },{
+                tr:[
+                    {
+                        td:"B7T/USDT",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/BTC",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            },{
+                tr:[
+                    {
+                        td:"B7T/ETH",
+                    },{
+                        td:"—/￥—"
+                    },{
+                        td:"—"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    },{
+                        td:"——"
+                    }
+                ]
+            }
+        ]
+    }
+}

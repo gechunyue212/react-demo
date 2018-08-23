@@ -60,8 +60,9 @@ export default class Footer extends Component{
                         <div className={`${styles.footerBtnRight} ${styles.clearAfter}`}>
                             {
                                 btnArr.map((item, i)=>(
-                                    <a href={item.href} key={i} className={styles.rightBtnItem}>
+                                    <a href={item.href} key={i} className={`${styles.rightBtnItem} ${item.qrcodeDom ? item.className : ''}`}>
                                         <img src={item.img} />
+                                        { item.qrcodeDom ? item.qrcodeDom : null }
                                     </a>
                                 ))
                             }

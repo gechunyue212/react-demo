@@ -1,0 +1,68 @@
+$color:#5134b2;
+
+.roadMap{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  .progressBar{
+    width: 100%;
+    height: 6px;
+    position: relative;
+
+    .progressBarNormal{
+      width: 100%;
+      height: 1px;
+      background-color: $color;
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+
+    .progressBarAction{
+      width: 50%;
+      height: 6px;
+      background-color: $color;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+}
+
+
+// 圆圈
+.circleBox{
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  position: relative;
+
+  .circleActiveBox{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid $color;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .circle{
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border: 2px solid $color;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+
+  .circleActive{
+    box-shadow: 0 0 5px $color;
+  }
+
+}

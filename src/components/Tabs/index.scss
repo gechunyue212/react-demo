@@ -1,0 +1,82 @@
+.TabsBox {
+    width: 1200px;
+    // height: 280px;
+    margin: auto;
+    border: 1px solid rgba(62, 37, 142, 1);
+    box-sizing: border-box;
+    .Tabs {
+        width: 100%;
+        height: 68px;
+        background: rgba(40, 26, 85, 1);
+        margin-bottom: 0;
+        >li {
+            width: 151px;
+            text-align: center;
+            float: left;
+            height: 68px;
+            line-height: 68px;
+            color: rgba(235, 240, 254, 1);
+            font-family: PingFangSC-Regular, "Microsoft YaHei";
+            cursor: pointer;
+            .bg {
+                width: 17px;
+                height: 16px;
+                background:url('../../assets/img/star-o.png') no-repeat;
+                background-size: 100% 100%;
+                margin: 25px 0 25px 23px;
+                float: left;
+            }
+        }
+        .active {
+            background: rgba(47, 31, 98, 1);
+        }
+    }
+    table {
+        clear: both;
+        width: 100%;
+        height: 212px;
+        tr {
+            width: 100%;
+            height: 52px;
+            color: rgba(147, 164, 218, 1);
+            font-family: PingFangSC-Regular, "Microsoft YaHei";
+            border-bottom: 1px solid rgba(62, 37, 142, 1);
+            td {
+                width: 16.5%;
+                text-align: center;
+            }
+            &:first-child {
+                background: rgba(47, 31, 98, 1);
+            }
+            &:nth-child(3) {
+                background:rgba(30,15,76,1);
+            }
+            &:last-child {
+                border: none;
+            }
+            &:nth-child(2n) {
+                background: rgba(40, 26, 85, 1);
+            }
+            .star {
+                width: 17px;
+                height: 16px;
+                float: left;
+                background:url('../../assets/img/star.png') no-repeat;
+                background-size: 100% 100%;
+                margin-left: 23px;
+            }
+            &:not(:first-child) {
+                td:nth-child(2) {
+                    .star {
+                        display: none;
+                    }
+                }
+            }
+            &:not(:first-child) {
+                td:nth-child(3) {
+                   color:rgba(24,191,128,1);
+                }
+            }
+        }
+    }
+}

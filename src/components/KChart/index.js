@@ -857,7 +857,7 @@ export default class KChart extends Component{
                     <img src={contentText.kChart} />
                 </div>
                 <div className={styles["k-chart-table"]}>
-                    <img src={contentText.table} />
+                    {/* <img src={contentText.table} /> */}
                 </div>
             </div>
         );

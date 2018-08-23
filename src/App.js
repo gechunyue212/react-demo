@@ -16,6 +16,7 @@ import Documents from './components/documents';
 import Paper from './components/paper';
 import RoadMap from './components/roadMap';
 import * as Texts from './assets/text/text';
+import Tabs from './components/Tabs'
 // PC端组件
 
 // 移动端组件
@@ -91,12 +92,13 @@ class PCApp extends Component {
   render() {
         const { language, languageListData } = this.state;
         const languageList = Object.keys(languageListData);
-        const { head, kChart, product, technology, documents, roadMap, download, foot } = Texts;
+        const { head, kChart, product, technology, documents, roadMap, download, foot,tabs } = Texts;
     return (
       <div style={{minWidth:"1250px"}}>
         <Head languageList={languageList} languageListData={languageListData} language={language} contentText={head[language]} handleMenuClick={this.onChangeLanguage} />
         <ChartArea>
-            <KChart contentText={kChart[language]}/>
+            <KChart contentText={kChart[language]} />
+            <Tabs contentText={tabs[language]}/>
         </ChartArea>
           <div id="CoreAdvantages" style={{height:"100px"}} />
           <BrBox title={product[language].title} />
