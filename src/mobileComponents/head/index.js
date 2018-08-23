@@ -36,7 +36,7 @@ export default class MobileHead extends Component{
 
         const { navStatus } = this.state;
         const { menuList, value, languageListData } = this.state;
-
+        const { contentText } = this.props
         return (
             <div className={styles.headBox}>
                 <div className={styles.headLogo}><img src={HeadLogo} /></div>
@@ -49,12 +49,12 @@ export default class MobileHead extends Component{
                         <div className={styles.rightNavBg}>
                             <img src={MavBtnBgImg} />
                         </div>
-                        <a href="#MobileProducts" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>产品优势</a>
-                        <a href="#MobileTechnologys" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>技术优势</a>
-                        <a href="#MobileDocuments" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>白皮书</a>
-                        <a href="#MobileRoadMap" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>路线图</a>
-                        <a href="#MobileDownload" onClick={this.toggleOpenNav} className={styles.rightNavBtn}>下载</a>
-                        <div className={styles.rightNavBtn}>语言切换</div>
+                        {
+                            contentText.nav.map((item,i)=>(
+                                <a href={item.href} onClick={this.toggleOpenNav} className={styles.rightNavBtn}>{item.title}</a>
+                            ))
+                        }
+                        <div className={styles.rightNavBtn}>{contentText.switch}</div>
                         {
                             menuList.map((item,i)=>(
                                 <a href="javascript:void(0)" key={i} onClick={()=>this.handleClick(item)} className={styles.rightNavBtn + " " + styles.leftPadding}>{languageListData[item].text}</a> 

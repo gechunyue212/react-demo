@@ -20,18 +20,27 @@ export const head = {
     CN:{
         nav:[
             {
-                title:"核心优势",
-                href:"#CoreAdvantages"
+                title:"产品优势",
+                href:"#MobileProducts"
+            },
+            {
+                title:"技术优势",
+                href:"#MobileTechnologys"
             },
             {
                 title:"白皮书",
-                href:"#Whitepaper"
+                href:"#MobileDocuments"
             },
             {
                 title:"路线图",
-                href:"#DevelopmentPath"
+                href:"#MobileRoadMap"
+            },
+            {
+                title:"下载",
+                href:"#MobileDownload"
             }
         ],
+        switch:"语言切换",
         title:"让金融进入幂时代",
         bannerText:["全球首个数字期货&外汇交易所","让金融进入幂时代"],
         bannerBottomText:[
@@ -49,18 +58,28 @@ export const head = {
     EN:{
         nav:[
             {
-                title:"Core Advantages",
-                href:"#CoreAdvantages"
+                title:"Product Advantage",
+                href:"#MobileProducts"
+            },
+            {
+                title:"Technical Advantage",
+                href:"#MobileTechnologys"
             },
             {
                 title:"Whitepaper",
-                href:"#Whitepaper"
+                href:"#MobileDocuments"
+            },
+            {
+                title:"Road Map",
+                href:"#MobileRoadMap"
+
             },
             {
                 title:"Development Path",
-                href:"#DevelopmentPath"
+                href:"#MobileDownload"
             }
         ],
+        switch:"Language Switch",
         title:"Crypto Derivatives Exchange",
         bannerText:["Zero Trading Fee on buying 20,000 or more IDAP tokens","IDAP reference price on idap.io Exchange: 50% Premium to ICO price"],
         bannerBottomText:[
