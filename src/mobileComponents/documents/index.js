@@ -27,7 +27,7 @@ export default class MobileDocuments extends Component{
                                 <span className={styles.font}>Download</span>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <div className={styles.bg}></div>
                             <p className={styles.scontent}>{contentText.scontent}</p>
                             <p className={styles.kb}>150kb</p>
@@ -35,7 +35,7 @@ export default class MobileDocuments extends Component{
                                 <span className={styles.d}></span>
                                 <span className={styles.font}>Download</span>
                         </div>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         );

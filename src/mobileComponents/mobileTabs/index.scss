@@ -1,0 +1,77 @@
+.TabsBox {
+    width: 7.1rem;
+    // height: 280px;
+    margin: auto;
+    border: 1px solid rgba(62, 37, 142, 1);
+    box-sizing: border-box;
+    .Tabs {
+        width: 100%;
+        height: 0.86rem;
+        background: rgba(40, 26, 85, 1);
+        margin-bottom: 0;
+        >li {
+            width: 1.6rem;
+            text-align: center;
+            float: left;
+            height: 0.86rem;
+            line-height: 0.86rem;
+            color: rgba(235, 240, 254, 1);
+            font-family: PingFangSC-Regular, "Microsoft YaHei";
+            font-size:0.24rem;
+            cursor: pointer;
+            .bg {
+                width: 0.17rem;
+                height: 0.16rem;
+                background:url('../../assets/img/star-o.png') no-repeat;
+                background-size: 100% 100%;
+                margin: 0.35rem 0 0.35rem 0.18rem;
+                float: left;
+            }
+        }
+        .active {
+            background: rgba(47, 31, 98, 1);
+        }
+    }
+    table {
+        clear: both;
+        width: 100%;
+        height: 212px;
+        tr {
+            width: 100%;
+            height: 1.1rem;
+            color: rgba(147, 164, 218, 1);
+            font-family: PingFangSC-Regular, "Microsoft YaHei";
+            border-bottom: 1px solid rgba(62, 37, 142, 1);
+            td{
+                width: 33%;
+                font-size:0.18rem;  
+            }
+            td:not(:first-child){
+                text-align: center;
+            }
+            .btn{
+                background:rgba(24,191,128,1);
+                border-radius:4px;
+                padding:8px 20px;
+                color:rgba(255,255,255,1);
+            }
+            &:first-child {
+                background: rgba(47, 31, 98, 1);
+            }
+            &:last-child {
+                border: none;
+            }
+            &:not(:first-child) {
+                background: rgba(40, 26, 85, 1); 
+            }
+            .star {
+                width: 0.17rem;
+                height: 0.16rem;
+                float: left;
+                background:url('../../assets/img/star.png') no-repeat;
+                background-size: 100% 100%;
+                margin:0.31rem 0.31rem  0.63rem 0.23rem;
+            }
+        }
+    }
+}
