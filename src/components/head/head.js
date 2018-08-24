@@ -63,34 +63,31 @@ export default class Head extends Component {
     }
 }
 
+// 语言切换栏
 export class Menu extends Component{
     constructor(props){
         super(props);
         this.state = {
             value:props.language,
             menuList:props.languageList,
-            languageListData:props.languageListData,
-            showMenuList:false
+            languageListData:props.languageListData
         };
     }
 
     handleClick(value){
-        this.setState({
-            value,
-            showMenuList:!this.state.showMenuList
-        });
+        this.setState({ value });
         if(typeof this.props.onClick === 'function'){
             this.props.onClick(value);
         }
     }
 
     render(){
-        const { menuList, value, showMenuList, languageListData } = this.state;
+        const { menuList, value, languageListData } = this.state;
         const language = languageListData[value].text;
         return (
             <div className={styles.menu}>
-                <div className={styles.menuTitle} onClick={() => this.setState({showMenuList:!showMenuList})}>{language + " >"}</div>
-                <div className={styles.menuListBox + " " + (showMenuList ? styles.show : styles.hide)}>
+                <div className={styles.menuTitle} >{language + " >"}</div>
+                <div className={styles.menuListBox}>
                     {
                         menuList.map((item,i)=>(
                             <div className={styles.menuItem} onClick={()=>this.handleClick(item)} key={i}>{languageListData[item].text}</div>

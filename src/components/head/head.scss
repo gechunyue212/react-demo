@@ -157,6 +157,15 @@
     position: relative;
     float: right;
     margin-top: 15px;
+    &:hover{
+        .menuListBox{
+            display: block;
+        }
+        .menuTitle{
+            color: white;
+        }
+    }
+
     .menuTitle{
         width: 110px;
         height: 30px;
@@ -166,10 +175,12 @@
         line-height:30px;
         text-align: center;
         cursor: pointer;
+        transition: color 0.3s;
     }
     .menuListBox{
         background: white;
         position: absolute;
+        display: none;
         top: 30px;
         padding: 10px 0;
         background:rgba(50,39,110,1);
@@ -189,11 +200,5 @@
                 background-color: rgba(67,55,133,1);
             }
         }
-    }
-    .show{
-        display: block;
-    }
-    .hide{
-        display: none;
     }
 }

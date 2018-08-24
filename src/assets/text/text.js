@@ -667,10 +667,12 @@ export const paper = {
     CN:{
         items:[
             {
-                text:"白皮书"
+                text:"白皮书",
+                size:"150kb"
             },
             {
-                text:"简介"
+                text:"简介",
+                size:"112kb"
             }
         ],
         btnText:"下载"
@@ -679,10 +681,12 @@ export const paper = {
     EN:{
         items:[
             {
-                text:"WHITE PAPER"
+                text:"WHITE PAPER",
+                size:"150kb"
             },
             {
-                text:"ONE PAGER"
+                text:"ONE PAGER",
+                size:"112kb"
             }
         ],
         btnText:"Download"
@@ -691,22 +695,26 @@ export const paper = {
     JAP:{
         items:[
             {
-                text:"はくしょ"
+                text:"はくしょ",
+                size:"150kb"
             },
             {
-                text:"いっちょう"
+                text:"いっちょう",
+                size:"112kb"
             }
         ],
-        btnText:"Download"
+        btnText:"ダウンロード"
     },
 
     AR:{
         items:[
             {
-                text:""
+                text:"",
+                size:"150kb"
             },
             {
-                text:""
+                text:"",
+                size:"112kb"
             }
         ],
         btnText:"Download"
@@ -715,13 +723,15 @@ export const paper = {
     KOR:{
         items:[
             {
-                text:"백서"
+                text:"백서",
+                size:"150kb"
             },
             {
-                text:"한 페이지"
+                text:"한 페이지",
+                size:"112kb"
             }
         ],
-        btnText:"Download"
+        btnText:"다운로드하다"
     },
 
 };
