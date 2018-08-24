@@ -92,7 +92,7 @@ class PCApp extends Component {
   render() {
         const { language, languageListData } = this.state;
         const languageList = Object.keys(languageListData);
-        const { head, kChart, product, technology, documents, roadMap, download, foot,tabs } = Texts;
+        const { head, kChart, product, technology, documents, roadMap, download, foot, tabs, paper } = Texts;
     return (
       <div style={{minWidth:"1250px"}}>
         <Head languageList={languageList} languageListData={languageListData} language={language} contentText={head[language]} handleMenuClick={this.onChangeLanguage} />
@@ -111,7 +111,7 @@ class PCApp extends Component {
               <SkillList language={language} contentText={technology[language]} />
           </SkillArea>
           <Documents contentText={documents[language]}/>
-          <Paper contentText={head[language]}/>
+          <Paper contentText={paper[language]}/>
           <RoadMap contentText={roadMap[language]}/>
           <DownLoadApp contentText={download[language]}/>
         <Footer contentText={foot[language]}/>

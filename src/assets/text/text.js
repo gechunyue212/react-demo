@@ -665,28 +665,63 @@ export const documents = {
 export const paper = {
 
     CN:{
-        text:"",
-        btn:"Download"
+        items:[
+            {
+                text:"白皮书"
+            },
+            {
+                text:"简介"
+            }
+        ],
+        btnText:"下载"
     },
 
     EN:{
-        text:"",
-        btn:"Download"
+        items:[
+            {
+                text:"WHITE PAPER"
+            },
+            {
+                text:"ONE PAGER"
+            }
+        ],
+        btnText:"Download"
     },
 
     JAP:{
-        text:"",
-        btn:"Download"
+        items:[
+            {
+                text:"はくしょ"
+            },
+            {
+                text:"いっちょう"
+            }
+        ],
+        btnText:"Download"
     },
 
     AR:{
-        text:"",
-        btn:"Download"
+        items:[
+            {
+                text:""
+            },
+            {
+                text:""
+            }
+        ],
+        btnText:"Download"
     },
 
     KOR:{
-        text:"",
-        btn:"Download"
+        items:[
+            {
+                text:"백서"
+            },
+            {
+                text:"한 페이지"
+            }
+        ],
+        btnText:"Download"
     },
 
 };

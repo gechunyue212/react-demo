@@ -31,6 +31,7 @@ export default class Paper extends Component {
     render(){
 
         const { actionIndex } = this.state;
+        const { contentText } = this.props;
 
         return (
             <Grid className={styles.box}>

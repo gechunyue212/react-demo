@@ -28,7 +28,7 @@ export default class RoadMap extends Component{
             this.setState({
                 actionBarWidth:_distance
             });
-        }, 10);
+        }, 13);
     };
 
     handleCircleActive = (index) => {
