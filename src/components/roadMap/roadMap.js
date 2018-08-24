@@ -18,16 +18,14 @@ export default class RoadMap extends Component{
         let _distance = start, speed;
         clearInterval(this.timer);
         this.timer = setInterval(() => {
-            speed = (end - _distance)/10;
+            speed = (end - _distance)/20;
             speed = speed>0 ? Math.ceil(speed) : Math.floor(speed);
             _distance += speed;
             if(end === _distance){
-                this.setState({actionBarWidth:end});
                 clearInterval(this.timer);
+                this.setState({actionBarWidth:end});
             }
-            this.setState({
-                actionBarWidth:_distance
-            });
+            this.setState({ actionBarWidth:_distance });
         }, 13);
     };
 

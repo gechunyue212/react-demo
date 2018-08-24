@@ -15,4 +15,20 @@
     text-align: center;
   }
 
+  .roadMapBox{
+    animation: roadMapBoxShow 1s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@keyframes roadMapBoxShow {
+  0%{
+    display: block;
+    opacity: 0;
+  }
+  100%{
+    display: block;
+    opacity: 1;
+  }
 }

@@ -42,7 +42,9 @@ export default class RoadMap extends Component{
                 <div style={{width:"100%",height:"225px"}} />
                 {
                     renderRoadMapComponent ?
-                        <RoadMapComponent contentText={contentText} />
+                        <div className={styles.roadMapBox}>
+                            <RoadMapComponent contentText={contentText} />
+                        </div>
                         :
                         null
                 }

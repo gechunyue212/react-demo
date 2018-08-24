@@ -28,6 +28,15 @@ $color:rgba(101,16,143,1);
       top: 0;
       transition: width 0.3s;
     }
+    .progressBarAction2{
+      width: 0;
+      height: 5px;
+      background:linear-gradient(90deg,rgba(75,28,177,1),rgba(132,21,182,1));
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: width 0.3s;
+    }
   }
 
   .roadMapItem{
