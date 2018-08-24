@@ -11,14 +11,14 @@ export default class RoadMap extends Component{
             actionBarWidth: 0,
         };
         // 运动定时器
-        this.timer;
+        this.timer = null;
     }
 
     handleAnimation = (start = 0, end) => {
         let _distance = start, speed;
         clearInterval(this.timer);
         this.timer = setInterval(() => {
-            speed = (end - _distance)/20;
+            speed = (end - _distance)/6;
             speed = speed>0 ? Math.ceil(speed) : Math.floor(speed);
             _distance += speed;
             if(end === _distance){
@@ -26,7 +26,7 @@ export default class RoadMap extends Component{
                 this.setState({actionBarWidth:end});
             }
             this.setState({ actionBarWidth:_distance });
-        }, 13);
+        }, 12);
     };
 
     handleCircleActive = (index) => {
