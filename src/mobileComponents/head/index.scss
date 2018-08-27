@@ -35,7 +35,7 @@
 
   .rightNavBox{
     width: 100%;
-    height: 100%;
+    height: 112%;
     position: fixed;
     right: 0;
     top: 1.07rem;
@@ -43,7 +43,7 @@
     overflow-y: scroll;
     .rightNavBgColor{
       width: 100%;
-      height: 100%;
+      height: 112%;
       position: absolute;
       top: 0;
       left: 0;
@@ -59,7 +59,7 @@
     }
     .rightNav{
       width: 5.55rem;
-      height: 100%;
+      height: 112%;
       box-sizing: border-box;
       padding: 0.99rem 0 0 0.56rem;
       position: absolute;
@@ -69,7 +69,8 @@
       background:linear-gradient(135deg,rgba(81,52,178,1),rgba(177,117,235,1));
       .rightNavBg{
         position: absolute;
-        bottom: 1.65rem;
+        // bottom: 1.65rem;
+        bottom: 2rem;
         left: 0;
         width: 100%;
         height: 3.17rem;

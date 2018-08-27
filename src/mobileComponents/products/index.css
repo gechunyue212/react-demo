@@ -11,8 +11,14 @@
 
 .MobileProduct .cellBox {
   width: 7.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex: auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0.2rem 0.58rem 0.2rem 0.59rem;
 }
 
@@ -22,6 +28,7 @@
 }
 
 .MobileProduct .cellBox .contentBox {
+  width: 5.5rem;
   padding-left: 0.51rem;
 }
 
