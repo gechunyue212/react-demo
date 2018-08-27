@@ -26,6 +26,7 @@ export default class LineChart extends Component{
             xAxis: dateList,
             yAxis: valueList
         };
+        this.timer;
     }
 
     _initChart = () => {
@@ -107,7 +108,7 @@ export default class LineChart extends Component{
             ]
 
         };
-        setInterval( () => {
+        this.timer = setInterval( () => {
 
             for (let i = 0; i < 1; i++) {
                 data.shift();
@@ -128,6 +129,10 @@ export default class LineChart extends Component{
 
     componentDidUpdate(){
         this._initChart();
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.timer);
     }
 
     render(){
