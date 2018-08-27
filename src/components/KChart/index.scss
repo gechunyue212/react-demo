@@ -61,16 +61,10 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 
     img{
       width: 100%;
-    }
-
-    .k-chart-content-hidden{
-      width: 105%;
-      position: absolute;
-      top: -85px;
-      left: -2.5%;
     }
 
   }

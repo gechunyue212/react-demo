@@ -148,7 +148,15 @@ export const kChart = {
                 title:"昨日已分配收入",
                 number:"0.0000000BTC"
             }
-        ]
+        ],
+        chartText:{
+            title:"B7 主力指数",
+            max:"最高",
+            min:"最低",
+            rise:"上涨币种",
+            fall:"下跌币种",
+            remark:"指数分时走势"
+        }
     },
 
     EN:{
@@ -171,7 +179,15 @@ export const kChart = {
                 title:"Cumulative revenue distributed in yesterday",
                 number:"0.0000000BTC"
             }
-        ]
+        ],
+        chartText:{
+            title:"B7 Index",
+            max:"High",
+            min:"Low",
+            rise:"Top Performances",
+            fall:"Bottom Performances",
+            remark:"Index Kline Trend"
+        }
     },
 
     JAP:{
@@ -194,7 +210,15 @@ export const kChart = {
                 title:"昨日分配済み収入",
                 number:"0.0000000BTC"
             }
-        ]
+        ],
+        chartText:{
+            title:"B7 主力指数",
+            max:"最高",
+            min:"最低",
+            rise:"アップ貨幣種類",
+            fall:"ダウン貨幣種類",
+            remark:"指数時差チャー"
+        }
     },
 
     AR:{
@@ -217,7 +241,15 @@ export const kChart = {
                 title:"الدخل المكتسب بالأمس",
                 number:"0.0000000BTC"
             }
-        ]
+        ],
+        chartText:{
+            title:"",
+            max:"",
+            min:"",
+            rise:"",
+            fall:"",
+            remark:""
+        }
     },
 
     KOR:{
@@ -240,7 +272,15 @@ export const kChart = {
                 title:"어제 분배 완료 수입",
                 number:"0.0000000BTC"
             }
-        ]
+        ],
+        chartText:{
+            title:"B7 주력 지수",
+            max:"최고",
+            min:"최저",
+            rise:"오른 화페 종류",
+            fall:"하락 화페 종류",
+            remark:"시간때 지수 추세"
+        }
     },
 
 };
