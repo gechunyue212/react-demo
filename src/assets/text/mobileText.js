@@ -187,14 +187,31 @@ export const documents ={
     CN:{
         title:"下载白皮书",
         content:"如果想要深入了解我们的业务，请下载白皮书阅读详情",
-        scontent:"白皮书"
-
-    },
+        nav:[
+                {
+                    scontent:"白皮书",
+                    size:"150kb"
+                },
+                {
+                    scontent:"简介",
+                    size:"112kb"
+                }
+            ]
+        },
 
     EN:{
         title:"Documents",
         content:"Please download our whitepaper for more details",
-        scontent:"WHITE PAPER"
+        nav:[
+            {
+                scontent:"WHITE PAPER",
+                size:"150kb"
+            },
+            {
+                scontent:"ONE PAGER",
+                size:"112kb"
+            }
+        ]
     },
 }
 

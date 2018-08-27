@@ -9,33 +9,19 @@ export default class MobileDocuments extends Component{
                 <div className={styles.title}>{contentText.title}</div>
                 <div className={styles.content}>{contentText.content}</div>
                 <ul>
-                    <li>
-                        <div className={styles.bg}></div>
-                            <p className={styles.scontent}>{contentText.scontent}</p>
-                            <p className={styles.kb}>150kb</p>
-                            <div className={styles.download}>
-                                <span className={styles.d}></span>
-                                <span className={styles.font}>Download</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles.bg}></div>
-                            <p className={styles.scontent}>{contentText.scontent}</p>
-                            <p className={styles.kb}>150kb</p>
-                            <div className={styles.download}>
-                                <span className={styles.d}></span>
-                                <span className={styles.font}>Download</span>
-                        </div>
-                    </li>
-                    {/* <li>
-                        <div className={styles.bg}></div>
-                            <p className={styles.scontent}>{contentText.scontent}</p>
-                            <p className={styles.kb}>150kb</p>
-                            <div className={styles.download}>
-                                <span className={styles.d}></span>
-                                <span className={styles.font}>Download</span>
-                        </div>
-                    </li> */}
+                    {
+                        contentText.nav.map((item,i)=>(
+                            <li key={i}>
+                                <div className={styles.bg}></div>
+                                    <p className={styles.scontent}>{item.scontent}</p>
+                                    <p className={styles.kb}>{item.size}</p>
+                                    <div className={styles.download}>
+                                        <span className={styles.d}></span>
+                                        <span className={styles.font}>Download</span>
+                                </div>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
         );
