@@ -87,7 +87,7 @@ export default class RoadMap extends Component{
                                     keepForward={item.active}
                                     onClick={()=>this.handleCircleActive(i)}
                                 />
-                                <TextBox top={textTop} contentList={item.content} title={item.title} key={`TextBox${i}`} />
+                                <TextBox style={{top:`${textTop}px`}} contentList={item.content} title={item.title} key={`TextBox${i}`} />
                             </div>
                         );
                     })
@@ -111,13 +111,16 @@ class Circle extends Component{
     }
 }
 
-class TextBox extends Component{
+// PC、移动公用
+
+// 文字块
+export class TextBox extends Component{
     render(){
 
-        const { contentList, title, top } = this.props;
+        const { contentList, title, style, className } = this.props;
 
         return (
-            <div style={{top:`${top}px`}} className={styles.textBox}>
+            <div style={style} className={styles.textBox + " " + (className ? className : "")}>
                 <div className={styles.textBoxTitle}>{title}</div>
                 {
                     contentList.map((item, i)=>(

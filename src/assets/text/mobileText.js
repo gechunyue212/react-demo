@@ -242,8 +242,7 @@ export const roadmap ={
                     "提出商业概念并验证",
                 ],
                 active:false,
-                turnDown:false,
-                leftMargin: 88,
+                boxHeight: "1.4rem",
             },
             {
                 title:"2018Q2",
@@ -252,8 +251,7 @@ export const roadmap ={
                     "完成概念验证",
                 ],
                 active:false,
-                turnDown:true,
-                leftMargin: 320,
+                boxHeight: "2.28rem",
             },
             {
                 title:"2018Q3",
@@ -265,21 +263,17 @@ export const roadmap ={
                     "团购节点",
                 ],
                 active:true,
-                turnDown:false,
-                leftMargin: 551,
+                boxHeight: "3.39rem",
             },
             {
                 title:"2018Q4",
                 content:[
-                    "创新指数",
-                    "定期合约",
-                    "ETF",
+                    "创新指数 / 定期合约 / ETF",
                     "投票功能",
                     "通证经济与实体经济孵化实验区",
                 ],
                 active:false,
-                turnDown:true,
-                leftMargin: 769,
+                boxHeight: "2.4rem",
             },
             {
                 title:"2019Q1",
@@ -289,8 +283,7 @@ export const roadmap ={
                     "外汇合约",
                 ],
                 active:false,
-                turnDown:false,
-                leftMargin: 987,
+                boxHeight: "1.6rem",
             }
         ]
     },
@@ -304,8 +297,7 @@ export const roadmap ={
                     "Proposed a business concept, and verified",
                 ],
                 active:false,
-                turnDown:false,
-                leftMargin: 88,
+                boxHeight: "1.4rem",
             },
             {
                 title:"2018Q2",
@@ -314,8 +306,7 @@ export const roadmap ={
                     "Completed the verification of the concept",
                 ],
                 active:false,
-                turnDown:true,
-                leftMargin: 320,
+                boxHeight: "2.28rem",
             },
             {
                 title:"2018Q3",
@@ -328,21 +319,17 @@ export const roadmap ={
                     '"Group purchase" node',
                 ],
                 active:true,
-                turnDown:false,
-                leftMargin: 551,
+                boxHeight: "3.39rem",
             },
             {
                 title:"2018Q4",
                 content:[
-                    "Innovation index",
-                    "Term contracts",
-                    "ETF",
+                    "Innovation index / Term contracts / ETF",
                     "Voting function",
                     "Token Economic and offline Economy Incubation Experimental Area",
                 ],
                 active:false,
-                turnDown:true,
-                leftMargin: 769,
+                boxHeight: "2.4rem",
             },
             {
                 title:"2019Q1",
@@ -352,8 +339,7 @@ export const roadmap ={
                     "Foreign exchange contracts",
                 ],
                 active:false,
-                turnDown:false,
-                leftMargin: 987,
+                boxHeight: "1.6rem",
             }
         ]
     }

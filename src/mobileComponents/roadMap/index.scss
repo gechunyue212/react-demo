@@ -1,6 +1,118 @@
 .roadMapBox{
   width: 100%;
+  padding: 0.55rem 0;
   img{
     width: 100%;
   }
+
+  .roadMapTitle{
+    height: 0.6rem;
+    font-size: 0.42rem;
+    font-family: PingFangSC-Regular, "Microsoft YaHei";
+    font-weight: 500;
+    color: rgba(51,51,51,1);
+    line-height: 0.6rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+
+  .roadMapContent{
+    box-sizing: border-box;
+    padding-left: 0.85rem;
+    position: relative;
+    .roadMapContentItemBox{
+      position: relative;
+      border-left: 1px solid rgba(101,16,143,1);
+    }
+
+    .roadMapContentLeftActiveBox{
+      position: absolute;
+      top: 0;
+      left: 0.85rem;
+      width: 0.07rem;
+      height: 0;
+      background:linear-gradient(90deg,rgba(75,28,177,1) 0%,rgba(132,21,182,1) 100%);
+
+      &.transitionActive{
+        transition: height 0.8s;
+      }
+
+    }
+
+  }
+
+}
+
+$color:rgba(101,16,143,1);
+$initScale:0.3;
+.circleBox{
+  width: 0.35rem;
+  height: 0.35rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: -0.17rem;
+  top: -0.17rem;
+  cursor: pointer;
+
+  .circleTextBar{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.15rem;
+    width: 0.45rem;
+    height: 0.04rem;
+    background-color: rgba(122,14,177,1);
+  }
+
+  .circle{
+    width: 0.25rem;
+    height: 0.25rem;
+    box-sizing: border-box;
+    border: 2px solid $color;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.05rem;
+    left: 0.05rem;
+    background-color: #FFFFFF;
+  }
+
+  .circleActiveBox{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid $color;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale($initScale, $initScale);
+    transform-origin: center;
+    box-shadow: 0 0 5px $color;
+    background-color: #FFFFFF;
+  }
+
+  .circleActive{
+    box-shadow: 0 0 8px $color;
+    animation: scaleUp 0.3s ease-out;
+  }
+
+  .keepForward{
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@keyframes scaleUp {
+
+  0%{
+    transform: scale($initScale, $initScale);
+  }
+
+  80%{
+    transform: scale(1.1, 1.1);
+  }
+
+  100%{
+    transform: scale(1, 1);
+  }
+
 }
