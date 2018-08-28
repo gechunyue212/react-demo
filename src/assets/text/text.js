@@ -1655,4 +1655,4 @@ export const tabs = {
             }
         ]
     }
-}
+};

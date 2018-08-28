@@ -50,6 +50,7 @@
           height: 16px;
           line-height: 16px;
           font-family: PingFangSC-Regular, "Microsoft YaHei";
+          user-select: none;
         }
 
       }
@@ -65,6 +66,7 @@
           float: left;
           color: rgba(255, 255, 255, 0.9);
           font-family: PingFangSC-Regular, "Microsoft YaHei";
+          user-select: none;
         }
 
         .chartTextTopRightNum1{
@@ -73,6 +75,7 @@
           color: #199975;
           float: left;
           font-family: PingFangSC-Regular, "Microsoft YaHei";
+          user-select: none;
         }
 
         .chartTextTopRightNum2{
@@ -81,6 +84,7 @@
           color: #199975;
           float: left;
           font-family: PingFangSC-Regular, "Microsoft YaHei";
+          user-select: none;
         }
       }
 
@@ -107,6 +111,7 @@
         .chartTextBottomText{
           float: left;
           margin-right: 45px;
+          user-select: none;
         }
 
       }
@@ -114,6 +119,7 @@
       .chartTextBottomRight{
         float: right;
         color: rgba(255, 255, 255, 0.5);
+        user-select: none;
       }
 
     }

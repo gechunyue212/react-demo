@@ -101,9 +101,9 @@ export default class LineChart extends Component{
         let oneDay = 24 * 3600 * 1000;
         const randomData = () => {
             now = new Date(+now + oneDay);
-            const value = Math.random() * 100;
+            const value = Math.random() * 90 + 10;
             return [
-                [now.getFullYear(), now.getMonth(), now.getDate()].join('/'),
+                [now.getFullYear(), now.getMonth(), now.getDate()].join('-'),
                 Math.round(value)
             ]
 
@@ -124,7 +124,7 @@ export default class LineChart extends Component{
 
             this.setState({ xAxis, yAxis });
 
-        }, 1000);
+        }, 3000);
     }
 
     componentDidUpdate(){
