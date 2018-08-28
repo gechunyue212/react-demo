@@ -98,12 +98,28 @@ export const kChart = {
 
     CN:{
         kChart:K1,
-        table:t1
+        table:t1,
+        chartText:{
+            title:"B7 主力指数",
+            max:"最高",
+            min:"最低",
+            rise:"上涨币种",
+            fall:"下跌币种",
+            remark:"指数分时走势"
+        }
     },
 
     EN:{
         kChart:K2,
-        table:t2
+        table:t2,
+        chartText:{
+            title:"B7 Index",
+            max:"High",
+            min:"Low",
+            rise:"Top Performances",
+            fall:"Bottom Performances",
+            remark:"Index Kline Trend"
+        }
     },
 };
 

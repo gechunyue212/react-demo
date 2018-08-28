@@ -14,8 +14,8 @@ export default class RoadMap extends Component{
     handleListenScroll(){
         const oRoadMap = document.getElementById("DevelopmentPath"),
             _scrollDistance = oRoadMap.offsetTop - oRoadMap.getBoundingClientRect().height;
-        const docEl = document.documentElement || document.body;
-        if(docEl.scrollTop >= _scrollDistance){
+        const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        if(scrollTop >= _scrollDistance){
             this.setState({
                 renderRoadMapComponent:true
             });

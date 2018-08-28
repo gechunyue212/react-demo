@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styles from './index.scss';
 import MobileTabs from '../mobileTabs';
+import MyChart from '../../components/KChart/chart';
+
 export default class MobileKChart extends Component{
     constructor(props){
         super(props);
@@ -19,7 +21,8 @@ export default class MobileKChart extends Component{
         return (
             <div className={styles["k-chart-box"]}>
                 <div className={styles["k-chart"]}>
-                    <img src={contentText.kChart}/>
+                    {/*<img src={contentText.kChart}/>*/}
+                    <MyChart contentText={contentText} isMobile={true} />
                 </div>
                 <div className={styles.brBox}/>
                 <div className={styles["k-table"]}>

@@ -126,3 +126,58 @@
 
   }
 }
+
+// 适配移动端
+.mobileStyle{
+  width: 100%;
+  height: 3rem;
+  .myChart{
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .chartText{
+    .chartTextTop{
+      top: 0.54rem;
+      left: 0.4rem;
+      .chartTextTopLeft{
+        .chartTextTopLeftTitle{
+          font-size: 0.16rem;
+          height: 0.16rem;
+          line-height: 0.16rem;
+        }
+      }
+      .chartTextTopRight{
+        height: 0.4rem;
+        line-height: 0.4rem;
+        margin-top: 0.22rem;
+        .chartTextTopLeftNum{
+          font-size: 0.2rem;
+        }
+        .chartTextTopRightNum1{
+          margin-left: 0.6rem;
+          font-size: 0.16rem;
+        }
+        .chartTextTopRightNum2{
+          margin-left: 0.45rem;
+          font-size: 0.16rem;
+        }
+      }
+    }
+    .chartTextBottom{
+      height: 0.6rem;
+      line-height: 0.6rem;
+      bottom: 0.6rem;
+      padding: 0 0 0 0.5rem;
+      font-size: 0.12rem;
+      .chartTextBottomLeft{
+        .chartTextBottomText{
+          margin-right: 0.4rem;
+        }
+      }
+      .chartTextBottomRight{
+        display: none;
+      }
+    }
+  }
+}

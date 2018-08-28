@@ -24,7 +24,8 @@ export default class LineChart extends Component{
                 chartTextTopRightNum2: "—",
             },
             xAxis: dateList,
-            yAxis: valueList
+            yAxis: valueList,
+            isMobile:props.isMobile
         };
         this.timer;
     }
@@ -138,9 +139,10 @@ export default class LineChart extends Component{
     render(){
 
         const { contentText } = this.props;
+        const { isMobile } = this.state;
 
         return (
-            <div className={styles.myChartBox}>
+            <div className={styles.myChartBox + " " + (isMobile ? styles.mobileStyle : "")}>
                 <div id="MyKChart" className={styles.myChart} />
                 <div className={styles.chartText}>
                     <div className={styles.chartTextTop}>
