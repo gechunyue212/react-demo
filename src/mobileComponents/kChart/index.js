@@ -11,6 +11,11 @@ export default class MobileKChart extends Component{
             contentText:props.contentText
         }
     }
+    componentWillReceiveProps(nextProps){
+            this.setState({
+                content:nextProps.content
+            })
+    }
     render(){
         const { content, contentText } = this.state;
         return (
