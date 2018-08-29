@@ -34,13 +34,14 @@
     table {
         clear: both;
         width: 100%;
-        height: 212px;
+        // height: 212px;
         tr {
             width: 100%;
-            height: 1.1rem;
+            // height: 1.1rem;
             color: rgba(147, 164, 218, 1);
             font-family: PingFangSC-Regular, "Microsoft YaHei";
             border-bottom: 1px solid rgba(62, 37, 142, 1);
+            background:rgba(40, 26, 85, 1);
             td {
                 width: 33%;
                 font-size: 0.18rem;
@@ -54,22 +55,30 @@
                 padding: 8px 20px;
                 color: rgba(255, 255, 255, 1);
             }
-            &:first-child {
+            &:hover {
                 background: rgba(47, 31, 98, 1);
             }
             &:last-child {
                 border: none;
             }
-            &:not(:first-child) {
-                background: rgba(40, 26, 85, 1);
-            }
+            // &:not(:first-child) {
+            //     background: rgba(40, 26, 85, 1);
+            // }
             .star {
                 width: 0.17rem;
                 height: 0.16rem;
                 float: left;
-                background: url('../../assets/img/star.png') no-repeat;
+                background: url('../../assets/img/star-o.png') no-repeat;
                 background-size: 100% 100%;
                 margin: 0.31rem 0.31rem 0.63rem 0.23rem;
+            }
+            .nocheck{
+                background: url('../../assets/img/star-o.png') no-repeat;
+                background-size: 100% 100%;  
+            }
+            .check{
+                background: url('../../assets/img/star.png') no-repeat;
+                background-size: 100% 100%;  
             }
         }
     }
