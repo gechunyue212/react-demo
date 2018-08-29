@@ -39,12 +39,10 @@
 .TabsBox table {
   clear: both;
   width: 100%;
-  height: 212px;
 }
 
 .TabsBox table tbody {
   width: 100%;
-  height: 212px;
   overflow-y: auto;
 }
 
