@@ -65,7 +65,7 @@ export default class Tabs extends Component {
                                     </tr>
                                 ))
                                 :
-                                <tr><td>暂无记录</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td>{contentText.empty}</td><td></td><td></td><td></td><td></td><td></td></tr>
                             }
                     </tbody>
                 </table>

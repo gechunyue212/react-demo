@@ -520,6 +520,7 @@ export const technology = {
 export const mobileTabs = {
     EN:{
         tab:"MARKED",
+        empty:"No Records",
         MARKED:{
             tbody:[]
         },
@@ -658,6 +659,7 @@ export const mobileTabs = {
     },
     CN:{
         tab:"自选",
+        empty:"暂无记录",
         MARKED:{
             tbody:[]
         },
