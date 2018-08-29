@@ -6,7 +6,26 @@ import logoSvg from '../../assets/img/logo.svg';
 export default class Head extends Component {
     constructor(props){
         super(props);
+        this.timer;
     }
+    handleScroll = (elementId) => {
+        const oEleArea = document.querySelector(elementId),
+            end = oEleArea.offsetTop;
+        let scrollTop = 0;
+        let speed;
+        clearInterval(this.timer);
+        this.timer = setInterval(() => {
+            speed = (end - scrollTop)/6;
+            speed = speed>0 ? Math.ceil(speed) : Math.floor(speed);
+            scrollTop += speed;
+            if(scrollTop === end){
+                clearInterval(this.timer);
+            }
+            document.documentElement.scrollTop = scrollTop;
+            window.pageYOffset = scrollTop;
+            document.body.scrollTop = scrollTop;
+        }, 12);
+    };
     render(){
 
         const { contentText, languageList, language, languageListData } = this.props;
@@ -35,7 +54,7 @@ export default class Head extends Component {
                         <div className={styles.headRight}>
                             {
                                 contentText.nav.map((item,i)=>(
-                                    <a href={item.href} key={i} className={styles.actionBtn}>{item.title}</a>
+                                    <a href="javascript:void(0)" onClick={()=>this.handleScroll(item.href)} key={i} className={styles.actionBtn}>{item.title}</a>
                                 ))
                             }
                             {/*<a href='javascript:void(0)' className={styles.headBtn} style={{marginRight:'0'}}> cn &gt;</a>*/}
