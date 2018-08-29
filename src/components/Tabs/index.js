@@ -4,9 +4,8 @@ export default class Tabs extends Component {
     constructor(props){
         super(props);
         this.state={
-            contentText:props.contentText,
-            current:"USDT",
-            choosedArr:[]
+            contentText1:props.contentText,
+            current:"USDT"
         }
     }
     changebg = (current) =>{
@@ -16,20 +15,26 @@ export default class Tabs extends Component {
     }
 
     choose = (option,index) =>{
-        let { contentText } = this.state;
-        const { choosedArr } = this.state
-        contentText[option].tbody[index].active = !contentText[option].tbody[index].active;
-        console.log(contentText[option][index]);
-        let tempArr = [];
-        tempArr.push(contentText[option][index]);
-            this.setState({
-                contentText,
-                choosedArr:tempArr
-            })
+        let { contentText1 } = this.state;
+        let temp = contentText1.tab
+        contentText1[option].tbody[index].active = !contentText1[option].tbody[index].active;
+        if(contentText1[option].tbody[index].active === true){
+            contentText1[temp].tbody.push(contentText1[option].tbody[index]);
+        }else{
+            contentText1[temp].tbody.forEach((element,index) => {
+                if(element.active === false){
+                    contentText1[temp].tbody.splice(index,1);
+                }
+            });
+        }
+        this.setState({
+            contentText1,
+        })
     }
     render(){
-        const { contentText } = this.props
-        const { current,choosedArr } = this.state;
+        const { contentText1 } = this.state;
+        const { contentText } = this.props;
+        const { current } = this.state;
         return(
             <div className={s.TabsBox}>
                 <ul className={s.Tabs}>
@@ -49,7 +54,8 @@ export default class Tabs extends Component {
                             }
                          </tr>
                             {
-                                contentText[current].tbody.map((item,i)=>(
+                                contentText1[current].tbody.length!=0?
+                                contentText1[current].tbody.map((item,i)=>(
                                     <tr key={i}>
                                         {
                                             item.tr.map((p,j)=>(
@@ -59,6 +65,8 @@ export default class Tabs extends Component {
                                         }
                                     </tr>
                                 ))
+                                :
+                                <tr><td>暂无数据</td><td></td><td></td><td></td><td></td><td></td></tr>
                             }
                     </tbody>
                 </table>

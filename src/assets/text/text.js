@@ -1308,7 +1308,7 @@ export const tabs = {
         tab:"MARKED",
         thead:["Paris","Last Price","Change","24h Hight","24h Low","24h Volume"],
         MARKED:{
-            tbody:[{}],
+            tbody:[],
         },
         USDT:{
             tbody:[
@@ -1482,8 +1482,8 @@ export const tabs = {
     CN:{
         tab:"自选",
         thead:["交易对","最新价格","涨幅","24h高点","24h低点","24h交易量"],
-        自选:{
-            tbody:[{}],
+        "自选":{
+            tbody:[],
         },
         USDT:{
             tbody:[
@@ -1658,7 +1658,7 @@ export const tabs = {
         tab:"自選する",
         thead:["取引","最新値段","増加量","24h最高","24h最低","24h取引量"],
         自選する:{
-            tbody:[{}],
+            tbody:[],
         },
         USDT:{
             tbody:[
@@ -1833,7 +1833,7 @@ export const tabs = {
         tab:"자선",
         thead:["-거래가","-최신 가격","-상승폭","-24h최고","-24h최저","-24h 거래량"],
         자선:{
-            tbody:[{}],
+            tbody:[],
         },
         USDT:{
             tbody:[
@@ -2008,7 +2008,7 @@ export const tabs = {
         tab:"自选",
         thead:["——زوج المعاملة","آخر سعر","زيادة","-24h최고","-24h최저","-24h 거래량"],
         자선:{
-            tbody:[{}],
+            tbody:[],
         },
         USDT:{
             tbody:[
