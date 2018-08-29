@@ -15,7 +15,7 @@ export default class MobileTabs extends Component{
     }
     choose = (option,index) =>{
         let { contentText } = this.state;
-        let temp = contentText.tab
+        let temp = "MARKED";
         contentText[option].tbody[index].active = !contentText[option].tbody[index].active;
         if(contentText[option].tbody[index].active === true){
             contentText[temp].tbody.push(contentText[option].tbody[index]);
@@ -34,7 +34,7 @@ export default class MobileTabs extends Component{
         console.log(nextProps);
         this.setState({
             contentText:nextProps.contentText,
-            current:nextProps.contentText.tab
+            current:"MARKED"
         })
     }
     render(){
@@ -50,7 +50,7 @@ export default class MobileTabs extends Component{
                 <table>
                      <tbody>
                     {
-                    contentText[current].tbody.length!=0?
+                    contentText[current].tbody.length!==0?
                       contentText[current].tbody.map((item,i)=>(  
                         <tr key={i} onClick={()=>this.choose(current,i)}>
                             {

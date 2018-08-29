@@ -658,7 +658,7 @@ export const mobileTabs = {
     },
     CN:{
         tab:"自选",
-        "自选":{
+        MARKED:{
             tbody:[]
         },
         USDT:{

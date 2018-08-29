@@ -7,17 +7,18 @@ export default class MobileKChart extends Component{
     constructor(props){
         super(props);
         this.state={
-            content:props.content
+            content:props.content,
+            contentText:props.contentText
         }
     }
     componentWillReceiveProps(nextProps){
             this.setState({
-                content:nextProps.content
+                content:nextProps.content,
+                contentText:nextProps.contentText
             })
     }
     render(){
-        const { contentText } =this.props;
-        const { content } = this.state;
+        const { content, contentText } = this.state;
         return (
             <div className={styles["k-chart-box"]}>
                 <div className={styles["k-chart"]}>
