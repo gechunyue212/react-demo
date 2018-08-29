@@ -9,7 +9,9 @@ export default class MobileRoadMap extends Component{
             activeBoxHeight: 0,
             contentRootText: props.contentText,
             contentText: props.contentText,
+            renderRoadMapComponent: false,
         };
+        this.handleListenScroll = this.handleListenScroll.bind(this);
     }
     handleChangeActive = (index) => {
         let { contentText } = this.state;
@@ -31,9 +33,21 @@ export default class MobileRoadMap extends Component{
         });
         return activeBoxHeight || 1;
     };
+    handleListenScroll(){
+        const oRoadMap = document.getElementById("MobileRoadMap"),
+            _scrollDistance = oRoadMap.offsetTop - oRoadMap.getBoundingClientRect().height;
+        const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        if(scrollTop >= _scrollDistance){
+            const { contentText } = this.state;
+            this.setState({
+                renderRoadMapComponent:true,
+                activeBoxHeight:this.getActiveBoxHeight(contentText.items)
+            });
+            document.removeEventListener("scroll", this.handleListenScroll);
+        }
+    };
     componentDidMount(){
-        const { contentText } = this.props;
-        this.setState({ activeBoxHeight:this.getActiveBoxHeight(contentText.items) });
+        document.addEventListener("scroll", this.handleListenScroll);
     }
     componentWillReceiveProps(nextProps){
         this.setState({
@@ -41,10 +55,13 @@ export default class MobileRoadMap extends Component{
             contentText: nextProps.contentText,
         });
     }
+    componentWillUnmount(){
+        document.removeEventListener("scroll", this.handleListenScroll);
+    }
     render(){
-        const { contentText, activeBoxHeight } = this.state;
+        const { contentText, activeBoxHeight, renderRoadMapComponent } = this.state;
         return (
-            <div className={styles.roadMapBox} id="MobileRoadMap">
+            <div className={styles.roadMapBox + " " + (renderRoadMapComponent ? styles.roadMapBoxShow : "")} id="MobileRoadMap">
                 {/*<img src={contentText.img} />*/}
                 <div className={styles.roadMapTitle}>{contentText.title}</div>
                 <div className={styles.roadMapContent}>

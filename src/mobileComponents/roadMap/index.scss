@@ -1,8 +1,10 @@
 .roadMapBox{
   width: 100%;
   padding: 0.55rem 0;
-  img{
-    width: 100%;
+  opacity: 0;
+  transition: opacity 2s;
+  &.roadMapBoxShow{
+    opacity: 1;
   }
 
   .roadMapTitle{
@@ -34,7 +36,7 @@
       background:linear-gradient(90deg,rgba(75,28,177,1) 0%,rgba(132,21,182,1) 100%);
 
       &.transitionActive{
-        transition: height 0.8s;
+        transition: height 1s;
       }
 
     }
