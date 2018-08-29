@@ -152,7 +152,7 @@ class MobileApp extends Component {
         const { head,kChart,product,documents,download,foot,roadmap,technology,mobileTabs} = MobileTexts;
 
         return (
-            <div>
+            <div style={{overflowX:"hidden"}}>
                 <div style={{width:"100%", height:"1.07rem"}}></div>
                 <MobileHead handleMenuClick={this.onChangeLanguage} languageList={languageList} language={language} languageListData={languageListData} contentText={head[language]}/>
                 <MobileBanner contentText={head[language]} />
